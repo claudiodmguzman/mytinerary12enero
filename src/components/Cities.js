@@ -72,12 +72,12 @@ const Cities = () => {
                 </div>
             </div>
 
-            <div className="card_master">
+            <div className="cardMaster">
                 <div className="card">
                     <div className="image">
                         <img src={imgCity4} />
                         <div className="imageTexto">
-                            <p>COUNTRY_1</p>
+                            <p>CITY_4</p>
                         </div>
                     </div>
                     <div className="details">
@@ -97,7 +97,7 @@ const Cities = () => {
                     <div className="image">
                         <img src={imgCity5} />
                         <div className="imageTexto">
-                            <p>COUNTRY_2</p>
+                            <p>CITY_5</p>
                         </div>
                     </div>
                     <div className="details">
@@ -117,7 +117,7 @@ const Cities = () => {
                     <div className="image">
                         <img src={imgCity6} />
                         <div className="imageTexto">
-                            <p>COUNTRY_3</p>
+                            <p>CITY_6</p>
                         </div>
                     </div>
                     <div className="details">

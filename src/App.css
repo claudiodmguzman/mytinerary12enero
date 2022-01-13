@@ -41,8 +41,8 @@
 
 body {
   background-image: url(./components/imgFondoBody.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .logueo {
@@ -137,7 +137,13 @@ a.linkDeco {
 }
 
 /* LOGIN */
+.masterLogContainer {
+  margin-top: 75px;
+}
 
+.btn.focus, .btn:focus {
+  box-shadow: none;
+}
 
 .dropdown-menu {
   background-image: url(./components/imgFondoLog.jpg);

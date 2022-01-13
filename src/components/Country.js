@@ -15,7 +15,7 @@ const Country = () => {
                     <div className="image">
                         <img src={imgCity1} />
                         <div className="imageTexto">
-                            <p>CITY_1</p>
+                            <p>COUNTRY_1</p>
                         </div>
                     </div>
                     <div className="details">
@@ -35,7 +35,7 @@ const Country = () => {
                     <div className="image">
                         <img src={imgCity2} />
                         <div className="imageTexto">
-                            <p>CITY_2</p>
+                            <p>COUNTRY_2</p>
                         </div>
                     </div>
                     <div className="details">
@@ -55,7 +55,7 @@ const Country = () => {
                     <div className="image">
                         <img src={imgCity3} />
                         <div className="imageTexto">
-                            <p>CITY_3</p>
+                            <p>COUNTRY_3</p>
                         </div>
                     </div>
                     <div className="details">
@@ -72,12 +72,12 @@ const Country = () => {
                 </div>
             </div>
 
-            <div className="card_master">
+            <div className="cardMaster">
                 <div className="card">
                     <div className="image">
                         <img src={imgCity4} />
                         <div className="imageTexto">
-                            <p>COUNTRY_1</p>
+                            <p>COUNTRY_4</p>
                         </div>
                     </div>
                     <div className="details">
@@ -97,7 +97,7 @@ const Country = () => {
                     <div className="image">
                         <img src={imgCity5} />
                         <div className="imageTexto">
-                            <p>COUNTRY_2</p>
+                            <p>COUNTRY_5</p>
                         </div>
                     </div>
                     <div className="details">
@@ -117,7 +117,7 @@ const Country = () => {
                     <div className="image">
                         <img src={imgCity6} />
                         <div className="imageTexto">
-                            <p>COUNTRY_3</p>
+                            <p>COUNTRY_6</p>
                         </div>
                     </div>
                     <div className="details">
