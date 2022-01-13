@@ -38,42 +38,42 @@ const Home = () => {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="d-block w-100" src={imgCity1.jpg} height="600" alt="First slide"/>
+                            <img className="d-block w-100" src={imgCity1} height="600" alt="First slide"/>
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>CIUDAD</h5>
                                     <p>description</p>
                                 </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity2.jpg} height="600" alt="Second slide"/>
+                            <img className="d-block w-100" src={imgCity2} height="600" alt="Second slide"/>
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>CIUDAD</h5>
                                     <p>description</p>
                                 </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity3.jpg} height="600" alt="Third slide"/>
+                            <img className="d-block w-100" src={imgCity3} height="600" alt="Third slide"/>
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>CIUDAD</h5>
                                     <p>description</p>
                                 </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity4.jpg} height="600" alt="Third slide"/>
+                            <img className="d-block w-100" src={imgCity4} height="600" alt="Third slide"/>
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>CIUDAD</h5>
                                     <p>description</p>
                                 </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity5.jpg} height="600" alt="Third slide"/>
+                            <img className="d-block w-100" src={imgCity5} height="600" alt="Third slide"/>
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>CIUDAD</h5>
                                     <p>description</p>
                                 </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity6.jpg} height="600" alt="Third slide"/>
+                            <img className="d-block w-100" src={imgCity6} height="600" alt="Third slide"/>
                                 <div className="carousel-caption d-none d-md-block">
                                     <h5>CIUDAD</h5>
                                     <p>description</p>

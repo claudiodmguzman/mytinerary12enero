@@ -13,7 +13,7 @@ const Country = () => {
             <div className="cardMaster">
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity1.jpg} />
+                        <img src={imgCity1} />
                         <div className="imageTexto">
                             <p>CITY_1</p>
                         </div>
@@ -33,7 +33,7 @@ const Country = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity2.jpg} />
+                        <img src={imgCity2} />
                         <div className="imageTexto">
                             <p>CITY_2</p>
                         </div>
@@ -53,7 +53,7 @@ const Country = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity3.jpg} />
+                        <img src={imgCity3} />
                         <div className="imageTexto">
                             <p>CITY_3</p>
                         </div>
@@ -75,7 +75,7 @@ const Country = () => {
             <div className="card_master">
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity4.jpg} />
+                        <img src={imgCity4} />
                         <div className="imageTexto">
                             <p>COUNTRY_1</p>
                         </div>
@@ -95,7 +95,7 @@ const Country = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity5.jpg} />
+                        <img src={imgCity5} />
                         <div className="imageTexto">
                             <p>COUNTRY_2</p>
                         </div>
@@ -115,7 +115,7 @@ const Country = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity6.jpg} />
+                        <img src={imgCity6} />
                         <div className="imageTexto">
                             <p>COUNTRY_3</p>
                         </div>

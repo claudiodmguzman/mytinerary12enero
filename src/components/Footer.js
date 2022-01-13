@@ -12,17 +12,17 @@ const Footer = () => {
                 <ul className="redSocialIcon">
                     
                     <li><Linkrouter className="redSocialIconLi" to="//https://es-la.facebook.com/" target="_blank">
-                        <img src={imgIconFacebook.png} width="30px" alt="facebook"/></Linkrouter></li>
+                        <img src={imgIconFacebook} width="30px" alt="facebook"/></Linkrouter></li>
                     
                     <li><Linkrouter className="redSocialIconLi" to="//https://www.instagram.com/?hl=es-la" target="_blank">
-                        <img src={imgIconInstagram.png} width="30px" alt="instagram"/></Linkrouter></li>
+                        <img src={imgIconInstagram} width="30px" alt="instagram"/></Linkrouter></li>
                    
                     <li><Linkrouter className="redSocialIconLi" to="//https://twitter.com/?lang=es" target="_blank">
-                        <img src={imgIconTwitter.png} width="30px" alt="twitter"/></Linkrouter></li>
+                        <img src={imgIconTwitter} width="30px" alt="twitter"/></Linkrouter></li>
                         
                     
                     <li><Linkrouter className="redSocialIconLi" to="//https://ar.linkedin.com/" target="_blank">
-                        <img src={imgIconLinkedin.png} width="30px" alt="linkedin"/></Linkrouter></li>
+                        <img src={imgIconLinkedin} width="30px" alt="linkedin"/></Linkrouter></li>
                         
                 </ul>
                 

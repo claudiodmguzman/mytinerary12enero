@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import Compass from './imgCompass.png'
-import iconLogCompass from './imgCompassLog.png';
+import imgCompass from './imgCompass.png';
+import imgCompassLog from './imgCompassLog.png';
 
 const Navbar = () => {
     return (
@@ -9,7 +9,7 @@ const Navbar = () => {
 
             <div className="noch">
                 <div className="encabezadoImgLogo">
-                    <Linkrouter to="/home"><img src={"./imgCompass.png"} height="175" width="175" alt="logo" /></Linkrouter>
+                    <Linkrouter to="/home"><img src={imgCompass} height="175" width="175" alt="logo" /></Linkrouter>
                 </div>
 
                 <div className="encabezadoNoch">
@@ -32,7 +32,7 @@ const Navbar = () => {
 
                         <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button"
                             className="btn btn bg-transparent">
-                            <img src={"./imgCompassLog.png"} width="60" height="60" alt="iconlogueo" />
+                            <img src={imgCompassLog} width="60" height="60" alt="iconlogueo" />
                         </button>
 
                         <div class="dropdown-menu">
