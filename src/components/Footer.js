@@ -11,17 +11,17 @@ const Footer = () => {
             <div className="footer">
                 <ul className="redSocialIcon">
                     
-                    <li><Linkrouter className="redSocialIconLi" to="//https://es-la.facebook.com/" target="_blank">
+                    <li><Linkrouter className="redSocialIconLi" to="//es-la.facebook.com/" target="_blank">
                         <img src={imgIconFacebook} width="30px" alt="facebook"/></Linkrouter></li>
                     
-                    <li><Linkrouter className="redSocialIconLi" to="//https://www.instagram.com/?hl=es-la" target="_blank">
+                    <li><Linkrouter className="redSocialIconLi" to="//www.instagram.com/" target="_blank">
                         <img src={imgIconInstagram} width="30px" alt="instagram"/></Linkrouter></li>
                    
-                    <li><Linkrouter className="redSocialIconLi" to="//https://twitter.com/?lang=es" target="_blank">
+                    <li><Linkrouter className="redSocialIconLi" to="//twitter.com/?lang=es" target="_blank">
                         <img src={imgIconTwitter} width="30px" alt="twitter"/></Linkrouter></li>
                         
                     
-                    <li><Linkrouter className="redSocialIconLi" to="//https://ar.linkedin.com/" target="_blank">
+                    <li><Linkrouter className="redSocialIconLi" to="//ar.linkedin.com/" target="_blank">
                         <img src={imgIconLinkedin} width="30px" alt="linkedin"/></Linkrouter></li>
                         
                 </ul>
