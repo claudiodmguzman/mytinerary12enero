@@ -18,7 +18,7 @@ const Home = () => {
                 </div>
 
                 <div className="description">
-                    <p>Para todos aquellos que tengan en mente conocer nuevos destinos, si necesita inspiración para decidir qué viaje realizar, estos son destinos populares de América del Sur que ofrece MyTinerary.</p>
+                    <p>Para todos aquellos que tengan en mente conocer nuevos destinos, si necesita inspiración para decidir qué viaje realizar, estos son destinos populares de América del Sur.</p>
 
                 </div>
 

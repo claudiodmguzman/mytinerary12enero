@@ -192,7 +192,8 @@ a.linkDeco {
 
 
 .homesweethome {
-  display: flex;
+  display: block;
+  justify-content: center;
   margin-top: 75px;
   justify-content: space-around;
 
@@ -200,29 +201,29 @@ a.linkDeco {
 
 .contenedorDescrption {
   display: block;
-  width: 50%;
-  margin: 0;
+  justify-content: center;
+  margin: 40px;
   padding: 0;
-  align-items: center;
 }
 
 .description {
+  justify-content: center;
   text-align: justify;
   font-size: 30px;
   font-weight: bold;
   color: #6e5228;
   font-family: 'Dancing Script';
+
 }
 
 .carrusel {
   display: flex;
-  height: 600px;
+  justify-content: center;
 }
 
 .carousel-item {
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .carousel-inner {
@@ -235,7 +236,7 @@ a.linkDeco {
 .access {
   /* display: block; */
   justify-content: center;
-  
+
 }
 
 .accessGroupImg {
@@ -276,7 +277,7 @@ a.linkDeco {
   width: 50%;
   height: 25%;
   background: linear-gradient(to right, #f1c077c0, #a0773a73, #a0773a2c, rgba(255, 254, 254, 0.514), rgba(248, 242, 242, 0.164));
-  
+
 }
 
 .accessCountry {
@@ -420,13 +421,13 @@ a.linkDeco {
 .card .image img {
   width: 100%;
   transition: .5s;
-  
+
 }
 
 .card:hover .image img {
   opacity: .5;
   transform: translateX(30%);/*100%*/
-  
+
 }
 
 .card .details {
@@ -477,7 +478,7 @@ a.linkDeco {
   margin: 10px 0;
   padding: 0;
   color: #262626;
-  
+
 }
 
 .card .details .center ul {
@@ -504,7 +505,7 @@ a.linkDeco {
   text-align: center;
   transform: .5s;
   text-decoration: none;
-  border-radius: 2px; 
+  border-radius: 2px;
 }
 
 .ulCenter {
