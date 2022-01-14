@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import imgCity1 from './imgCity1.jpg';
-import imgCity2 from './imgCity2.jpg';
-import imgCity3 from './imgCity3.jpg';
-import imgCity4 from './imgCity4.jpg';
-import imgCity5 from './imgCity5.jpg';
-import imgCity6 from './imgCity6.jpg';
+import img13 from '.img/imgPaises/img13-DESIERTO-DE-TATACOA-COLOMBIA.jpg';
+import img14 from '.img/imgPaises/img14-ILHA-GRANDE-BRASIL.jpg';
+import img15 from '.img/imgPaises/img15-LAGUNA-COLORADA-BOLIVIA.jpg';
+import img16 from '.img/imgPaises/img16-RORAIMA-LA-GRAN-SABANA-VENEZUELA-GUYANA-BRASIL.jpg';
+import img17 from '.img/imgPaises/img17-TORRES-DEL-PAINE-CHILE.jpg';
+import img18 from '.img/imgPaises/img18-CATARATAS-DE-IGUAZU-BRASIL-ARGENTINA.jpg';
 
 const Cities = () => {
 
@@ -17,7 +17,7 @@ const Cities = () => {
             <div className="cardMaster">
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity1} />
+                        <img src={img13} />
                         <div className="imageTexto">
                             <p>CITY_1</p>
                         </div>
@@ -37,7 +37,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity2} />
+                        <img src={im14} />
                         <div className="imageTexto">
                             <p>CITY_2</p>
                         </div>
@@ -57,7 +57,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity3} />
+                        <img src={img15} />
                         <div className="imageTexto">
                             <p>CITY_3</p>
                         </div>
@@ -79,7 +79,7 @@ const Cities = () => {
             <div className="cardMaster">
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity4} />
+                        <img src={img16} />
                         <div className="imageTexto">
                             <p>CITY_4</p>
                         </div>
@@ -99,7 +99,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity5} />
+                        <img src={img17} />
                         <div className="imageTexto">
                             <p>CITY_5</p>
                         </div>
@@ -119,7 +119,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={imgCity6} />
+                        <img src={img18} />
                         <div className="imageTexto">
                             <p>CITY_6</p>
                         </div>

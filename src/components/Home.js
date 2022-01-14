@@ -1,10 +1,10 @@
 import React from 'react';
-import imgCity1 from './imgCity1.jpg';
-import imgCity2 from './imgCity2.jpg';
-import imgCity3 from './imgCity3.jpg';
-import imgCity4 from './imgCity4.jpg';
-import imgCity5 from './imgCity5.jpg';
-import imgCity6 from './imgCity6.jpg';
+import img1 from './img/imgPaises/img1-SALAR-DE-UYUNI-BOLIVIA.jpg';
+import img2 from './img/imgPaises/img2-MONTE-FITZ-ROY-PATAGONIA-ARGENTINA.jpg';
+import img3 from './img/imgPaises/img3-PEÑÓN-DE-GUATAPE-COLOMBIA.jpg';
+import img4 from './img/imgPaises/img4-ISLA-DE-PASCUA-CHILE.jpg';
+import img5 from './img/imgPaises/img5-HUARAZ-PERU.jpg';
+import img6 from './img/imgPaises/img6-ISLA-DE-GALAPAGOS-ECUADOR.jpg';
 
 const Home = () => {
     return (
@@ -36,42 +36,42 @@ const Home = () => {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="d-block w-100" src={imgCity1} height="600" alt="First slide" />
+                            <img className="d-block w-100" src={img1} height="600" alt="First slide" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>CIUDAD</h5>
                                 <p>description</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity2} height="600" alt="Second slide" />
+                            <img className="d-block w-100" src={img2} height="600" alt="Second slide" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>CIUDAD</h5>
                                 <p>description</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity3} height="600" alt="Third slide" />
+                            <img className="d-block w-100" src={img3} height="600" alt="Third slide" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>CIUDAD</h5>
                                 <p>description</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity4} height="600" alt="Third slide" />
+                            <img className="d-block w-100" src={img4} height="600" alt="Third slide" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>CIUDAD</h5>
                                 <p>description</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity5} height="600" alt="Third slide" />
+                            <img className="d-block w-100" src={img5} height="600" alt="Third slide" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>CIUDAD</h5>
                                 <p>description</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={imgCity6} height="600" alt="Third slide" />
+                            <img className="d-block w-100" src={img6} height="600" alt="Third slide" />
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>CIUDAD</h5>
                                 <p>description</p>

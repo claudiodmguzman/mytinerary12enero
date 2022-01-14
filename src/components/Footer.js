@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import imgIconFacebook from './imgIconFacebook.png';
-import imgIconInstagram from './imgIconInstagram.png';
-import imgIconLinkedin from './imgIconLinkedin.png';
-import imgIconTwitter from './imgIconTwitter.png';
+import imgIconFacebook from './img/imgIcon/imgIconFacebook';
+import imgIconInstagram from '.img/imgIcon/imgIconInstagram.png';
+import imgIconLinkedin from '.img/imgIcon/imgIconLinkedin.png';
+import imgIconTwitter from '.img/imgIcon/imgIconTwitter.png';
 
 const Footer = () => {
     return (

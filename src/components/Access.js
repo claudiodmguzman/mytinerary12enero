@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import imgCity1 from './imgCity1.jpg'
+import img7 from './img/imgPaises/img7-MACHU-PICCHU-PERU.jpg';
 
 const Access = () => {
     return (
@@ -33,7 +33,7 @@ const Access = () => {
                 </div>
 
                 <div className="accessImage">
-                    <img className="d-block w-100 accessImage" src={imgCity1} height="600" alt="First slide" />
+                    <img className="d-block w-100 accessImage" src={img7} height="600" alt="First slide" />
                 </div>
 
             </div>
