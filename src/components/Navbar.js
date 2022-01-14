@@ -21,7 +21,7 @@ const Navbar = () => {
                             <div className="selector">
                             </div>
                             <nav className="encabezadoLinks">
-                                <Linkrouter className="linkDeco" to="/country">Country</Linkrouter>
+                                <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter>
                             </nav>
                         </div>
                     </div>
