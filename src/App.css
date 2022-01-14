@@ -216,6 +216,23 @@ a.linkDeco {
 
 }
 
+.descrptionHome1 {
+  background-color: rgba(226, 168, 43, 0.103);
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  font-size: 20px;
+}
+
+.descrptionHome2 {
+  background-color: rgba(252, 173, 4, 0.205);
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  font-size: 25px;
+  margin-left: 80px;
+}
+
 .carrusel {
   display: flex;
   justify-content: center;
