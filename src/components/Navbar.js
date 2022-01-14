@@ -9,7 +9,7 @@ const Navbar = () => {
 
             <div className="noch">
                 <div className="encabezadoImgLogo">
-                    <Linkrouter to="/"><img src={imgCompass} height="175" width="175" alt="logo" /></Linkrouter>
+                    <Linkrouter to="/"><img src={imgCompass} height="175" width="175" alt="Logo principal, lleva a la Home page" /></Linkrouter>
                 </div>
 
                 <div className="encabezadoNoch">
@@ -32,7 +32,7 @@ const Navbar = () => {
 
                         <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button"
                             className="btn btn bg-transparent">
-                            <img src={imgCompassLog} width="60" height="60" alt="iconlogueo" />
+                            <img src={imgCompassLog} width="60" height="60" alt="ícono de Logueo SignIn y SignUp" />
                         </button>
 
                         <div class="dropdown-menu">

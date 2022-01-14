@@ -18,13 +18,13 @@ const Country = () => {
                     <div className="image">
                         <img src={img7} />
                         <div className="imageTexto">
-                            <p>COUNTRY_1</p>
+                            <p>PERÚ</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>City<br /><span>Country</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Machu Picchu<br /><span>Perú</span></h1>
+                            <p>Es Patrimonio de la Humanidad y una de las nuevas siete maravillas del mundo moderno</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -38,13 +38,13 @@ const Country = () => {
                     <div className="image">
                         <img src={img8} />
                         <div className="imageTexto">
-                            <p>COUNTRY_2</p>
+                            <p>ECUADOR</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>City<br /><span>Country</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Chimborazo<br /><span>Ecuador</span></h1>
+                            <p>Medido desde el centro de la tierra, es el punto más lejano del planeta al que puedes llegar sin volar</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -58,13 +58,13 @@ const Country = () => {
                     <div className="image">
                         <img src={img9} />
                         <div className="imageTexto">
-                            <p>COUNTRY_3</p>
+                            <p>CHILE</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>City<br /><span>Country</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Desierto de Atacama<br /><span>Chile</span></h1>
+                            <p>Es el mejor sitio del planeta para observar el firmamento</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -80,13 +80,13 @@ const Country = () => {
                     <div className="image">
                         <img src={img10} />
                         <div className="imageTexto">
-                            <p>COUNTRY_4</p>
+                            <p>ARGENTINA</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>Country<br /><span>Continent</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Glaciar Perito Moreno<br /><span>Argentina</span></h1>
+                            <p>Se trata del glaciar con más fácil acceso de todo el planeta</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -100,13 +100,13 @@ const Country = () => {
                     <div className="image">
                         <img src={img11} />
                         <div className="imageTexto">
-                            <p>COUNTRY_5</p>
+                            <p>BRASIL</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>Country<br /><span>Continent</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Lençóis Maranhenses<br /><span>Brasil</span></h1>
+                            <p>Se forman centenares de lagunas de color azulado o verdoso, cercadas por dunas de arena blanca</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -120,13 +120,13 @@ const Country = () => {
                     <div className="image">
                         <img src={img12} />
                         <div className="imageTexto">
-                            <p>COUNTRY_6</p>
+                            <p>VENEZUELA</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>Country<br /><span>Continent</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Los Roques<br /><span>Venezuela</span></h1>
+                            <p>Su singularidad y belleza se debe en parte por la formación de una estructura de atolón</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
