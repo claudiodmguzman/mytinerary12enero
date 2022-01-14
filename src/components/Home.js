@@ -36,45 +36,45 @@ const Home = () => {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="d-block w-100" src={img1} height="600" alt="First slide" />
+                            <img className="d-block w-100" src={img1} height="600" alt="img1 SALAR DE UYUNI BOLIVIA" />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>CIUDAD</h5>
-                                <p>description</p>
+                                <h5>BOLIVIA</h5>
+                                <p>Salar de Uyuni</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={img2} height="600" alt="Second slide" />
+                            <img className="d-block w-100" src={img2} height="600" alt="img2 MONTE FITZ ROY PATAGONIA ARGENTINA" />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>CIUDAD</h5>
-                                <p>description</p>
+                                <h5>ARGENTINA</h5>
+                                <p>Monte Fitz Roy</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={img3} height="600" alt="Third slide" />
+                            <img className="d-block w-100" src={img3} height="600" alt="img3 PEÑÓN DE GUATAPE COLOMBIA" />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>CIUDAD</h5>
-                                <p>description</p>
+                                <h5>COLOMBIA</h5>
+                                <p>Peñón de Guatape</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={img4} height="600" alt="Third slide" />
+                            <img className="d-block w-100" src={img4} height="600" alt="img4 ISLA DE PASCUA CHILE" />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>CIUDAD</h5>
-                                <p>description</p>
+                                <h5>CHILE</h5>
+                                <p>Isla de Pascua</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={img5} height="600" alt="Third slide" />
+                            <img className="d-block w-100" src={img5} height="600" alt="img5 HUARAZ PERU" />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>CIUDAD</h5>
-                                <p>description</p>
+                                <h5>PERÚ</h5>
+                                <p>Huaraz</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="d-block w-100" src={img6} height="600" alt="Third slide" />
+                            <img className="d-block w-100" src={img6} height="600" alt="img6 ISLAS GALAPAGOS ECUADOR" />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>CIUDAD</h5>
-                                <p>description</p>
+                                <h5>ECUADOR</h5>
+                                <p>Islas Galápagos</p>
                             </div>
                         </div>
                     </div>

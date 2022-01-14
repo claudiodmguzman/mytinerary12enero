@@ -1,7 +1,7 @@
 /* NAVBAR INICIO */
 
 body {
-  background-image: url(./components/imgFondoBody.png);
+  background-image: url(./components/img/imgFondo/imgFondoBody.png);
   /* background-repeat: no-repeat;
   background-size: cover; */
 }
@@ -116,7 +116,7 @@ a.linkDeco {
 }
 
 .dropdown-menu {
-  background-image: url(./components/imgFondoLog.jpg);
+  background-image: url(./components/img/imgFondo/imgFondoLog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* background: -webkit-linear-gradient(#f8af111a, #f58e07);
@@ -224,10 +224,12 @@ a.linkDeco {
 .carousel-item {
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 .carousel-inner {
   border-radius: 10px;
+  width: 900px !important;
 }
 
 /* ACCESS */
