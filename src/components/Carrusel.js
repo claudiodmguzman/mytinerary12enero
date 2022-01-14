@@ -1,0 +1,81 @@
+import React from 'react';
+import img1 from './img/imgPaises/img1-SALAR-DE-UYUNI-BOLIVIA.jpg';
+import img2 from './img/imgPaises/img2-MONTE-FITZ-ROY-PATAGONIA-ARGENTINA.jpg';
+import img3 from './img/imgPaises/img3-PEÑÓN-DE-GUATAPE-COLOMBIA.jpg';
+import img4 from './img/imgPaises/img4-ISLA-DE-PASCUA-CHILE.jpg';
+import img5 from './img/imgPaises/img5-HUARAZ-PERU.jpg';
+import img6 from './img/imgPaises/img6-ISLAS-GALAPAGOS-ECUADOR.jpg';
+
+
+function Carrusel() {
+
+    return (
+    <div className="carrusel">
+        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img className="d-block w-100" src={img1} height="600" alt="img1 SALAR DE UYUNI BOLIVIA" />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>BOLIVIA</h5>
+                        <p>Salar de Uyuni</p>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img className="d-block w-100" src={img2} height="600" alt="img2 MONTE FITZ ROY PATAGONIA ARGENTINA" />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>ARGENTINA</h5>
+                        <p>Monte Fitz Roy</p>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img className="d-block w-100" src={img3} height="600" alt="img3 PEÑÓN DE GUATAPE COLOMBIA" />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>COLOMBIA</h5>
+                        <p>Peñón de Guatape</p>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img className="d-block w-100" src={img4} height="600" alt="img4 ISLA DE PASCUA CHILE" />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>CHILE</h5>
+                        <p>Isla de Pascua</p>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img className="d-block w-100" src={img5} height="600" alt="img5 HUARAZ PERU" />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>PERÚ</h5>
+                        <p>Huaraz</p>
+                    </div>
+                </div>
+                <div className="carousel-item">
+                    <img className="d-block w-100" src={img6} height="600" alt="img6 ISLAS GALAPAGOS ECUADOR" />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>ECUADOR</h5>
+                        <p>Islas Galápagos</p>
+                    </div>
+                </div>
+            </div>
+            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    )
+}
+
+export default Carrusel;
+

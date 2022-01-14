@@ -6,11 +6,17 @@ import img15 from './img/imgPaises/img15-LAGUNA-COLORADA-BOLIVIA.jpg';
 import img16 from './img/imgPaises/img16-RORAIMA-LA-GRAN-SABANA-VENEZUELA-GUYANA-BRASIL.jpg';
 import img17 from './img/imgPaises/img17-TORRES-DEL-PAINE-CHILE.jpg';
 import img18 from './img/imgPaises/img18-CATARATAS-DE-IGUAZU-BRASIL-ARGENTINA.jpg';
+import Swicht from './Swicht';
 
 const Cities = () => {
 
     return (
         <div className="master">
+
+            <div className="cardMasterTitulo">
+                <Swicht />
+            </div>
+
 
             <h1 className="cardMasterTitulo">the Cities...</h1>
 
