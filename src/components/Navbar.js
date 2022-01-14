@@ -41,13 +41,13 @@ const Navbar = () => {
                                 <label className="texSign">Hello There!</label>
                                 <div class="form-group">
 
-                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" required
                                         placeholder="email@example.com"/>
                                 </div>
                                 <div class="form-group">
 
                                     <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                                        placeholder="Password"/>
+                                        required placeholder="Password"/>
                                 </div>
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="dropdownCheck"/>
@@ -71,17 +71,17 @@ const Navbar = () => {
                                 <div class="form-group">
 
                                     <input type="email" class="form-control" id="exampleDropdownFormEmail1"
-                                        placeholder="email@example.com"/>
+                                        required placeholder="email@example.com"/>
                                 </div>
                                 <div class="form-group">
 
                                     <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                                        placeholder="Password"/>
+                                        required placeholder="Password"/>
                                 </div>
                                 <div class="form-group">
 
                                     <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                                        placeholder="Repeat Password"/>
+                                        required placeholder="Repeat Password"/>
                                 </div>
 
                                 <button type="submit" class="btn btn-success">Sign Up</button>
