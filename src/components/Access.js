@@ -10,16 +10,13 @@ const Access = () => {
                 <div className="accessGroup">
 
                     <div className="accessCyCo">
-                        <div className="accessCity">City</div>
-                        <div className="accessCountry">Country</div>
+                        <div className="accessCity">Machu Picchu</div>
+                        <div className="accessCountry">Perú</div>
                     </div>
 
                     <div className="accessDesDet">
 
-                        <div className="accessDescription">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nesciunt obcaecati atque voluptas repudiandae in totam ipsum odio voluptatem nobis
-                            necessitatibus,
-                            doloremque velit ad ipsa architecto dolore deserunt expedita eius amet.</div>
+                        <div className="accessDescription">Uno de los lugares más mágicos del planeta. El atractivo de alcanzar la antigua ciudad de Machu Picchu, en el promontorio rocoso que une los cerros de Machu Picchu y Huayna Picchu, concentra a miles de viajeros que llegan a Perú atraídos por los misterios de esta maravilla de la civilización inca. Es Patrimonio de la Humanidad y una de las nuevas siete maravillas del mundo moderno.</div>
 
                         <div className="accessDetail">
                             Expand Detail

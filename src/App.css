@@ -210,9 +210,9 @@ a.linkDeco {
   justify-content: center;
   text-align: justify;
   font-size: 30px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #6e5228;
-  font-family: 'Dancing Script';
+  font-family: 'Script';
 
 }
 
@@ -348,6 +348,7 @@ a.linkDeco {
 .accessImage {
   display: flex;
   height: 600px;
+  width: 900 !important;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
