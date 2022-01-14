@@ -9,7 +9,7 @@ const Navbar = () => {
 
             <div className="noch">
                 <div className="encabezadoImgLogo">
-                    <Linkrouter to="/home"><img src={imgCompass} height="175" width="175" alt="logo" /></Linkrouter>
+                    <Linkrouter to="/"><img src={imgCompass} height="175" width="175" alt="logo" /></Linkrouter>
                 </div>
 
                 <div className="encabezadoNoch">

@@ -363,6 +363,16 @@ a.linkDeco {
   margin-top: 79px;
 }
 
+.cardMasterTitulo {
+  justify-content: center;
+  display: flex;
+  color: #795b2d;
+  /* font-family: 'Dancing Script', cursive; */
+  font-weight:300;
+  font-size: 45px;
+  margin-bottom: 45px;
+}
+
 .cardMaster {
   display:flex;
   justify-content: space-between;

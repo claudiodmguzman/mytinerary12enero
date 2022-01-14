@@ -10,6 +10,9 @@ import imgCity6 from './imgCity6.jpg';
 const Cities = () => {
     return (
         <div className="master">
+
+            <h1 className="cardMasterTitulo">the Cities...</h1>
+
             <div className="cardMaster">
                 <div className="card">
                     <div className="image">
