@@ -7,6 +7,8 @@ import Cities from './components/Cities';
 import Country from './components/Country';
 import Access from './components/Access';
 import Footer from './components/Footer';
+// import Switch from '.components/Swicht';
+
 
 
 function App() {

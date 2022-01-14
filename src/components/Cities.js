@@ -8,6 +8,7 @@ import imgCity5 from './imgCity5.jpg';
 import imgCity6 from './imgCity6.jpg';
 
 const Cities = () => {
+
     return (
         <div className="master">
 
