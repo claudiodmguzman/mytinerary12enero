@@ -11,7 +11,6 @@ export default function ControlledSwitches() {
 
   return (
     <div>
-    <h1>Hola Switch</h1>
     <Switch
       checked={checked}
       onChange={handleChange}

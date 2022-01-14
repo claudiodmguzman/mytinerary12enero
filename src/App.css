@@ -347,8 +347,8 @@ a.linkDeco {
 
 .accessImage {
   display: flex;
-  height: 600px;
-  width: 900 !important;
+  height: 400px;
+  width: 700px !important;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
