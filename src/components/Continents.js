@@ -11,7 +11,7 @@ const Country = () => {
     return (
         <div className="master">
 
-            <h1 className="cardMasterTitulo">the Countries...</h1>
+            <h1 className="cardMasterTitulo">Continents</h1>
 
             <div className="cardMaster">
                 <div className="card">
