@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import img13 from '.img/imgPaises/img13-DESIERTO-DE-TATACOA-COLOMBIA.jpg';
-import img14 from '.img/imgPaises/img14-ILHA-GRANDE-BRASIL.jpg';
-import img15 from '.img/imgPaises/img15-LAGUNA-COLORADA-BOLIVIA.jpg';
-import img16 from '.img/imgPaises/img16-RORAIMA-LA-GRAN-SABANA-VENEZUELA-GUYANA-BRASIL.jpg';
-import img17 from '.img/imgPaises/img17-TORRES-DEL-PAINE-CHILE.jpg';
-import img18 from '.img/imgPaises/img18-CATARATAS-DE-IGUAZU-BRASIL-ARGENTINA.jpg';
+import img13 from './img/imgPaises/img13-DESIERTO-DE-TATACOA-COLOMBIA.jpg';
+import img14 from './img/imgPaises/img14-ILHA-GRANDE-BRASIL.jpg';
+import img15 from './img/imgPaises/img15-LAGUNA-COLORADA-BOLIVIA.jpg';
+import img16 from './img/imgPaises/img16-RORAIMA-LA-GRAN-SABANA-VENEZUELA-GUYANA-BRASIL.jpg';
+import img17 from './img/imgPaises/img17-TORRES-DEL-PAINE-CHILE.jpg';
+import img18 from './img/imgPaises/img18-CATARATAS-DE-IGUAZU-BRASIL-ARGENTINA.jpg';
 
 const Cities = () => {
 
@@ -37,7 +37,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={im14} />
+                        <img src={img14} />
                         <div className="imageTexto">
                             <p>CITY_2</p>
                         </div>

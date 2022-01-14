@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import imgCompass from '.img/imgNavbar/imgCompass.png';
-import imgCompassLog from '.img/imgNavbar/imgCompassLog.png';
+import imgCompass from './img/imgNavbar/imgCompass.png';
+import imgCompassLog from './img/imgNavbar/imgCompassLog.png';
 
 const Navbar = () => {
     return (

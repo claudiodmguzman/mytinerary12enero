@@ -4,7 +4,7 @@ import img2 from './img/imgPaises/img2-MONTE-FITZ-ROY-PATAGONIA-ARGENTINA.jpg';
 import img3 from './img/imgPaises/img3-PEÑÓN-DE-GUATAPE-COLOMBIA.jpg';
 import img4 from './img/imgPaises/img4-ISLA-DE-PASCUA-CHILE.jpg';
 import img5 from './img/imgPaises/img5-HUARAZ-PERU.jpg';
-import img6 from './img/imgPaises/img6-ISLA-DE-GALAPAGOS-ECUADOR.jpg';
+import img6 from './img/imgPaises/img6-ISLAS-GALAPAGOS-ECUADOR.jpg';
 
 const Home = () => {
     return (

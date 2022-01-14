@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import img7 from '.img/imgPaises/img7-MACHU-PICCHU-PERU.jpg';
-import img8 from '.img/imgPaises/img8-CHIMBORAZO-ECUADOR.jpg';
-import img9 from '.img/imgPaises/img9-DESIERTO-DE-ATACAMA-CHILE.jpg';
-import img10 from '.img/imgPaises/img10-GLACIAR-PERITO-MORENO-ARGENTINA.jpg';
-import img11 from '.img/imgPaises/img11-LENCOIS-MARANHENSES-BRASIL.jpg';
-import img12 from '.img/imgPaises/img12-LOS-ROQUES-VENEZUELA.jpg';
+import img7 from './img/imgPaises/img7-MACHU-PICCHU-PERU.jpg';
+import img8 from './img/imgPaises/img8-CHIMBORAZO-ECUADOR.jpg';
+import img9 from './img/imgPaises/img9-DESIERTO-DE-ATACAMA-CHILE.jpg';
+import img10 from './img/imgPaises/img10-GLACIAR-PERITO-MORENO-ARGENTINA.jpg';
+import img11 from './img/imgPaises/img11-LENCOIS-MARANHENSES-BRASIL.jpg';
+import img12 from './img/imgPaises/img12-LOS-ROQUES-VENEZUELA.jpg';
 
 const Country = () => {
     return (
