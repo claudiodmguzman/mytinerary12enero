@@ -7,16 +7,16 @@ import img5City from './img/imgCiudades/citiesAsia/img4City-';
 import img6City from './img/imgCiudades/citiesEuropa/img5City-';
 import img7City from './img/imgCiudades/citiesOceania/img6City-';
 // import Card from './Card'
-import Swicht from './Swicht';
+// import Swicht from './Swicht';
 
 const Cities = () => {
 
     return (
         <div className="master">
 
-            <div className="cardMasterTitulo">
+            {/* <div className="cardMasterTitulo">
                 <Swicht />
-            </div>
+            </div> */}
 
 
             <h1 className="cardMasterTitulo">Cities</h1>
