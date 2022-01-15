@@ -25,18 +25,18 @@ const Continents = () => {
 
                         <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button"
                             className="btn btn bg-transparent">
-                            <p className="imageTexto">Amérci del Sur</p>
+                            <p className="imageTexto">América del Sur</p>
                         </button>
 
                         <div class="dropdown-menu">
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <Linkrouter class="dropdown-item" to="/City1">City1</Linkrouter>
-                                <Linkrouter class="dropdown-item" to="/City2">City2</Linkrouter>
-                                <Linkrouter class="dropdown-item" to="/City3">City3</Linkrouter>
-                                <Linkrouter class="dropdown-item" to="/City4">City4</Linkrouter>
-                                <Linkrouter class="dropdown-item" to="/City5">City5</Linkrouter>
-                                <Linkrouter class="dropdown-item" to="/City6">City6</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/access">City1</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/access">City2</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/access">City3</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/access">City4</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/access">City5</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/access">City6</Linkrouter>
                             </div>
                         </div>
                     </div>

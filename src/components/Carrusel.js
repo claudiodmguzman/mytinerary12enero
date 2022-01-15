@@ -1,15 +1,16 @@
 import React from 'react';
-import img1 from './img/imgPaises/img1-SALAR-DE-UYUNI-BOLIVIA.jpg';
-import img2 from './img/imgPaises/img2-MONTE-FITZ-ROY-PATAGONIA-ARGENTINA.jpg';
-import img3 from './img/imgPaises/img3-PEÑÓN-DE-GUATAPE-COLOMBIA.jpg';
-import img4 from './img/imgPaises/img4-ISLA-DE-PASCUA-CHILE.jpg';
-import img5 from './img/imgPaises/img5-HUARAZ-PERU.jpg';
-import img6 from './img/imgPaises/img6-ISLAS-GALAPAGOS-ECUADOR.jpg';
+import img1City from './img/imgCiudades/citiesAfrica/img1City-';
+import img2City from './img/imgCiudades/citiesAmericaNorte/img2City-';
+import img3City from './img/imgCiudades/citiesAmericaSur/img3City-';
+import img4City from './img/imgCiudades/citiesAsia/img4City-';
+import img5City from './img/imgCiudades/citiesEuropa/img5City-';
+import img6City from './img/imgCiudades/citiesOceania/img6City-';
 
 
 function Carrusel() {
 
     return (
+        
     <div className="carrusel">
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
@@ -22,42 +23,42 @@ function Carrusel() {
             </ol>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img className="d-block w-100" src={img1} height="600" alt="img1 SALAR DE UYUNI BOLIVIA" />
+                    <img className="d-block w-100" src={img1City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>BOLIVIA</h5>
                         <p>Salar de Uyuni</p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img className="d-block w-100" src={img2} height="600" alt="img2 MONTE FITZ ROY PATAGONIA ARGENTINA" />
+                    <img className="d-block w-100" src={img2City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>ARGENTINA</h5>
                         <p>Monte Fitz Roy</p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img className="d-block w-100" src={img3} height="600" alt="img3 PEÑÓN DE GUATAPE COLOMBIA" />
+                    <img className="d-block w-100" src={img3City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>COLOMBIA</h5>
                         <p>Peñón de Guatape</p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img className="d-block w-100" src={img4} height="600" alt="img4 ISLA DE PASCUA CHILE" />
+                    <img className="d-block w-100" src={img4City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>CHILE</h5>
                         <p>Isla de Pascua</p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img className="d-block w-100" src={img5} height="600" alt="img5 HUARAZ PERU" />
+                    <img className="d-block w-100" src={img5City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>PERÚ</h5>
                         <p>Huaraz</p>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img className="d-block w-100" src={img6} height="600" alt="img6 ISLAS GALAPAGOS ECUADOR" />
+                    <img className="d-block w-100" src={img6City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
                         <h5>ECUADOR</h5>
                         <p>Islas Galápagos</p>
