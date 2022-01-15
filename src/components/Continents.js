@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import img7 from './img/imgPaises/img7-MACHU-PICCHU-PERU.jpg';
-import img8 from './img/imgPaises/img8-CHIMBORAZO-ECUADOR.jpg';
-import img9 from './img/imgPaises/img9-DESIERTO-DE-ATACAMA-CHILE.jpg';
-import img10 from './img/imgPaises/img10-GLACIAR-PERITO-MORENO-ARGENTINA.jpg';
-import img11 from './img/imgPaises/img11-LENCOIS-MARANHENSES-BRASIL.jpg';
-import img12 from './img/imgPaises/img12-LOS-ROQUES-VENEZUELA.jpg';
+import img1 from './img/imgContinentes/img1-America-del-Sur.png';
+import img2 from './img/imgContinentes/img2-America-del-Norte.png';
+import img3 from './img/imgContinentes/img3-Africa.png';
+import img4 from './img/imgContinentes/img4-Asia.png';
+import img5 from './img/imgContinentes/img5-Europa.png';
+import img6 from './img/imgContinentes/img6-Oceania.png';
 
 const Country = () => {
     return (
@@ -16,7 +16,7 @@ const Country = () => {
             <div className="cardMaster">
                 <div className="card">
                     <div className="image">
-                        <img src={img7} />
+                        <img src={img1} />
                         <div className="imageTexto">
                             <p>PERÚ</p>
                         </div>
@@ -36,7 +36,7 @@ const Country = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img8} />
+                        <img src={img2} />
                         <div className="imageTexto">
                             <p>ECUADOR</p>
                         </div>
@@ -56,7 +56,7 @@ const Country = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img9} />
+                        <img src={img3} />
                         <div className="imageTexto">
                             <p>CHILE</p>
                         </div>
@@ -78,7 +78,7 @@ const Country = () => {
             <div className="cardMaster">
                 <div className="card">
                     <div className="image">
-                        <img src={img10} />
+                        <img src={img4} />
                         <div className="imageTexto">
                             <p>ARGENTINA</p>
                         </div>
@@ -98,7 +98,7 @@ const Country = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img11} />
+                        <img src={img5} />
                         <div className="imageTexto">
                             <p>BRASIL</p>
                         </div>
@@ -118,7 +118,7 @@ const Country = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img12} />
+                        <img src={img6} />
                         <div className="imageTexto">
                             <p>VENEZUELA</p>
                         </div>
