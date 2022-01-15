@@ -7,7 +7,7 @@ import img4 from './img/imgContinentes/img4-Asia.png';
 import img5 from './img/imgContinentes/img5-Europa.png';
 import img6 from './img/imgContinentes/img6-Oceania.png';
 
-const Country = () => {
+const Continents = () => {
     return (
         <div className="master">
 
@@ -15,21 +15,28 @@ const Country = () => {
 
             <div className="cardMaster">
 
-                <div className="card">
+                <div className="cardContinente">
                     <div className="image">
                         <img src={img1} />
-                        <div className="imageTexto">
-                            <p>PERÚ</p>
-                        </div>
+
                     </div>
-                    <div className="details">
-                        <div className="center">
-                            <h1>Machu Picchu<br /><span>Perú</span></h1>
-                            <p>Es Patrimonio de la Humanidad y una de las nuevas siete maravillas del mundo moderno</p>
-                            <div className="ulCenter">
-                                <ul>
-                                    <li><Linkrouter to="/access">access</Linkrouter></li>
-                                </ul>
+
+                    <div className="dropdown">
+
+                        <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button"
+                            className="btn btn bg-transparent">
+                            <p className="imageTexto">Amérci del Sur</p>
+                        </button>
+
+                        <div class="dropdown-menu">
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <Linkrouter class="dropdown-item" to="/City1">City1</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/City2">City2</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/City3">City3</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/City4">City4</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/City5">City5</Linkrouter>
+                                <Linkrouter class="dropdown-item" to="/City6">City6</Linkrouter>
                             </div>
                         </div>
                     </div>
@@ -39,4 +46,4 @@ const Country = () => {
     )
 }
 
-export default Country;
+export default Continents;
