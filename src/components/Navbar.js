@@ -18,7 +18,13 @@ const Navbar = () => {
                             <nav className="encabezadoLinks">
                                 <Linkrouter className="linkDeco" to="/cities">Cities</Linkrouter>
                             </nav>
+
+                            <nav className="encabezadoLinks">
+                                <Linkrouter className="linkDeco" to="/acordion">Acordion</Linkrouter>
+                            </nav>
+
                             <div className="selector">
+                                
                             </div>
                             <nav className="encabezadoLinks">
                                 <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter>

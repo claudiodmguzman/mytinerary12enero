@@ -193,7 +193,7 @@ a.linkDeco {
 .cardContinentsContainer {
   justify-content: center;
   display: flex;
-  margin-bottom: 250px;
+  /* margin-bottom: 250px; */
 }
 
 .textCardContinents {
@@ -239,7 +239,6 @@ a.linkDeco {
   color: #4d3b20;
   background-color: white;
   text-decoration: none;
-  
 }
 
 
@@ -427,7 +426,7 @@ a.linkDeco {
 
 }
 
-/* CARD */
+/* CARD CITIES*/
 
 
 .filtroBuscar {
