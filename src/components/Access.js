@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img1City from './img/imgCiudades/citiesAfrica/';
+import img5City from './img/imgCiudades/citiesAfrica/img5City-Angola-Luanda.jpg';
 // IMPORTAR TODAS LAS IMÁGENES DE CADA UNO DE LOS PAISES
 
 const Access = () => {
@@ -33,7 +33,7 @@ const Access = () => {
                 </div>
 
                 <div className="accessImage">
-                    <img className="d-block w-100 accessImage" src={img1City} height="600" alt="First slide" />
+                    <img className="d-block w-100 accessImage" src={img5City} height="600" alt="First slide" />
                 </div>
 
             </div>
