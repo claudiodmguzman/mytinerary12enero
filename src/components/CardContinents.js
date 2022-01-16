@@ -18,10 +18,14 @@ const Continents = () => {
         <div>
             <h1 className="cardMasterTitulo">Continents</h1>
 
-            <div className='cardContinentsContainer'>
+            <div className='ContinentsContainer'>
 
-                <div>
-                    {/* <img src={img1} alt="Imagen de America del Sur" /> */}
+                <div className='cardContinentsContainer'>
+
+                    <div className='imgCardContinent'>
+                        <img src={img1} alt="Imagen de America del Sur" />
+                    </div>
+
                     <Accordion title='South America'>
                         <ul className='cardUlContinent'>
                             <li><Linkrouter className='item-Continent' to="/access">City1</Linkrouter></li>
@@ -32,10 +36,106 @@ const Continents = () => {
                             <li><Linkrouter className='item-Continent' to="/access">City6</Linkrouter></li>
                         </ul>
                     </Accordion>
-                </div>
 
-            </div >
+                </div >
 
+                <div className='cardContinentsContainer'>
+
+                    <div className='imgCardContinent'>
+                        <img src={img2} alt="Imagen de America del Norte" />
+                    </div>
+
+                    <Accordion title='North America'>
+                        <ul className='cardUlContinent'>
+                            <li><Linkrouter className='item-Continent' to="/access">City1</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City2</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City3</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City4</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City5</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City6</Linkrouter></li>
+                        </ul>
+                    </Accordion>
+
+                </div >
+
+                <div className='cardContinentsContainer'>
+
+                    <div className='imgCardContinent'>
+                        <img src={img3} alt="Imagen de Africa" />
+                    </div>
+
+                    <Accordion title='Africa'>
+                        <ul className='cardUlContinent'>
+                            <li><Linkrouter className='item-Continent' to="/access">City1</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City2</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City3</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City4</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City5</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City6</Linkrouter></li>
+                        </ul>
+                    </Accordion>
+
+                </div >
+
+                <div className='cardContinentsContainer'>
+
+                    <div className='imgCardContinent'>
+                        <img src={img4} alt="Imagen de Asia" />
+                    </div>
+
+                    <Accordion title='Asia'>
+                        <ul className='cardUlContinent'>
+                            <li><Linkrouter className='item-Continent' to="/access">City1</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City2</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City3</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City4</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City5</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City6</Linkrouter></li>
+                        </ul>
+                    </Accordion>
+
+                </div >
+
+                <div className='cardContinentsContainer'>
+
+                    <div className='imgCardContinent'>
+                        <img src={img5} alt="Imagen de Europa" />
+                    </div>
+
+                    <Accordion title='Europe'>
+                        <ul className='cardUlContinent'>
+                            <li><Linkrouter className='item-Continent' to="/access">City1</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City2</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City3</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City4</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City5</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City6</Linkrouter></li>
+                        </ul>
+                    </Accordion>
+
+                </div >
+
+                <div className='cardContinentsContainer'>
+
+                    <div className='imgCardContinent'>
+                        <img src={img6} alt="Imagen de Oceania" />
+                    </div>
+
+                    <Accordion title='Oceania'>
+                        <ul className='cardUlContinent'>
+                            <li><Linkrouter className='item-Continent' to="/access">City1</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City2</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City3</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City4</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City5</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">City6</Linkrouter></li>
+                        </ul>
+                    </Accordion>
+
+                </div >
+
+
+            </div>
         </div>
 
     )

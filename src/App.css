@@ -190,10 +190,63 @@ a.linkDeco {
 
 /* CARD CONTINENTS */
 
-.cardContinentsContainer {
+
+
+
+element.style {
+}
+.accordion-item:first-of-type {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+
+element.style {
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 50px !important;
+}
+
+.accordion-item {
+    background-color: transparent !important;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+.ContinentsContainer {
   justify-content: center;
   display: flex;
-  /* margin-bottom: 250px; */
+}
+
+.cardContinentsContainer {
+  justify-content: center;
+ 
+  align-items: center;
+  width: 210px;
+  padding: 0;
+  margin: 0;
+}
+
+.imgCardContinent {
+  justify-content: center;
+  display: flex;
+  width: 210px;
+  height: 142px;
+  margin-bottom: 10px;
 }
 
 .accordion-button {
@@ -227,13 +280,9 @@ a.linkDeco {
 }
 
 
-[type=button]:not(:disabled), [type=reset]:not(:disabled), 
-[type=submit]:not(:disabled), button:not(:disabled) {
-  color: #000000;
-}
+
 
 .accordion-header {
-  background-image: url(./components/img/imgFondo/imgFondoBody.png);
   text-align: center !important;
   color: #4d3b20 !important;
   font-size: 20px !important;
