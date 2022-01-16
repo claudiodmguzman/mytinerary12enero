@@ -9,7 +9,7 @@ import img3City from './img/imgCiudades/citiesAfrica/img3City-Marruecos-Essaouir
 
 
 
-function Card() {
+function CardCities() {
 
     return (
 
@@ -36,4 +36,4 @@ function Card() {
     )
 }
 
-export default Card;
+export default CardCities;

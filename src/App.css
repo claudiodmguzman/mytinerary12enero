@@ -190,6 +190,19 @@ a.linkDeco {
 
 /* CARD CONTINENTS */
 
+.cardContinentsContainer {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 250px;
+}
+
+.textCardContinents {
+  text-align: center;
+  color: #4d3b20;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .cardUlContinent {
   background: none;
   background-image: none;
@@ -201,42 +214,34 @@ a.linkDeco {
   width: auto;
   padding: 0;
   margin: 0;
+  border-radius: 2px;
+  border: none;
 }
 
 .ulContinent {
   padding: 0;
   margin: 0;
+  border-color: 1px solid black;
 }
 
 .dropdown-item-Continent {
   display: block;
   padding: 0.25rem 1.5rem;
-  clear: both;
+  /* clear: both; */
   font-weight: 600;
   color: #4d3b20;
   border: 0;
-  background-color: rgba(231, 188, 95, 0.705);
-  border-radius: 5px;
+  background-color: rgba(231, 188, 95, 0.233);
+  
 }
 
 .dropdown-item-Continent:hover {
   color: #4d3b20;
   background-color: white;
   text-decoration: none;
+  
 }
 
-
-
-.texSign {
-    width: 100%;
-    padding: 0.25rem 1.5rem;
-    clear: both;
-    color: black;
-    text-align: inherit;
-    border: 0;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-}
 
 /* CARRUSEL */
 
