@@ -6,8 +6,7 @@ import img3 from './img/imgContinentes/img3-Africa.png';
 import img4 from './img/imgContinentes/img4-Asia.png';
 import img5 from './img/imgContinentes/img5-Europa.png';
 import img6 from './img/imgContinentes/img6-Oceania.png';
-// import { Collapse } from 'react-collapse';
-// import Cities from './Cities';
+import { Accordion } from 'react-bootstrap-accordion'
 
 
 
@@ -22,30 +21,21 @@ const Continents = () => {
 
                 <div className="dropdown">
                     <div className='textCardContinents'>South America</div>
+                    <img src={img1} alt="Imagen de America del Sur" />
 
-                    <button data-toggle="dropdown" type="button" className="btn btn bg-transparent">
-                        <img src={img1} alt="Imagen de America del Sur" />
-                    </button>
-
-
-                    <div className="dropdown-menu cardUlContinent">
-              
-                            <ul className="ulContinent">
-                                <Linkrouter className="dropdown-item-Continent" to="/access">City1</Linkrouter>
-                                <Linkrouter className="dropdown-item-Continent" to="/access">City2</Linkrouter>
-                                <Linkrouter className="dropdown-item-Continent" to="/access">City3</Linkrouter>
-                                <Linkrouter className="dropdown-item-Continent" to="/access">City4</Linkrouter>
-                                <Linkrouter className="dropdown-item-Continent" to="/access">City5</Linkrouter>
-                                <Linkrouter className="dropdown-item-Continent" to="/access">City6</Linkrouter>
-                            </ul>
-                 
+                    <div className='App'>
+                        <Accordion >
+                            este es un acordion
+                        </Accordion>
                     </div>
 
                 </div>
-            </div>
-        </div >
+            </div >
+
+        </div>
 
     )
 }
 
 export default Continents;
+
