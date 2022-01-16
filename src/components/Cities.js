@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import img2City from './img/imgCiudades/citiesAfrica/img1City-';
-import img3City from './img/imgCiudades/citiesAmericaNorte/img2City-';
-import img4City from './img/imgCiudades/citiesAmericaSur/img3City-';
-import img5City from './img/imgCiudades/citiesAsia/img4City-';
-import img6City from './img/imgCiudades/citiesEuropa/img5City-';
+import img2City from './img/imgCiudades/citiesAfrica/img1City-Sudafrica-Ciudad-del-Cabo.jpg';
+import img3City from './img/imgCiudades/citiesAmericaNorte/img2City-EEUU-Chicago.jpg';
+import img4City from './img/imgCiudades/citiesAmericaSur/img3City-Bolivia-La-Paz.png';
+import img5City from './img/imgCiudades/citiesAsia/img4City-Japon-Tokio.jpg';
+import img6City from './img/imgCiudades/citiesEuropa/img5City-Paises-Bajos-Amsterdam.jpg';
 import img7City from './img/imgCiudades/citiesOceania/img6City-';
 // import Card from './Card'
 // import Swicht from './Swicht';
