@@ -23,6 +23,7 @@ export default function ControlledSwitches() {
     <h1>
       {filtro}
     </h1>
+    <p></p>
     </div>
 
   );
