@@ -216,7 +216,7 @@ a.linkDeco {
   color: #4d3b20;
   border: 0;
   background-color: rgba(231, 188, 95, 0.705);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .dropdown-item-Continent:hover {
