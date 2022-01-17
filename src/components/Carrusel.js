@@ -25,43 +25,43 @@ function Carrusel() {
                 <div className="carousel-item active">
                     <img className="d-block w-100" src={img1City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>BOLIVIA</h5>
-                        <p>Salar de Uyuni</p>
+                        <h5>CAPE TOWN</h5>
+                        <p>South Africa</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img className="d-block w-100" src={img2City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>ARGENTINA</h5>
-                        <p>Monte Fitz Roy</p>
+                        <h5>CHICAGO</h5>
+                        <p>U.S</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img className="d-block w-100" src={img3City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>COLOMBIA</h5>
-                        <p>Peñón de Guatape</p>
+                        <h5>LA PAZ</h5>
+                        <p>Bolivia</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img className="d-block w-100" src={img4City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>CHILE</h5>
-                        <p>Isla de Pascua</p>
+                        <h5>TOKYO</h5>
+                        <p>Japan</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img className="d-block w-100" src={img5City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>PERÚ</h5>
-                        <p>Huaraz</p>
+                        <h5>AMSTERDAM</h5>
+                        <p>Netherlands</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img className="d-block w-100" src={img6City} height="600" alt="" />
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>ECUADOR</h5>
-                        <p>Islas Galápagos</p>
+                        <h5>PERTH</h5>
+                        <p>Australia</p>
                     </div>
                 </div>
             </div>
