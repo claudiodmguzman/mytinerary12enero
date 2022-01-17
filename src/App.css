@@ -359,19 +359,31 @@ a.linkDeco {
 }
 
 .descrptionHome1 {
+  text-align: center;
   background-color: rgba(226, 168, 43, 0.103);
   padding: 20px;
   border-radius: 20px;
-  width: 90%;
-  font-size: 20px;
+  width: 70%;
+  font-size: 22px;
 }
 
 .descrptionHome2 {
-  background-color: rgba(252, 173, 4, 0.205);
+  text-align: center;
+  background-color: rgba(219, 179, 92, 0.205);
   padding: 20px;
   border-radius: 20px;
   width: 80%;
   font-size: 25px;
+  margin-left: 80px;
+}
+
+.descrptionHome3 {
+  text-align: center;
+  background-color: rgba(252, 173, 4, 0.205);
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  font-size: 24px;
   margin-left: 80px;
 }
 
