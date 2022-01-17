@@ -349,6 +349,7 @@ a.linkDeco {
 }
 
 .description {
+  display: flex;
   justify-content: center;
   text-align: justify;
   font-size: 30px;
@@ -359,33 +360,35 @@ a.linkDeco {
 }
 
 .descrptionHome1 {
+  display: flex;
   text-align: center;
-  background-color: rgba(226, 168, 43, 0.103);
+  background-color: rgba(226, 214, 43, 0.103);
   padding: 20px;
   border-radius: 20px;
-  width: 70%;
-  font-size: 22px;
+  font-size: 21px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .descrptionHome2 {
+  display: flex;
   text-align: center;
-  background-color: rgba(219, 179, 92, 0.205);
+  background-color: rgba(219, 111, 92, 0.205);
   padding: 20px;
   border-radius: 20px;
-  width: 80%;
-  font-size: 25px;
-  margin-left: 80px;
+  font-size: 24px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .descrptionHome3 {
+  display: flex;
   text-align: center;
-  background-color: rgba(252, 173, 4, 0.205);
+  background-color: rgba(252, 227, 4, 0.274);
   padding: 20px;
   border-radius: 20px;
-  width: 90%;
-  font-size: 24px;
-  margin-left: 80px;
+  font-size: 22px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 .carrusel {
   display: flex;
