@@ -220,40 +220,22 @@ a.linkDeco {
 /* CARD CONTINENTS */
 
 
-
-
-element.style {
-}
 .accordion-item:first-of-type {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-}
-
-
-element.style {
-}
-
-.accordion-item:first-of-type {
-    border-top-left-radius: 50px !important;
-    border-top-right-radius: 50px !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-color: none !important;
 }
 
 .accordion-item {
     background-color: transparent !important;
-    border: 1px solid rgba(0,0,0,.125);
+    border-color: none !important;
 }
 
 
 *, :after, :before {
-  box-sizing: border-box;
+  box-sizing: none !important;
+  border-color: none !important;
 }
-
-
-
-
-
-
-
 
 
 .ContinentsContainer {
@@ -278,6 +260,7 @@ element.style {
 }
 
 .accordion-button {
+  background-color: transparent !important;
   position: relative;
   display: flex;
   align-items: center;
@@ -285,28 +268,16 @@ element.style {
   color: #4d3b20 !important;
   font-size: 20px !important;
   font-weight: bold !important;
-  /* width: 100%; */
-  /* padding: 1rem 1.25rem; */
-  /* font-size: 1rem; */
-  /* color: #212529; */
-  /* background-color: #fff; */
-  /* border: 0; */
-  /* border-radius: 0; */
-  /* overflow-anchor: none; */
-  /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease; */
+  border: none !important;
+  border-radius: none !important;
+  border: red !important;
+  overflow-anchor: none;
+  transition: color .15s ease-in-out,
+  background-color .15s ease-in-out,
+  border-color .15s ease-in-out,
+  box-shadow .15s ease-in-out,
+  border-radius .15s ease;
 }
-
-.accordion-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  text-align: center !important;
-  color: #4d3b20 !important;
-  font-size: 20px !important;
-  font-weight: bold !important;
-  transition: none;
-}
-
 
 
 
@@ -315,6 +286,7 @@ element.style {
   color: #4d3b20 !important;
   font-size: 20px !important;
   font-weight: bold !important;
+ 
 }
 
 
@@ -326,13 +298,13 @@ element.style {
   list-style: none;
   opacity: 0.90;
   filter: alpha(opacity=90);
-  border-radius: 5px;
   text-align: center;
   width: auto;
   padding: 0;
   margin: 0;
   border-radius: 2px;
   border: none;
+ 
 }
 
 .item-Continent {
@@ -342,11 +314,13 @@ element.style {
   color: #4d3b20;
   border: 0;
   background-color: rgba(231, 188, 95, 0.233);
+  
 }
 
 .accordion-body {
   padding: 0 !important;
   margin: 0 !important;
+  
 }
 
 .item-Continent:hover {
@@ -423,111 +397,36 @@ element.style {
 .access {
   /* display: block; */
   justify-content: center;
-
-}
-
-.accessGroupImg {
-  display: flex;
-  margin-top: 75px;
-  justify-content: center;
-  height: 600px;
-}
-
-.accessGroup {
-  /* flex-direction: column; */
-  text-align: justify;
-  font-size: 20px;
-  color: #000000;
-  font-weight:bold;
-  width: 600px;
-  border: 1px solid;
-  border-top-color: #a0773a;
-  border-right-color: transparent;
-  border-bottom-color: #a0773a;
-  border-left-color: #a0773a;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 20px;
-}
-
-.accessCyCo {
-  display: flex;
-  justify-content: center;
-}
-
-.accessCity {
-  display: flex;
-  padding: 5px;
-  margin: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 50%;
-  height: 25%;
-  background: linear-gradient(to right, #f1c077c0, #a0773a73, #a0773a2c, rgba(255, 254, 254, 0.514), rgba(248, 242, 242, 0.164));
-
-}
-
-.accessCountry {
-  display: flex;
-  padding: 5px;
-  margin: 5px;
-  border-left-color: #a0773a;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 50%;
-  height: 25%;
-  background: linear-gradient(to right, #f1c077c0, #a0773a73, #a0773a2c, rgba(255, 254, 254, 0.514), rgba(248, 242, 242, 0.164));
-}
-
-.accessDesDet {
   display: block;
-  /* justify-content: center; */
+
+}
+
+.accessFondo {
   padding: 5px;
   margin: 5px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 97,5%;
-  height: 80%;
+  width: 50%;
+  height: 25%;
   background: linear-gradient(to right, #f1c077c0, #a0773a73, #a0773a2c, rgba(255, 254, 254, 0.514), rgba(248, 242, 242, 0.164));
-}
 
-.accessDescription {
-  display: flex;
-  justify-content: center;
 }
 
 .accessDetail {
-  display: flex;
   justify-content: center;
-  margin-top: 25%;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  
+
 }
 
-
-.accessComLik {
+.paccessDetail {
+  text-align: unset;
   display: flex;
-  justify-content: center;
-}
-
-.accessComment {
-  display: flex;
-  padding: 5px;
-  margin: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 75%;
-  height: 25%;
-  background: linear-gradient(to right, #f1c077c0, #a0773a73, #a0773a2c, rgba(255, 254, 254, 0.514), rgba(248, 242, 242, 0.164));
-}
-
-.accessLike {
-  display: flex;
-  padding: 5px;
-  margin: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 20%;
-  height: 25%;
-  background: linear-gradient(to right, #f1c077c0, #a0773a73, #a0773a2c, rgba(255, 254, 254, 0.514), rgba(248, 242, 242, 0.164));
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
 }
 
 .accessImage {

@@ -6,8 +6,8 @@ import img3 from './img/imgContinentes/img3-Africa.png';
 import img4 from './img/imgContinentes/img4-Asia.png';
 import img5 from './img/imgContinentes/img5-Europa.png';
 import img6 from './img/imgContinentes/img6-Oceania.png';
-import { Accordion } from 'react-bootstrap-accordion'
-import 'react-bootstrap-accordion/dist/index.css'
+import { Accordion } from 'react-bootstrap-accordion';
+import 'react-bootstrap-accordion/dist/index.css';
 
 
 
