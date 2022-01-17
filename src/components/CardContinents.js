@@ -11,6 +11,7 @@ import 'react-bootstrap-accordion/dist/index.css'
 
 
 
+
 const Continents = () => {
     return (
 
@@ -135,7 +136,12 @@ const Continents = () => {
                 </div >
 
 
+
+                
             </div>
+
+           
+
         </div>
 
     )

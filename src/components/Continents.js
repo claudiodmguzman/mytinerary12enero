@@ -2,7 +2,6 @@ import React from 'react';
 import CardContinents from './CardContinents';
 
 
-
 const Continents = () => {
     return (
 
