@@ -7,6 +7,7 @@ import 'react-bootstrap-accordion/dist/index.css';
 const Access = () => {
     return (
 
+            
         <div className="accessContainer">
 
             <div className='access' >
