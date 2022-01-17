@@ -188,6 +188,35 @@ a.linkDeco {
     margin-bottom: 20px;
 }
 
+.signUpContainer {
+  justify-content: center;
+  display: flex;
+ 
+}
+
+
+.signUp {
+  width: 500px;
+  text-align: center;
+  display: block;
+  
+}
+
+.texSignUp {
+  padding: 0.25rem 1.5rem;
+  color: black;
+  font-weight: bolder;
+  text-align: inherit;
+  border: 0;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.formSignup {
+  background: rgba(128, 128, 128, 0.219);
+}
+
+
 /* CARD CONTINENTS */
 
 
@@ -234,7 +263,6 @@ element.style {
 
 .cardContinentsContainer {
   justify-content: center;
- 
   align-items: center;
   width: 210px;
   padding: 0;

@@ -6,7 +6,9 @@ import Home from './components/Home'
 import Cities from './components/Cities';
 import Continents from './components/Continents';
 import Access from './components/Access';
+import CardLogup from './components/CardLogup';
 import Footer from './components/Footer';
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/cardLogup' element={<CardLogup />} />
         <Route path='/cities' element={<Cities />} />
         <Route path='/continents' element={<Continents />} />
         <Route path='/access' element={<Access />} />

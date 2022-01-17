@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link as Linkrouter } from 'react-router-dom';
 import imgCompassLog from './img/imgNavbar/imgCompassLog.png';
+import { Link as Linkrouter } from 'react-router-dom';
 
 
 const CardLogin = () => {
@@ -38,32 +38,10 @@ const CardLogin = () => {
                 </form>
 
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Forgot password?</a>
+                <Linkrouter class="dropdown-item" to="#">Forgot password?</Linkrouter>
+                <Linkrouter class="dropdown-item" to="/cardLogup">New around here? Sign Up</Linkrouter>
                 <div class="dropdown-divider"></div>
 
-                <form class="px-4 py-3">
-
-                    <label className="texSign">Before using our services you need to create an account</label>
-
-                    <div class="form-group">
-
-                        <input type="email" class="form-control" id="exampleDropdownFormEmail1"
-                            required placeholder="email@example.com" />
-                    </div>
-                    <div class="form-group">
-
-                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                            required placeholder="Password" />
-                    </div>
-                    <div class="form-group">
-
-                        <input type="password" class="form-control" id="exampleDropdownFormPassword1"
-                            required placeholder="Repeat Password" />
-                    </div>
-
-                    <button type="submit" class="btn btn-success">Sign Up</button>
-
-                </form>
             </div>
         </div>
 
