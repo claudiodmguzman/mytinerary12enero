@@ -105,12 +105,12 @@ const Continents = () => {
 
                     <Accordion title='Europe'>
                         <ul className='cardUlContinent'>
-                            <li><Linkrouter className='item-Continent' to="/access">Londres</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Amsterdam</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Athens</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Barcelona</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Istanbul</Linkrouter></li>
                             <li><Linkrouter className='item-Continent' to="/access">Paris</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Atenas</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Praga</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Berlín</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Moscú</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Prague</Linkrouter></li>
                         </ul>
                     </Accordion>
 
