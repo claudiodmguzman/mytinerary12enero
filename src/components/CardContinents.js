@@ -29,12 +29,12 @@ const Continents = () => {
 
                     <Accordion title='South America'>
                         <ul className='cardUlContinent'>
-                            <li><Linkrouter className='item-Continent' to="/access">Santiago de Chile</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Brasilia</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Cartajena de Indias</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Asunción</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Santa Cruz</Linkrouter></li>
                             <li><Linkrouter className='item-Continent' to="/access">Buenos Aires</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Cartajena de Indias</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Cuzco</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">La Paz</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Rio de Janeiro</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Santiago de Chile</Linkrouter></li>
                         </ul>
                     </Accordion>
 
@@ -48,12 +48,12 @@ const Continents = () => {
 
                     <Accordion title='North America'>
                         <ul className='cardUlContinent'>
-                            <li><Linkrouter className='item-Continent' to="/access">New York</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Anchorage</Linkrouter></li>
                             <li><Linkrouter className='item-Continent' to="/access">Chicago</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Montreal</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Quebec</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Ciudad de México</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Alaska</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Guadalajara</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Mexico City1</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Vancouver</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Victoria</Linkrouter></li>
                         </ul>
                     </Accordion>
 
@@ -67,12 +67,12 @@ const Continents = () => {
 
                     <Accordion title='Africa'>
                         <ul className='cardUlContinent'>
-                            <li><Linkrouter className='item-Continent' to="/access">City1</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">City2</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">City3</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">City4</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">City5</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">City6</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Cairo</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Cape Town</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Dar es Salaam</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Essaouira</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Luanda</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Nairobi</Linkrouter></li>
                         </ul>
                     </Accordion>
 
@@ -86,11 +86,11 @@ const Continents = () => {
 
                     <Accordion title='Asia'>
                         <ul className='cardUlContinent'>
-                            <li><Linkrouter className='item-Continent' to="/access">Hong Kong</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Tokio</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Singapur</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Bombai</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">El Cairo</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Dubai</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Omsk</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Seoul</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Singapore</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Taipei</Linkrouter></li>
                             <li><Linkrouter className='item-Continent' to="/access">Dubai</Linkrouter></li>
                         </ul>
                     </Accordion>
