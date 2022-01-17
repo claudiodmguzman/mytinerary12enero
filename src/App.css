@@ -426,9 +426,17 @@ a.linkDeco {
   /* word-wrap: break-word; */
 }
 
+.accessdet {
+  text-align: justify;
+  padding: 20px;
+  margin-top: 10px;
+  width: 700px;
+}
+
 .paccessDetail {
   text-align: justify;
   padding: 20px;
+  font-weight: bold;
   margin-top: 10px;
   width: 700px;
 }
