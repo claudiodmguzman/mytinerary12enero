@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img5City from './img/imgCiudades/citiesAfrica/img5City-Angola-Luanda.jpg';
+import img6City from './img/imgCiudades/citiesEuropa/img6City-Republica-Checa-Praga.jpg';
 import { Accordion } from 'react-bootstrap-accordion';
 import 'react-bootstrap-accordion/dist/index.css';
 // IMPORTAR TODAS LAS IMÁGENES DE CADA UNO DE LOS PAISES
@@ -13,13 +13,13 @@ const Access = () => {
             <div className='access' >
 
 
-                <div className="accessFondo">PRAGA</div>
+                <div className="accessFondo">Prague</div>
 
 
-                <div className="accessFondo">REPÚBLICA CHECA</div>
+                <div className="accessFondo">Czech-Republic</div>
 
                 <div className="accessImage">
-                    <img className="d-block w-100 accessImage" src={img5City} height="600" alt="First slide" />
+                    <img className="d-block w-100 accessImage" src={img6City} height="600" alt="img6City-Republica-Checa-Praga.jpg" />
                 </div>
 
 

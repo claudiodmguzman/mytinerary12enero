@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import img2City from './img/imgCiudades/citiesAfrica/img2City-Egipto-El-Cairo.jpg';
-import img3City from './img/imgCiudades/citiesAmericaNorte/img2City-EEUU-Chicago.jpg';
-import img4City from './img/imgCiudades/citiesAmericaSur/img3City-Bolivia-La-Paz.png';
-import img5City from './img/imgCiudades/citiesAsia/img4City-Japon-Tokio.jpg';
-import img6City from './img/imgCiudades/citiesEuropa/img5City-Paises-Bajos-Amsterdam.jpg';
-// import img7City from './img/imgCiudades/citiesOceania/img7City-';
+import img6City from './img/imgCiudades/citiesAfrica/img6City-Tanzania-Dar-es-Salaam.jpg';
+import img5City from './img/imgCiudades/citiesAmericaNorte/img5City-EEUU-Anchorage.jpg';
+import img4City from './img/imgCiudades/citiesAmericaSur/img4City-Chile-Santiago-de-Chile.png';
+import img3City from './img/imgCiudades/citiesAsia/img3City-Singapur-Singapur.jpg';
+import img2City from './img/imgCiudades/citiesEuropa/img2City-Grecia-Atenas.jpg';
+import img1City from './img/imgCiudades/citiesOceania/img1City-Nueva-Zelanda-Auckland.jpg';
 // import Card from './Card'
 // import Swicht from './Swicht';
 
@@ -30,15 +30,15 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img2City} />
+                        <img src={img6City} alt='img6City-Tanzania-Dar-es-Salaam.jpg'/>
                         <div className="imageTexto">
-                            <p>CITY_1</p>
+                            <p>Dar es Salaam</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>City<br /><span>Country</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Dar es Salaam<br /><span>Tanzania</span></h1>
+                            <p>Africa</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -50,15 +50,15 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img3City} />
+                        <img src={img5City} alt='img5City-EEUU-Anchorage.jpg'/>
                         <div className="imageTexto">
-                            <p>CITY_2</p>
+                            <p>Anchorage</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>City<br /><span>Country</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Anchorage<br /><span>United States</span></h1>
+                            <p>North America</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -70,15 +70,15 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img4City} />
+                        <img src={img4City} alt='img4City-Chile-Santiago-de-Chile.png'/>
                         <div className="imageTexto">
-                            <p>CITY_3</p>
+                            <p>Santiago de Chile</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>City<br /><span>Country</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Santiago de Chile<br /><span>Chile</span></h1>
+                            <p>South America</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -92,15 +92,15 @@ const Cities = () => {
             <div className="cardMaster">
                 <div className="card">
                     <div className="image">
-                        <img src={img5City} />
+                        <img src={img3City} alt='img3City-Singapur-Singapur.jpg'/>
                         <div className="imageTexto">
-                            <p>CITY_4</p>
+                            <p>Singapore</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>Country<br /><span>Continent</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Singapore<br /><span>Singapore</span></h1>
+                            <p>Asia</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -112,15 +112,15 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img6City} />
+                        <img src={img2City} alt='img2City-Grecia-Atenas'/>
                         <div className="imageTexto">
-                            <p>CITY_5</p>
+                            <p>Athens</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>Country<br /><span>Continent</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Athens<br /><span>Creece</span></h1>
+                            <p>Europe</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
@@ -132,15 +132,15 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        {/* <img src={img7City} /> */}
+                        <img src={img1City} alt='img1City-Nueva-Zelanda-Auckland.jpg'/>
                         <div className="imageTexto">
-                            <p>CITY_6</p>
+                            <p>Auckland</p>
                         </div>
                     </div>
                     <div className="details">
                         <div className="center">
-                            <h1>Country<br /><span>Continent</span></h1>
-                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                            <h1>Auckland<br /><span>New Zealand</span></h1>
+                            <p>Oceania</p>
                             <div className="ulCenter">
                                 <ul>
                                     <li><Linkrouter to="/access">access</Linkrouter></li>
