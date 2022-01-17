@@ -51,7 +51,7 @@ const Continents = () => {
                             <li><Linkrouter className='item-Continent' to="/access">Anchorage</Linkrouter></li>
                             <li><Linkrouter className='item-Continent' to="/access">Chicago</Linkrouter></li>
                             <li><Linkrouter className='item-Continent' to="/access">Guadalajara</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Mexico City1</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Mexico City</Linkrouter></li>
                             <li><Linkrouter className='item-Continent' to="/access">Vancouver</Linkrouter></li>
                             <li><Linkrouter className='item-Continent' to="/access">Victoria</Linkrouter></li>
                         </ul>
