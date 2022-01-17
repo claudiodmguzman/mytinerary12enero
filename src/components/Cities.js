@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
-import img2City from './img/imgCiudades/citiesAfrica/img1City-Sudafrica-Ciudad-del-Cabo.jpg';
+import img2City from './img/imgCiudades/citiesAfrica/img2City-Egipto-El-Cairo.jpg';
 import img3City from './img/imgCiudades/citiesAmericaNorte/img2City-EEUU-Chicago.jpg';
 import img4City from './img/imgCiudades/citiesAmericaSur/img3City-Bolivia-La-Paz.png';
 import img5City from './img/imgCiudades/citiesAsia/img4City-Japon-Tokio.jpg';
