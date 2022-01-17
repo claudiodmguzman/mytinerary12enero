@@ -124,12 +124,12 @@ const Continents = () => {
 
                     <Accordion title='Oceania'>
                         <ul className='cardUlContinent'>
-                            <li><Linkrouter className='item-Continent' to="/access">Kuala Lum Pur</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">Tanzania</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">City3</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">City4</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">City5</Linkrouter></li>
-                            <li><Linkrouter className='item-Continent' to="/access">City6</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Auckland</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Brisbane</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Gold Coast</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Melbourne</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Perth</Linkrouter></li>
+                            <li><Linkrouter className='item-Continent' to="/access">Port Vila</Linkrouter></li>
                         </ul>
                     </Accordion>
 
