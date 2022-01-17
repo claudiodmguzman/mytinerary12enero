@@ -122,14 +122,14 @@ a.linkDeco {
   /* background: -webkit-linear-gradient(#f8af111a, #f58e07);
   background: linear-gradient(#f8a91711, #f5d57d); */
   opacity: 0.90;
-  filter: alpha(opacity=90);
+  /* filter: alpha(opacity=10); */
   border-radius: 5px;
   font-weight: bolder;
   text-align: center;
   width: 400px;
   height: auto;
   border: 2px solid white;
-  box-shadow: 0 20px 40px -14px #ca9c56;
+  box-shadow: 0 20px 40px -14px #725832;
 }
 
 .btn-primary {
