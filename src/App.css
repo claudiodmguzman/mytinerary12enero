@@ -451,7 +451,10 @@ a.linkDeco {
 }
 
 
-
+.accessCommLik {
+  display: flex;
+  justify-content: space-around;
+}
 
 
 /* CARD CITIES*/

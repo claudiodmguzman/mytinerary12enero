@@ -42,10 +42,13 @@ const Access = () => {
                         </p></Accordion>
                 </div>
 
+                <div className='accessCommLik' >
 
-                <div className="accessFondo">User comments</div>
+                    <div className="accessFondo">User comments</div>
 
-                <div className="accessFondo">Likes</div>
+                    <div className="accessFondo">Likes</div>
+
+                </div>
 
             </div>
         </div>
