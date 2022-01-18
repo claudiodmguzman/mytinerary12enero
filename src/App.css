@@ -406,12 +406,23 @@ a.linkDeco {
   width: 900px !important;
 }
 
+
+/* CARD TINERARY */
+
+
+.cardTinerary {
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 /* ACCESS */
 
 .accessContainer {
   justify-content: center;
   display: flex;
- 
 }
 
 
