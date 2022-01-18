@@ -1,7 +1,7 @@
 import React from "react";
 import CardContinents from "./CardContinents";
 import { Link as Linkrouter } from 'react-router-dom';
-// import imgTineraryEurope from './img/imgTinerary/imgTineraryEurope.png'
+import imgTineraryEurope from './img/imgTinerary/imgTineraryEurope.png'
 
 
 const CardTineraryEurope = () => {
@@ -22,7 +22,7 @@ const CardTineraryEurope = () => {
                     <div className="tineraryImgInfo" >
 
                         <div className="tineraryImg" >
-                        {/* <img className="tineraryImg" src={imgTineraryEurope} alt="Imagen de America del Sur" /> */}
+                        <img className="tineraryImg" src={imgTineraryEurope} alt="Imagen de America del Sur" />
                         </div>
 
                         <div className="tineraryInfo" >
