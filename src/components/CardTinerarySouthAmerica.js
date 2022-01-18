@@ -1,13 +1,7 @@
 import React from "react";
 import CardContinents from "./CardContinents";
 import { Link as Linkrouter } from 'react-router-dom';
-// import CardSouthAmerica from './CardSouthAmerica';
-// import CardNorthAmerica from './CardNorthAmerica';
-// import CardAfrica from './CardAfrica';
-// import CardAsia from './CardAsia';
-// import CardEurope from './CardEurope';
-// import CardOceania from './CardOceania';
-import imgTinerarySouthAmerica from './img/imgTinerary/imgTinerarySouthAmerica.jpg'
+import imgTinerarySouthAmerica from './img/imgTinerary/imgTinerarySouthAmerica.png'
 
 
 const CardTinerarySouthAmerica = () => {
@@ -22,7 +16,7 @@ const CardTinerarySouthAmerica = () => {
 
             <div className="tinerary" >
                 <div className="cardTinerary">
-                    <h1 className="tineraryTitle" >CONTINENT NAME</h1>
+                    <h1 className="tineraryTitle" >South America</h1>
                     <h4 className="tinerarySubTitle" >view the itinerary by Continent</h4>
 
                     <div className="tineraryImgInfo" >
