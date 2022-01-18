@@ -1,5 +1,6 @@
 import React from "react";
 import CardContinents from "./CardContinents";
+import { Link as Linkrouter } from 'react-router-dom';
 // import CardSouthAmerica from './CardSouthAmerica';
 // import CardNorthAmerica from './CardNorthAmerica';
 // import CardAfrica from './CardAfrica';
@@ -21,6 +22,7 @@ const CardTinerarySouthAmerica = () => {
             <div className="tinerary" >
                 <div className="cardTinerary">
                     <h1 className="tineraryTitle" >CONTINENT NAME</h1>
+                    <h4 className="tinerarySubTitle" >view the itinerary by Continent</h4>
 
                     <div className="tineraryImgInfo" >
 
@@ -29,28 +31,70 @@ const CardTinerarySouthAmerica = () => {
                         </div>
 
                         <div className="tineraryInfo" >
-                            <div>
-                                CITY 1
+                            <div className="tineraryReadMore" >
+                                <div>
+                                    <p className="tineraryP">City</p>
+                                    <p className="tineraryP">Money</p>
+                                </div>
+                                <div>
+                                    <p className="tineraryP">Country</p>
+                                    <p className="tineraryPLink"><Linkrouter className="tineraryLink" to="/access">read more...</Linkrouter></p>
+                                </div>
                             </div>
 
-                            <div>
-                                CITY 2
+                            <div className="tineraryReadMore" >
+                                <div>
+                                    <p className="tineraryP">City</p>
+                                    <p className="tineraryP">Money</p>
+                                </div>
+                                <div>
+                                    <p className="tineraryP">Country</p>
+                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                </div>
                             </div>
 
-                            <div>
-                                CITY 3
+                            <div className="tineraryReadMore" >
+                                <div>
+                                    <p className="tineraryP">City</p>
+                                    <p className="tineraryP">Money</p>
+                                </div>
+                                <div>
+                                    <p className="tineraryP">Country</p>
+                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                </div>
                             </div>
 
-                            <div>
-                                CITY 4
+                            <div className="tineraryReadMore" >
+                                <div>
+                                    <p className="tineraryP">City</p>
+                                    <p className="tineraryP">Money</p>
+                                </div>
+                                <div>
+                                    <p className="tineraryP">Country</p>
+                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                </div>
                             </div>
 
-                            <div>
-                                CITY 5
+                            <div className="tineraryReadMore" >
+                                <div>
+                                    <p className="tineraryP">City</p>
+                                    <p className="tineraryP">Money</p>
+                                </div>
+                                <div>
+                                    <p className="tineraryP">Country</p>
+                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                </div>
                             </div>
 
-                            <div>
-                                CITY 6
+                            <div className="tineraryReadMore" >
+                                <div>
+                                    <p className="tineraryP">City</p>
+                                    <p className="tineraryP">Money</p>
+                                </div>
+                                <div>
+                                    <p className="tineraryP">Country</p>
+                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                </div>
                             </div>
                         </div>
                     </div>
