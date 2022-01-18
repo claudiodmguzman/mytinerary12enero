@@ -409,13 +409,31 @@ a.linkDeco {
 
 /* CARD TINERARY */
 
-
-.cardTinerary {
+.tinerary {
   justify-content: center;
   display: flex;
+}
+
+.cardTinerary {
+  display: block;
+  text-align: center;
   margin-top: 50px;
   font-weight: bolder;
   font-size: 20px;
+  border: 1px solid black;
+  width: 900px;
+}
+
+.tineraryTitle {
+  border: 1px solid violet;
+}
+
+.tineraryImg {
+  border: 1px solid red;
+}
+
+.tineraryInfo {
+  border:  1px solid green;
 }
 
 /* ACCESS */
