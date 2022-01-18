@@ -443,6 +443,8 @@ a.linkDeco {
 
 .tineraryInfo {
   border:  1px solid green;
+  width: auto;
+  height: auto;
 }
 
 /* ACCESS */
