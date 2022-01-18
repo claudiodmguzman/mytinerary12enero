@@ -8,7 +8,7 @@ import CardContinents from "./CardContinents";
 // import CardOceania from './CardOceania';
 
 
-const CardTinerary = () => {
+const CardTinerarySouthAmerica = () => {
     return (
 
 
@@ -28,4 +28,4 @@ const CardTinerary = () => {
     )
 }
 
-export default CardTinerary;
+export default CardTinerarySouthAmerica;

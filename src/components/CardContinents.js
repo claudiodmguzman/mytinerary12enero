@@ -10,6 +10,7 @@ import { Accordion } from 'react-bootstrap-accordion';
 import 'react-bootstrap-accordion/dist/index.css';
 
 
+
 const CardContinents = () => {
     return (
 
