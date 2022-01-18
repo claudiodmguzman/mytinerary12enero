@@ -8,10 +8,6 @@ import img5 from './img/imgContinentes/img5-Europa.png';
 import img6 from './img/imgContinentes/img6-Oceania.png';
 import { Accordion } from 'react-bootstrap-accordion';
 import 'react-bootstrap-accordion/dist/index.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CardTinerary from './CardTinerary';
-
-
 
 
 const CardContinents = () => {
@@ -26,7 +22,7 @@ const CardContinents = () => {
                 <div className='cardContinentsContainer'>
 
                     <div className='imgCardContinent'>
-                    <Linkrouter to="/continents/cardTinerary"> <img src={img1} alt="Imagen de America del Sur" /></Linkrouter>
+                    <Linkrouter to="/cardTinerarySouthAmerica"><img src={img1} alt="Imagen de America del Sur" /></Linkrouter>
                     </div>
 
                     <Accordion title='South America'>
@@ -136,20 +132,9 @@ const CardContinents = () => {
                     </Accordion>
 
                 </div >
-
-
-
                 
             </div>
 
-            {/* <BrowserRouter>
-                <Routes>
-                    <Route path='/continents/cardTinerary' element={<CardTinerary />} />
-                </Routes>
-            </BrowserRouter> */}
-
-
-           
 
         </div>
 

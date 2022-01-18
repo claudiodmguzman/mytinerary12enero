@@ -1,0 +1,31 @@
+import React from "react";
+import CardContinents from "./CardContinents";
+// import CardSouthAmerica from './CardSouthAmerica';
+// import CardNorthAmerica from './CardNorthAmerica';
+// import CardAfrica from './CardAfrica';
+// import CardAsia from './CardAsia';
+// import CardEurope from './CardEurope';
+// import CardOceania from './CardOceania';
+
+
+const CardTinerary = () => {
+    return (
+
+
+        <div>
+
+            <div >
+                <CardContinents />
+            </div>
+
+
+            <div>
+            CardSouthAmerica
+            </div>
+
+        </div>
+
+    )
+}
+
+export default CardTinerary;

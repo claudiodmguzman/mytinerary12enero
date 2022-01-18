@@ -1,6 +1,6 @@
 import React from 'react';
 import CardContinents from './CardContinents';
-import CardTinerary from './CardTinerary';
+import CardTinerarySouthAmerica from './CardTinerarySouthAmerica';
 
 
 const Continents = () => {
