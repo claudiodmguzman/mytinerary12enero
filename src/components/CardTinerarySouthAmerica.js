@@ -22,41 +22,40 @@ const CardTinerarySouthAmerica = () => {
                 <div className="cardTinerary">
                     <h1 className="tineraryTitle" >CONTINENT NAME</h1>
 
-                    <div className="tineraryImg" >
-                        IMG
+                    <div className="tineraryImgInfo" >
+
+                        <div className="tineraryImg" >
+                            IMG
+                        </div>
+
+                        <div className="tineraryInfo" >
+                            <div>
+                                CITY 1
+                            </div>
+
+                            <div>
+                                CITY 2
+                            </div>
+
+                            <div>
+                                CITY 3
+                            </div>
+
+                            <div>
+                                CITY 4
+                            </div>
+
+                            <div>
+                                CITY 5
+                            </div>
+
+                            <div>
+                                CITY 6
+                            </div>
+                        </div>
                     </div>
-
-                    <div className="tineraryInfo" >
-                        <div>
-                            CITY 1
-                        </div>
-
-                        <div>
-                            CITY 2
-                        </div>
-
-                        <div>
-                            CITY 3
-                        </div>
-
-                        <div>
-                            CITY 4
-                        </div>
-
-                        <div>
-                            CITY 5
-                        </div>
-
-                        <div>
-                            CITY 6
-                        </div>
-                    </div>
-
-
-
                 </div>
             </div>
-
         </div>
 
     )
