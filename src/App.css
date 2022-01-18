@@ -446,8 +446,8 @@ a.linkDeco {
 }
 
 .tineraryImg {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: auto;
   border: 1px solid red;
 }
 
