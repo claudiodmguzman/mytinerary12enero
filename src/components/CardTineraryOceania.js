@@ -20,7 +20,7 @@ const CardTinerarySouthAmerica = () => {
 
 
             <div>
-            Oceania
+            OCEANIA
             </div>
 
         </div>
