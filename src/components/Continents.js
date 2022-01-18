@@ -1,5 +1,6 @@
 import React from 'react';
 import CardContinents from './CardContinents';
+import CardTinerary from './CardTinerary';
 
 
 const Continents = () => {
@@ -7,9 +8,9 @@ const Continents = () => {
 
         <div>
 
-            <div>
-                <CardContinents />
-            </div>
+        <div>
+            <CardContinents />
+        </div>
 
         </div>
 
