@@ -49,7 +49,7 @@ const CardTinerarySouthAmerica = () => {
                                 </div>
                                 <div>
                                     <p className="tineraryP">Country</p>
-                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                    <p className="tineraryPLink"><Linkrouter className="tineraryLink" to="/access">read more...</Linkrouter></p>
                                 </div>
                             </div>
 
@@ -60,7 +60,7 @@ const CardTinerarySouthAmerica = () => {
                                 </div>
                                 <div>
                                     <p className="tineraryP">Country</p>
-                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                    <p className="tineraryPLink"><Linkrouter className="tineraryLink" to="/access">read more...</Linkrouter></p>
                                 </div>
                             </div>
 
@@ -71,7 +71,7 @@ const CardTinerarySouthAmerica = () => {
                                 </div>
                                 <div>
                                     <p className="tineraryP">Country</p>
-                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                    <p className="tineraryPLink"><Linkrouter className="tineraryLink" to="/access">read more...</Linkrouter></p>
                                 </div>
                             </div>
 
@@ -82,7 +82,7 @@ const CardTinerarySouthAmerica = () => {
                                 </div>
                                 <div>
                                     <p className="tineraryP">Country</p>
-                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                    <p className="tineraryPLink"><Linkrouter className="tineraryLink" to="/access">read more...</Linkrouter></p>
                                 </div>
                             </div>
 
@@ -93,7 +93,7 @@ const CardTinerarySouthAmerica = () => {
                                 </div>
                                 <div>
                                     <p className="tineraryP">Country</p>
-                                    <p ><Linkrouter className="tineraryPLink" to="/access">read more...</Linkrouter></p>
+                                    <p className="tineraryPLink"><Linkrouter className="tineraryLink" to="/access">read more...</Linkrouter></p>
                                 </div>
                             </div>
                         </div>

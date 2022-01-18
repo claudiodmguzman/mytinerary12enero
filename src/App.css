@@ -465,6 +465,7 @@ a.linkDeco {
   border-radius: 5px;
   margin: 10px;
   box-shadow: #6d532c;
+  box-shadow: 4px 4px 4px #88888863;
 }
 
 .tineraryP {
@@ -493,9 +494,11 @@ a.linkDeco {
 
 .tineraryPLink:hover {
   background-color: #ca9c5633;
-  color: #a0773a;
 }
 
+.tineraryLink:hover {
+  color: #a0773a;
+}
 
 /* ACCESS */
 
