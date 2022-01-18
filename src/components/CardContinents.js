@@ -42,7 +42,7 @@ const CardContinents = () => {
                 <div className='cardContinentsContainer'>
 
                     <div className='imgCardContinent'>
-                        <img src={img2} alt="Imagen de America del Norte" />
+                    <Linkrouter to="/cardTineraryNorthAmerica"><img src={img2} alt="Imagen de America del Norte" /></Linkrouter>
                     </div>
 
                     <Accordion title='North America'>
@@ -61,7 +61,7 @@ const CardContinents = () => {
                 <div className='cardContinentsContainer'>
 
                     <div className='imgCardContinent'>
-                        <img src={img3} alt="Imagen de Africa" />
+                    <Linkrouter to="/cardTineraryAfrica"><img src={img3} alt="Imagen de Africa" /></Linkrouter>
                     </div>
 
                     <Accordion title='Africa'>
@@ -80,7 +80,7 @@ const CardContinents = () => {
                 <div className='cardContinentsContainer'>
 
                     <div className='imgCardContinent'>
-                        <img src={img4} alt="Imagen de Asia" />
+                    <Linkrouter to="/cardTineraryAsia"><img src={img4} alt="Imagen de Asia" /></Linkrouter>
                     </div>
 
                     <Accordion title='Asia'>
@@ -99,7 +99,7 @@ const CardContinents = () => {
                 <div className='cardContinentsContainer'>
 
                     <div className='imgCardContinent'>
-                        <img src={img5} alt="Imagen de Europa" />
+                    <Linkrouter to="/cardTineraryEurope"><img src={img5} alt="Imagen de Europa" /></Linkrouter>
                     </div>
 
                     <Accordion title='Europe'>
@@ -115,10 +115,10 @@ const CardContinents = () => {
 
                 </div >
 
-                <div className='cardContinentsContainer'>
+                <div className='cardContinents'>
 
                     <div className='imgCardContinent'>
-                        <img src={img6} alt="Imagen de Oceania" />
+                    <Linkrouter to="/cardTineraryOceania"><img src={img6} alt="Imagen de Oceania" /></Linkrouter>
                     </div>
 
                     <Accordion title='Oceania'>
