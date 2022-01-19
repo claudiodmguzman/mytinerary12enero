@@ -28,7 +28,7 @@ const Cities = () => {
                     <Swicht />
                 </div> */}
                 <div>
-                    <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter>
+                    <Linkrouter className="linkDeco2" to="/continents">...go to Continents</Linkrouter>
                 </div>
             </nav>
 
