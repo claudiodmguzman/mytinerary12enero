@@ -14,6 +14,7 @@ import CardTineraryAfrica from './components/CardTineraryAfrica';
 import CardTineraryAsia from './components/CardTineraryAsia';
 import CardTineraryEurope from './components/CardTineraryEurope';
 import CardTineraryOceania from './components/CardTineraryOceania';
+import Prueba from './components/Prueba';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/prueba' element={<Prueba />} />
         <Route path='/cardLogup' element={<CardLogup />} />
         <Route path='/cities' element={<Cities />} />
         <Route path='/continents' element={<Continents />} />

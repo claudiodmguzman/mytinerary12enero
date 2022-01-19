@@ -7,7 +7,7 @@ import img3City from './img/imgCiudades/citiesAsia/img3City-Singapur-Singapur.jp
 import img2City from './img/imgCiudades/citiesEuropa/img2City-Grecia-Atenas.jpg';
 import img1City from './img/imgCiudades/citiesOceania/img1City-Nueva-Zelanda-Auckland.jpg';
 // import Card from './Card'
-import Swicht from './Swicht';
+// import Swicht from './Swicht';
 
 const Cities = () => {
 
@@ -19,9 +19,9 @@ const Cities = () => {
                 <div>
                     <Linkrouter className="linkDeco" to="/cities">Cities</Linkrouter>
                 </div>
-                <div className="linkDeco">
+                {/* <div className="linkDeco">
                     <Swicht />
-                </div>
+                </div> */}
                 <div>
                     <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter>
                 </div>
