@@ -406,6 +406,11 @@ a.linkDeco {
   width: 900px !important;
 }
 
+.carruselTexto {
+  background-color: rgba(0, 0, 0, 0.712);
+  border-radius: 20px;
+  padding: 0;
+}
 
 /* CARD TINERARY */
 

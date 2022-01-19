@@ -21,6 +21,10 @@ const Cities = () => {
 
             <h1 className="cardMasterTitulo">Cities</h1>
 
+            <nav className="encabezadoLinks">
+                <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter>
+            </nav>
+
             <div className="cardMaster">
 
                 {/* <div>
@@ -30,7 +34,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img6City} alt='img6City-Tanzania-Dar-es-Salaam.jpg'/>
+                        <img src={img6City} alt='img6City-Tanzania-Dar-es-Salaam.jpg' />
                         <div className="imageTexto">
                             <p>Dar es Salaam</p>
                         </div>
@@ -50,7 +54,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img5City} alt='img5City-EEUU-Anchorage.jpg'/>
+                        <img src={img5City} alt='img5City-EEUU-Anchorage.jpg' />
                         <div className="imageTexto">
                             <p>Anchorage</p>
                         </div>
@@ -70,7 +74,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img4City} alt='img4City-Chile-Santiago-de-Chile.png'/>
+                        <img src={img4City} alt='img4City-Chile-Santiago-de-Chile.png' />
                         <div className="imageTexto">
                             <p>Santiago de Chile</p>
                         </div>
@@ -92,7 +96,7 @@ const Cities = () => {
             <div className="cardMaster">
                 <div className="card">
                     <div className="image">
-                        <img src={img3City} alt='img3City-Singapur-Singapur.jpg'/>
+                        <img src={img3City} alt='img3City-Singapur-Singapur.jpg' />
                         <div className="imageTexto">
                             <p>Singapore</p>
                         </div>
@@ -112,7 +116,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img2City} alt='img2City-Grecia-Atenas'/>
+                        <img src={img2City} alt='img2City-Grecia-Atenas' />
                         <div className="imageTexto">
                             <p>Athens</p>
                         </div>
@@ -132,7 +136,7 @@ const Cities = () => {
 
                 <div className="card">
                     <div className="image">
-                        <img src={img1City} alt='img1City-Nueva-Zelanda-Auckland.jpg'/>
+                        <img src={img1City} alt='img1City-Nueva-Zelanda-Auckland.jpg' />
                         <div className="imageTexto">
                             <p>Auckland</p>
                         </div>

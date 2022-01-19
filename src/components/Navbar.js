@@ -21,12 +21,9 @@ const Navbar = () => {
                             </nav>
 
 
-                            <div className="selector"></div>
-
-
-                            <nav className="encabezadoLinks">
+                            {/* <nav className="encabezadoLinks">
                                 <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter>
-                            </nav>
+                            </nav> */}
                         </div>
                     </div>
                 </div>
