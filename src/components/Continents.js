@@ -9,7 +9,7 @@ const Continents = () => {
 
         <div>
 
-            <nav className="cardMasterTitulo">
+            <nav>
 
                 <h1 className="cardMasterTitulo">Continents</h1>
 
