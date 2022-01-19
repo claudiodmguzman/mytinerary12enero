@@ -67,6 +67,7 @@ body {
 }
 
 .linkDeco {
+  display: flex;
   text-decoration: none;
   font-size: 18px;
   font-family: 'Courier New', Courier, monospace;
@@ -589,7 +590,7 @@ a.linkDeco {
 }
 
 .cardMasterTitulo {
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   color: #795b2d;
   /* font-family: 'Dancing Script', cursive; */

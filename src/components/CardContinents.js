@@ -16,7 +16,7 @@ const CardContinents = () => {
 
 
         <div>
-            <h1 className="cardMasterTitulo">Continents</h1>
+            {/* <h1 className="cardMasterTitulo">Continents</h1> */}
 
             <div className='ContinentsContainer'>
 
