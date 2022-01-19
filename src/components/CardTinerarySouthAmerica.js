@@ -9,6 +9,8 @@ const CardTinerarySouthAmerica = () => {
 
 
         <div>
+            
+            <h1 className="cardMasterTitulo">Continents</h1>
 
             <div >
                 <CardContinents />

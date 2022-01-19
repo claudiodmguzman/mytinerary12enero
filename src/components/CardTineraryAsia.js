@@ -10,6 +10,8 @@ const CardTineraryAsia = () => {
 
         <div>
 
+            <h1 className="cardMasterTitulo">Continents</h1>
+
             <div >
                 <CardContinents />
             </div>
@@ -22,7 +24,7 @@ const CardTineraryAsia = () => {
                     <div className="tineraryImgInfo" >
 
                         <div className="tineraryImg" >
-                        <img className="tineraryImg" src={imgTineraryAsia} alt="Imagen de America del Sur" />
+                            <img className="tineraryImg" src={imgTineraryAsia} alt="Imagen de America del Sur" />
                         </div>
 
                         <div className="tineraryInfo" >
