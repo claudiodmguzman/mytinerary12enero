@@ -9,15 +9,11 @@ const Prueba = () => {
 
 
             <nav className="cardMasterTitulo">
+               
                 <div>
-                    <Linkrouter className="linkDeco" to="/cities">Cities</Linkrouter>
-                </div>
-                <div className="linkDeco">
                     <Swicht />
                 </div>
-                <div>
-                    <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter>
-                </div>
+              
             </nav>
 
             <div className="cardMaster">

@@ -8,17 +8,22 @@ import img2City from './img/imgCiudades/citiesEuropa/img2City-Grecia-Atenas.jpg'
 import img1City from './img/imgCiudades/citiesOceania/img1City-Nueva-Zelanda-Auckland.jpg';
 // import Card from './Card'
 // import Swicht from './Swicht';
+// import Prueba from './Prueba'
 
 const Cities = () => {
 
     return (
         <div className="master">
 
+            {/* <div>
+                <Prueba/>
+            </div> */}
+
 
             <nav className="cardMasterTitulo">
-                <div>
+                {/* <div>
                     <Linkrouter className="linkDeco" to="/cities">Cities</Linkrouter>
-                </div>
+                </div> */}
                 {/* <div className="linkDeco">
                     <Swicht />
                 </div> */}

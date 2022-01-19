@@ -6,7 +6,7 @@ import Cities from './Cities'
 
 export default function ControlledSwitches() {
   const [checked, setChecked] = React.useState(false);
-  const [filtro, setFiltro] = React.useState("Cities")
+  const [filtro, setFiltro] = React.useState("Prueba")
 
 
   const handleChange = (event) => {

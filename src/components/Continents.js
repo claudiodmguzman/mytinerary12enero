@@ -1,6 +1,6 @@
 import React from 'react';
 import CardContinents from './CardContinents';
-import { Link as Linkrouter } from 'react-router-dom';
+// import { Link as Linkrouter } from 'react-router-dom';
 
 
 
@@ -10,9 +10,13 @@ const Continents = () => {
         <div>
 
             <nav className="cardMasterTitulo">
-                <Linkrouter className="linkDeco" to="/cities">Cities</Linkrouter>
+
+                <h1 className="cardMasterTitulo">Continents</h1>
+
+
+                {/* <Linkrouter className="linkDeco" to="/cities">Cities</Linkrouter> */}
             
-                <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter>
+                {/* <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter> */}
             </nav>
 
             <div>
