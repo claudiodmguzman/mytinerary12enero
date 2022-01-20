@@ -1,9 +1,12 @@
 /* NAVBAR INICIO */
 
+
 body {
   background-image: url(./components/img/imgFondo/imgFondoBody.png);
   /* background-repeat: no-repeat;
   background-size: cover; */
+  display: flex;
+  justify-content: center;
 }
 
 .logueo {
