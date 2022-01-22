@@ -4,27 +4,27 @@ import React from 'react';
 const CardSignUp = () => {
     return (
 
-        <div className='signUpContainer'>
+        <div className='signUpInContainer'>
 
             
 
-                <form className="signUp">
+                <form className="signUpIn">
 
-                    <label className="texSignUp">Before using our services you need to create an account</label>
+                    <label className="texSign">Before using our services you need to create an account</label>
 
                     <div class="form-group">
 
-                        <input type="email" class="form-control formSignup" id="exampleDropdownFormEmail1"
+                        <input type="email" class="form-control formSign" id="exampleDropdownFormEmail1"
                             required placeholder="email@example.com" />
                     </div>
                     <div class="form-group">
 
-                        <input type="password" class="form-control formSignup" id="exampleDropdownFormPassword1"
+                        <input type="password" class="form-control formSign" id="exampleDropdownFormPassword1"
                             required placeholder="Password" />
                     </div>
                     <div class="form-group">
 
-                        <input type="password" class="form-control formSignup" id="exampleDropdownFormPassword1"
+                        <input type="password" class="form-control formSign" id="exampleDropdownFormPassword1"
                             required placeholder="Repeat Password" />
                     </div>
 

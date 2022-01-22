@@ -243,21 +243,21 @@ a.linkDeco2 {
     margin-bottom: 20px;
 }
 
-.signUpContainer {
+.signUpInContainer {
   justify-content: center;
   display: flex;
  
 }
 
 
-.signUp {
+.signUpIn {
   width: 500px;
   text-align: center;
   display: block;
   
 }
 
-.texSignUp {
+.texSign {
   padding: 0.25rem 1.5rem;
   color: black;
   font-weight: bolder;
@@ -267,7 +267,7 @@ a.linkDeco2 {
   margin-bottom: 20px;
 }
 
-.formSignup {
+.formSign {
   background: rgba(128, 128, 128, 0.219);
 }
 

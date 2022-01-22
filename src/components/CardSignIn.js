@@ -5,28 +5,28 @@ import { Link as Linkrouter } from 'react-router-dom';
 const CardSignIn = () => {
     return (
 
-        <div className='signUpContainer'>
+        <div className='signUpInContainer'>
 
 
 
-            <form className="signUp">
+            <form className="signUpIn">
 
-                <label className="texSignUp">Hello There!</label>
+                <label className="texSign">Hello There!</label>
 
                 <div class="form-group">
 
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" required
+                    <input type="email" class="form-control formSign" id="exampleDropdownFormEmail1" required
                         placeholder="email@example.com" />
                 </div>
 
                 <div class="form-group">
 
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                    <input type="password" class="form-control formSign" id="exampleDropdownFormPassword1"
                         required placeholder="Password" />
                 </div>
 
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck" />
+                    <input type="checkbox" class="form-check-input formSign" id="dropdownCheck" />
                     <label class="form-check-label" for="dropdownCheck">
                         Remember me
                     </label>
@@ -34,11 +34,15 @@ const CardSignIn = () => {
 
                 <button type="submit" class="btn btn-success">Sign In</button>
 
+
+                <div class="dropdown-divider"></div>
+                <Linkrouter class="dropdown-item" to="#">Forgot password?</Linkrouter>
+                <div class="dropdown-divider"></div>
+
+
             </form>
 
-            <div class="dropdown-divider"></div>
-            <Linkrouter class="dropdown-item" to="#">Forgot password?</Linkrouter>
-            <div class="dropdown-divider"></div>
+
 
         </div>
 
