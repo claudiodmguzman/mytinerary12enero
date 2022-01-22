@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const CardLogup = () => {
+const CardSignIn = () => {
     return (
 
-        <div className='signUpContainer'>
+        <div className='signInContainer'>
 
 
 
@@ -25,20 +25,19 @@ const CardLogup = () => {
                 </div>
 
                 <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="dropdownCheck" />
-                        <label class="form-check-label" for="dropdownCheck">
-                            Remember me
-                        </label>
-                    </div>
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck" />
+                    <label class="form-check-label" for="dropdownCheck">
+                        Remember me
+                    </label>
+                </div>
 
                 <button type="submit" class="btn btn-success">Sign In</button>
 
             </form>
 
             <div class="dropdown-divider"></div>
-                <Linkrouter class="dropdown-item" to="#">Forgot password?</Linkrouter>
-                <Linkrouter class="dropdown-item" to="/cardLogup">New around here? Sign Up</Linkrouter>
-                <div class="dropdown-divider"></div>
+            <Linkrouter class="dropdown-item" to="#">Forgot password?</Linkrouter>
+            <div class="dropdown-divider"></div>
 
         </div>
 
@@ -47,4 +46,4 @@ const CardLogup = () => {
     )
 }
 
-export default CardLogup;
+export default CardSignIn;

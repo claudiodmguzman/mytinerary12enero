@@ -6,7 +6,8 @@ import Home from './components/Home'
 import Cities from './components/Cities';
 import Continents from './components/Continents';
 import Access from './components/Access';
-import CardLogup from './components/CardLogup';
+import CardSignUp from './components/CardSignUp';
+import CardSignIn from './components/CardSignIn'
 import Footer from './components/Footer';
 import CardTinerarySouthAmerica from './components/CardTinerarySouthAmerica';
 import CardTineraryNorthAmerica from './components/CardTineraryNorthAmerica';
@@ -25,7 +26,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         {/* <Route path='/prueba' element={<Prueba />} /> */}
-        <Route path='/cardLogup' element={<CardLogup />} />
+        <Route path='/cardLogup' element={<CardSignIn />} />
+        <Route path='/cardLogup' element={<CardSignUp />} />
         <Route path='/cities' element={<Cities />} />
         <Route path='/continents' element={<Continents />} />
         <Route path='/cardTinerarySouthAmerica' element={<CardTinerarySouthAmerica />} />

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const CardLogup = () => {
+const CardSignUp = () => {
     return (
 
         <div className='signUpContainer'>
@@ -38,4 +38,4 @@ const CardLogup = () => {
     )
 }
 
-export default CardLogup;
+export default CardSignUp;
