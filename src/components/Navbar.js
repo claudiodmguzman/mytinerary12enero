@@ -6,41 +6,41 @@ import CardLogin from './CardLogin';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='navbarContainer'>
+
+            <div className='nochtitulo' >
 
             <div className="noch">
                 <div className="encabezadoImgLogo">
-                    <Linkrouter to="/"><img src={imgCompass} height="175" width="175" alt="Logo principal, lleva a la Home page" /></Linkrouter>
+                    <Linkrouter to="/"><img src={imgCompass} className="App-logo" height="175" width="175" alt="Logo principal, lleva a la Home page" /></Linkrouter>
                 </div>
 
                 <div className="encabezadoNoch">
-                    <div className="encabezado">
-                        <div className="encabezadoLinksGroup">
-                            <nav className="encabezadoLinks">
-                                <Linkrouter className="linkDeco" to="/cities">Cities</Linkrouter>
-                            </nav>
-
-
-                            {/* <nav className="encabezadoLinks">
-                                <Linkrouter className="linkDeco" to="/continents">Continents</Linkrouter>
-                            </nav> */}
-                        </div>
-                    </div>
+                    <div className="smile"></div>
                 </div>
 
-
-                <div className="logueo">
-                    <div>
-                        <CardLogin />
-                    </div>
-                </div>
-
-                
             </div>
 
 
             <div className="titulo">
                 <p>MYTinerary</p>
+            </div>
+
+            </div>
+
+            <div>
+                <nav className="encabezadoLinks">
+                    <Linkrouter className="linkDeco" to="/cities">Cities</Linkrouter>
+                </nav>
+
+
+                <nav className="encabezadoLinks">
+                    <Linkrouter className="linkDeco" to="/">Home</Linkrouter>
+                </nav>
+
+                <div>
+                    <CardLogin />
+                </div>
             </div>
 
         </div>

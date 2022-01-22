@@ -10,7 +10,7 @@ const CardLogin = () => {
 
             <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button"
                 className="btn btn bg-transparent">
-                <img src={imgCompassLog} width="60" height="60" alt="ícono de Logueo SignIn y SignUp" />
+                <img src={imgCompassLog} width="40" height="40" alt="ícono de Logueo SignIn y SignUp" />
             </button>
 
             <div class="dropdown-menu">
