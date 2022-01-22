@@ -3,7 +3,7 @@ import imgCompassLog from './img/imgNavbar/imgCompassLog.png';
 import { Link as Linkrouter } from 'react-router-dom';
 
 
-const CardLogin = () => {
+const CardLog = () => {
     return (
 
         <div className="dropdown">
@@ -17,6 +17,7 @@ const CardLogin = () => {
 
                 <div class="dropdown-divider"></div>
                 <Linkrouter class="dropdown-item" to="/cardSignIn">Sign In</Linkrouter>
+                <div class="dropdown-divider"></div>
                 <Linkrouter class="dropdown-item" to="/cardSignUp">Sign Up</Linkrouter>
                 <div class="dropdown-divider"></div>
 
@@ -28,4 +29,4 @@ const CardLogin = () => {
     )
 }
 
-export default CardLogin;
+export default CardLog;

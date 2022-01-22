@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
 import imgCompass from './img/imgNavbar/imgCompass.png';
-import CardLogin from './CardLogin';
+import CardLog from './CardLog';
 
 
 const Navbar = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
                 </nav>
 
                 <div>
-                    <CardLogin />
+                    <CardLog />
                 </div>
             </div>
 

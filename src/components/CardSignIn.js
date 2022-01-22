@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link as Linkrouter } from 'react-router-dom';
 
 
 const CardSignIn = () => {
     return (
 
-        <div className='signInContainer'>
+        <div className='signUpContainer'>
 
 
 
