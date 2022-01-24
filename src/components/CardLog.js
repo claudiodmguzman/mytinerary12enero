@@ -13,13 +13,13 @@ const CardLog = () => {
                 <img src={imgCompassLog} width="40" height="40" alt="ícono de Logueo SignIn y SignUp" />
             </button>
 
-            <div class="dropdown-menu">
 
+            <div class="dropdown-menu dropdown-menu-right">
+
+                <Linkrouter className="dropdown-item" to="/cardSignIn">Sign In</Linkrouter>
                 <div class="dropdown-divider"></div>
-                <Linkrouter class="dropdown-item" to="/cardSignIn">Sign In</Linkrouter>
-                <div class="dropdown-divider"></div>
-                <Linkrouter class="dropdown-item" to="/cardSignUp">Sign Up</Linkrouter>
-                <div class="dropdown-divider"></div>
+                <Linkrouter className="dropdown-item" to="/cardSignUp">Sign Up</Linkrouter>
+    
 
             </div>
         </div>

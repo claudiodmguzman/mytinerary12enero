@@ -165,26 +165,35 @@ a.linkDeco2 {
   box-shadow: none;
 }
 
-.pruebas {
+/* .pruebas {
  align-items: center !important;
-}
+} */
 
 
 .dropdown-menu {
-  background-image: url(./components/img/imgFondo/imgFondoLog.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background: -webkit-linear-gradient(#f8af111a, #f58e07);
-  background: linear-gradient(#f8a91711, #f5d57d); */
-  opacity: 0.90;
-  /* filter: alpha(opacity=10); */
   border-radius: 5px;
-  font-weight: bolder;
+  border-color: #ddba84;
   text-align: center;
-  width: 400px;
-  height: auto;
-  border: 2px solid white;
-  box-shadow: 0 20px 40px -14px #725832;
+  background: rgba(255, 255, 255, 0.178);
+}
+
+.dropdown-item {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  border: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.493);
+  transition: background-color .4s;
+}
+
+.dropdown-item:hover {
+  color: #ec920b !important;
+  background-color: #ca9c5633;
+  text-decoration: none;
+}
+
+a.dropdown-item {
+  color:#96733f !important;
 }
 
 .btn-primary {
@@ -194,15 +203,15 @@ a.linkDeco2 {
   width: 150px;
   border-radius: 5px;
   padding: 4px;
-}
+} 
 
 .btn-success {
-    font-weight: bolder;
-    border: 2px solid white;
-    margin-top: 12px;
-    width: 150px;
-    border-radius: 5px;
-    padding: 4px;
+  font-weight: bolder;
+  border: 2px solid white;
+  margin-top: 12px;
+  width: 150px;
+  border-radius: 5px;
+  padding: 4px;
   }
 
 .form-control {
@@ -215,32 +224,18 @@ a.linkDeco2 {
   border-radius: 5px;
 }
 
-.dropdown-item {
+
+
+
+.texSign {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 600;
   color: black;
   text-align: inherit;
-  white-space: nowrap;
-  /* background-color: transparent; */
   border: 0;
   background-color: rgb(255, 255, 255);
-}
-
-.dropdown-item:hover {
-  color: #ec920b;
-}
-
-.texSign {
-    width: 100%;
-    padding: 0.25rem 1.5rem;
-    clear: both;
-    color: black;
-    text-align: inherit;
-    border: 0;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .signUpInContainer {
