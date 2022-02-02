@@ -1,5 +1,5 @@
 require("dotenv").config()
-const { config } = require("dotenv")
+// const { config } = require("dotenv")
 const express = require("express")  //equivalente al import de Reac, pero en Node
 const app = express()
 require("./config/database")
