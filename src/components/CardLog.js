@@ -14,10 +14,10 @@ const CardLog = () => {
             </button>
 
 
-            <div class="dropdown-menu dropdown-menu-right">
+            <div className="dropdown-menu dropdown-menu-right">
 
                 <Linkrouter className="dropdown-item" to="/cardSignIn">Sign In</Linkrouter>
-                <div class="dropdown-divider"></div>
+                <div className="dropdown-divider"></div>
                 <Linkrouter className="dropdown-item" to="/cardSignUp">Sign Up</Linkrouter>
     
 
