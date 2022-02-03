@@ -21,7 +21,11 @@ const citiesController = {
             error:error
         })
 
-    } // req=require res=response
+    } 
 }
 
 module.exports = citiesController
+
+
+
+// req=require res=response
