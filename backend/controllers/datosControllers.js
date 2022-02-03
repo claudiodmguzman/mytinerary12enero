@@ -2,8 +2,7 @@ const Cities = require("../models/cities.js")
 
 const citiesController = {
     ObtenerTodosLosDatos:async(req,res) => {
-        console.log(req)
-        console.log(res)
+       
         let cities
         let error = null
         try {

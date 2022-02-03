@@ -9,7 +9,8 @@ import img3City from './img/imgCiudades/citiesAfrica/img3City-Marruecos-Essaouir
 
 
 
-function CardCities() {
+function CardCities(cities) {
+    console.log(cities)
 
     return (
 

@@ -21,16 +21,13 @@ import axios from 'axios';
 
 
 function App() {
+  const data=[]
 
-  async function test(){
-    await axios.get("http://localhost:4000/api/datos")
-    .then(response => console.log(response))
-  } 
+  axios.get("http://localhost:4000/api/datos")
+    .then(response => data.push(...response.data.response.cities))
+   
+  console.log(data)
 
-  useEffect(() => {
-       test()
-      
-      });
   
   return (
 
@@ -42,7 +39,7 @@ function App() {
         <Route path='/cardLog' element={<CardLog />} />
         <Route path='/cardSignIn' element={<CardSignIn />} />
         <Route path='/cardSignUp' element={<CardSignUp />} />
-        <Route path='/cities' element={<Cities />} />
+        <Route path='/cities' element={<Cities data={data} />} />
         <Route path='/continents' element={<Continents />} />
         <Route path='/cardTinerarySouthAmerica' element={<CardTinerarySouthAmerica />} />
         <Route path='/cardTineraryNorthAmerica' element={<CardTineraryNorthAmerica />} />
