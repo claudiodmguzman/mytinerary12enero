@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -17,9 +17,21 @@ import CardTineraryAsia from './components/CardTineraryAsia';
 import CardTineraryEurope from './components/CardTineraryEurope';
 import CardTineraryOceania from './components/CardTineraryOceania';
 // import Prueba from './components/Prueba';
+import axios from 'axios'; 
 
 
 function App() {
+
+  async function test(){
+    await axios.get("http://localhost:4000/api/datos")
+    .then(response => console.log(response))
+  } 
+
+  useEffect(() => {
+       test()
+      
+      });
+  
   return (
 
     <BrowserRouter>
