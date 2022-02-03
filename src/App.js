@@ -1,4 +1,4 @@
-
+import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -17,7 +17,6 @@ import CardTineraryAsia from './components/CardTineraryAsia';
 import CardTineraryEurope from './components/CardTineraryEurope';
 import CardTineraryOceania from './components/CardTineraryOceania';
 // import Prueba from './components/Prueba';
-import React, { useEffect } from 'react';
 import axios from 'axios'; 
 
 
