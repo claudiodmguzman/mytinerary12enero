@@ -7,6 +7,7 @@ import img5City from './img/imgCiudades/citiesEuropa/img5City-Paises-Bajos-Amste
 import img6City from './img/imgCiudades/citiesOceania/img6City-Australia-Perth.jpg';
 
 
+
 function Carrusel() {
 
     return (
