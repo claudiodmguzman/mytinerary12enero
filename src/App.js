@@ -28,6 +28,7 @@ function App() {
    
   console.log(data)
 
+
   
   return (
 
@@ -56,3 +57,8 @@ function App() {
 }
 
 export default App;
+
+
+
+// <img src={process.env.PUBLIC_URL + `/image/cities/${city.name}/${city.images.banner2}`} alt={city.name} />
+                         
