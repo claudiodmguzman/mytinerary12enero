@@ -61,4 +61,21 @@ export default App;
 
 
 // <img src={process.env.PUBLIC_URL + `/image/cities/${city.name}/${city.images.banner2}`} alt={city.name} />
+
+// return (
+//   <>  
+//   <div className="cards-like">
+//       <div className="container">
+//           <div className="row"> 
+//               {city.map((city) => {
+//                   return (
+//                       <div className=" col-12 col-md-6 col-lg-4 col-xl-4">
+//                           info card
+//                       </div>
+//                   )
+//               })}
+//           </div>
+//       </div>
+//   </div>
+//   </>
                          
