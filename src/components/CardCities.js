@@ -1,8 +1,6 @@
 import React from 'react';
-import { useStateValue } from '../stateProvider';
+import { useStateValue } from '../StateProvider';
 import { Link as Linkrouter } from 'react-router-dom';
-import img3City from './img/imgCiudades/citiesAfrica/img3City-Marruecos-Essaouira.jpg';
-
 
 
 function CardCities() {
@@ -13,7 +11,7 @@ function CardCities() {
 
         <div className="card">
             <div className="image">
-                <img src={img3City} />
+                {/* <img src={img3City} /> */}
                 <div className="imageTexto">
                     <p>CITY_1</p>
                 </div>

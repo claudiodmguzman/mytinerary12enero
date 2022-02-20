@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { actionType } from './reducer';
-import { useStateValue } from './stateProvider';
+import { useStateValue } from './StateProvider';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -23,18 +23,16 @@ import axios from 'axios';
 
 function App() {
 
-  const [{cities}, dispatch] = useStateValue ()
-
-
-
-  axios.get("http://localhost:4000/api/datos")
-    .then(response =>{
-      dispatch({
-        type: actionType.CITIESDB,
-        cities: response.data.response.cities
+  const [{cities}, dispatch]=useStateValue()
+  useEffect(() => {
+    axios.get("http://localhost:4000/api/datos")
+      .then(response => {
+        dispatch({
+          type: actionType.CITIESDB,
+          cities: response.data.response.cities
+        })
       })
-    });
-   
+  }, [])
 
   
   return (
