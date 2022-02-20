@@ -6,9 +6,6 @@ import img4City from './img/imgCiudades/citiesAmericaSur/img4City-Chile-Santiago
 import img3City from './img/imgCiudades/citiesAsia/img3City-Singapur-Singapur.jpg';
 import img2City from './img/imgCiudades/citiesEuropa/img2City-Grecia-Atenas.jpg';
 import img1City from './img/imgCiudades/citiesOceania/img1City-Nueva-Zelanda-Auckland.jpg';
-// import Card from './Card'
-// import Swicht from './Swicht';
-// import Prueba from './Prueba';
 import CardCities from './CardCities'
 
 
@@ -18,7 +15,7 @@ const Cities = (data) => {
     return (
         <div className="master">
 
-        <CardCities cities={cities}/>
+        <CardCities />
 
         </div>
     )

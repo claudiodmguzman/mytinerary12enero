@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { actionType } from './reducer';
+import { useStateValue } from './stateProvider';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -16,18 +18,23 @@ import CardTineraryAfrica from './components/CardTineraryAfrica';
 import CardTineraryAsia from './components/CardTineraryAsia';
 import CardTineraryEurope from './components/CardTineraryEurope';
 import CardTineraryOceania from './components/CardTineraryOceania';
-// import Prueba from './components/Prueba';
 import axios from 'axios'; 
 
 
 function App() {
-  const data=[]
+
+  const [{cities}, dispatch] = useStateValue ()
+
+
 
   axios.get("http://localhost:4000/api/datos")
-    .then(response => data.push(...response.data.response.cities))
+    .then(response =>{
+      dispatch({
+        type: actionType.CITIESDB,
+        cities: response.data.response.cities
+      })
+    });
    
-  console.log(data)
-
 
   
   return (
@@ -36,11 +43,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        {/* <Route path='/prueba' element={<Prueba />} /> */}
         <Route path='/cardLog' element={<CardLog />} />
         <Route path='/cardSignIn' element={<CardSignIn />} />
         <Route path='/cardSignUp' element={<CardSignUp />} />
-        <Route path='/cities' element={<Cities data={data} />} />
+        <Route path='/cities' element={<Cities />} />
         <Route path='/continents' element={<Continents />} />
         <Route path='/cardTinerarySouthAmerica' element={<CardTinerarySouthAmerica />} />
         <Route path='/cardTineraryNorthAmerica' element={<CardTineraryNorthAmerica />} />

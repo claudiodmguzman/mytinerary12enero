@@ -1,16 +1,13 @@
 import React from 'react';
+import { useStateValue } from '../stateProvider';
 import { Link as Linkrouter } from 'react-router-dom';
 import img3City from './img/imgCiudades/citiesAfrica/img3City-Marruecos-Essaouira.jpg';
-// import img3City from './img/imgCiudades/citiesAmericaNorte/img2City-';
-// import img4City from './img/imgCiudades/citiesAmericaSur/img3City-';
-// import img5City from './img/imgCiudades/citiesAsia/img4City-';
-// import img6City from './img/imgCiudades/citiesEuropa/img5City-';
-// import img7City from './img/imgCiudades/citiesOceania/img6City-';
 
 
 
-function CardCities(cities) {
-    console.log(cities)
+function CardCities() {
+
+    const [{cities}, dispatch] = useStateValue ()
 
     return (
 
