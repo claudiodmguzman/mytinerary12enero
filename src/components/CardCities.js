@@ -8,13 +8,13 @@ function CardCities () {
 
     const [{cities}, dispatch] = useStateValue ()
 
-    searchFilters(".card-filter",".card")
+    searchFilters(".card-filter",".searching")
 
     return (
 
         <>
         {cities.map((city) => (
-        <div className="card">
+        <div className="card searching">
             <div className="image">
                 { <img src={process.env.PUBLIC_URL+`/imgCiudades/${city.image}`} /> }
                 <div className="imageTexto">

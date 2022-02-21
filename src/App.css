@@ -641,7 +641,7 @@ a.linkDeco2 {
 .formSearch {
   /* display: flex; */
   text-align: center;
-  width: 400px;
+  width: 500px;
   height: 40px;
   font-weight: bolder;
   background: rgba(128, 128, 128, 0.219);
@@ -680,15 +680,6 @@ input::placeholder {
   /* width: 900px;  */
 }
 
-.cards {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
-  transition: all 0.3s ease-out;
-} 
-
-.card-filter {
-
-}
 
 .filter {
   display: none;
