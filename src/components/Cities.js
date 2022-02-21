@@ -14,15 +14,11 @@ function Cities() {
         <div>
 
             <div className='search'>
-
                 <input type="search" name="cityCountrySearch" className="formSearch card-filter" placeholder="enter the name of the city or the country you want to search" />
-
             </div>
 
             <div className='decoContinents'>
-
                 <Linkrouter className="linkDeco2" to="/continents">...go to Continents</Linkrouter>
-
             </div>
 
 
