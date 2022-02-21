@@ -632,7 +632,6 @@ a.linkDeco2 {
 
 /* CARD CITIES*/
 
-
 .search {
   display: flex;
   justify-content: center;
@@ -640,7 +639,7 @@ a.linkDeco2 {
 }
 
 .formSearch {
-  display: flex;
+  /* display: flex; */
   text-align: center;
   width: 400px;
   height: 40px;
@@ -679,6 +678,20 @@ input::placeholder {
   display:flex;
   justify-content: space-between;
   /* width: 900px;  */
+}
+
+/* .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  transition: all 0.3s ease-out;
+}  */
+
+.card-filter {
+
+}
+
+.filter {
+  display: none;
 }
 
 .card {
