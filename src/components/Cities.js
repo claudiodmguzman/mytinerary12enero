@@ -3,13 +3,13 @@ import { useParams } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
 import CardCities from './CardCities'
 import { Link as Linkrouter } from 'react-router-dom'
-import searchFilters from './Filtro';
+// import searchFilters from './Filtro';
 
 
 function Cities() {
     const [{ cities }, dispatch] = useStateValue()
     
-    searchFilters(".card-filter",".card")
+    // searchFilters(".card-filter",".card")
 
     return (
 

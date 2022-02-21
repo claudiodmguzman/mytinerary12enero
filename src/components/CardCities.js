@@ -1,11 +1,14 @@
 import React from 'react';
 import { useStateValue } from '../StateProvider';
 import { Link as Linkrouter } from 'react-router-dom';
+import searchFilters from './Filtro';
 
 
 function CardCities () {
 
     const [{cities}, dispatch] = useStateValue ()
+
+    searchFilters(".card-filter",".card")
 
     return (
 
