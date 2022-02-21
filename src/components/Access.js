@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import img6City from './img/imgCiudades/citiesEuropa/img6City-Republica-Checa-Praga.jpg';
 import { Accordion } from 'react-bootstrap-accordion';
 import 'react-bootstrap-accordion/dist/index.css';
-// IMPORTAR TODAS LAS IMÁGENES DE CADA UNO DE LOS PAISES
 
 const Access = () => {
     return (

@@ -22,7 +22,7 @@ function CardCities() {
                     <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
                     <div className="ulCenter">
                         <ul>
-                            <li><Linkrouter to="/access">access</Linkrouter></li>
+                            <li><Linkrouter to={`/access/${cities._id}`}>access</Linkrouter></li>
                         </ul>
                     </div>
                 </div>
