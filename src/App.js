@@ -24,6 +24,7 @@ import axios from 'axios';
 function App() {
 
   const [{cities}, dispatch]=useStateValue()
+
   useEffect(() => {
     axios.get("http://localhost:4000/api/datos")
       .then(response => {
@@ -32,6 +33,7 @@ function App() {
           cities: response.data.response.cities
         })
       })
+      
   }, [])
 
   
