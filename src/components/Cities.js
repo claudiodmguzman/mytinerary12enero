@@ -14,7 +14,7 @@ function Cities() {
 
             <div className='search'>
 
-                <input type="text" className="formSearch" placeholder="enter the name of the city you want to search" />
+                <input type="search" name="citySearch" className="formSearch" placeholder="enter the name of the city you want to search" />
 
             </div>
 
