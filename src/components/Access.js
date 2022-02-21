@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
+import { useStateValue } from '../StateProvider';
 import img6City from './img/imgCiudades/citiesEuropa/img6City-Republica-Checa-Praga.jpg';
 import { Accordion } from 'react-bootstrap-accordion';
 import 'react-bootstrap-accordion/dist/index.css';
+import { useParams } from 'react-router-dom';
 
 const Access = () => {
+    
+    const [{cities}, dispatch] = useStateValue ()
+
+    const {id}= useParams()
+    const citiesSelecter = cities.filter(cities._id === id)
+
+    console.log(citiesSelecter)
+
     return (
 
-
+        <>
         <div className="accessContainer">
 
             <div className='access' >
 
 
-                <div className="accessFondo">Prague</div>
+                <div className="accessFondo">{cities.name}</div>
 
 
                 <div className="accessFondo">Czech-Republic</div>
@@ -51,6 +61,7 @@ const Access = () => {
 
             </div>
         </div>
+        </>
     )
 }
 

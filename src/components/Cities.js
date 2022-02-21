@@ -6,10 +6,6 @@ import CardCities from './CardCities'
 
 function Cities () {
     const [{cities}, dispatch] = useStateValue ()
-    const {id}= useParams()
-    const citiesSelecter = cities.filter(cities._id === id)
-
-    console.log(citiesSelecter)
    
     return (
         <div className="master">

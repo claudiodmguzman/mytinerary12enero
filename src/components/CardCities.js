@@ -3,23 +3,25 @@ import { useStateValue } from '../StateProvider';
 import { Link as Linkrouter } from 'react-router-dom';
 
 
-function CardCities() {
+function CardCities () {
 
     const [{cities}, dispatch] = useStateValue ()
 
     return (
 
+        <>
+        {cities.map((cities) => (
         <div className="card">
             <div className="image">
-                {/* <img src={img3City} /> */}
+                { <img src={process.env.PUBLIC_URL+`/imgCiudades/${cities.image}`} /> }
                 <div className="imageTexto">
-                    <p>CITY_1</p>
+                    <p>{cities.name}</p>
                 </div>
             </div>
             <div className="details">
                 <div className="center">
-                    <h1>City<br /><span>Country</span></h1>
-                    <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                    <h1>{cities.name}<br /><span>{cities.country}</span></h1>
+                    <p>{cities.textShort}</p>
                     <div className="ulCenter">
                         <ul>
                             <li><Linkrouter to={`/access/${cities._id}`}>access</Linkrouter></li>
@@ -28,6 +30,8 @@ function CardCities() {
                 </div>
             </div>
         </div>
+))}
+        </>
 
     )
 }
