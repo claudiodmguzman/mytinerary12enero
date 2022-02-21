@@ -30,6 +30,8 @@ const Access = () => {
 
                         <div className="accessFondo">{cities.demonym}</div>
 
+                        <div className="accessFondo">{cities.timezone}</div>
+
                         <div className="accessFondo">{cities.population}</div>
 
                         <div className="accessImage">
@@ -44,15 +46,14 @@ const Access = () => {
                                 <p className='paccessDetail' >{cities.description}</p></Accordion>
                         </div>
 
-                        <div className="accessFondo">{cities.timezone}</div>
-
                         <div className="accessFondo">{cities.coordinates}</div>
-                        
-                        <div className="accessFondo">{cities.googlemaps}</div>
 
+                        <div className="accessFondo">{cities.googlemaps}</div>
+                        
                         <div className="accessFondo">{cities.continents}</div>
 
                         <div className="accessFondo">{cities.region}</div>
+
 
                         <div className='accessCommLik' >
 
