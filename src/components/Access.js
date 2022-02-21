@@ -22,7 +22,7 @@ const Access = () => {
 
                         <div className="accessFondo">{cities.name}</div>
 
-                        <div className="accessFondo">{cities.country}</div>
+                        {/* <div className="accessFondo">{cities.country}</div>
 
                         <div className="accessFondo">{cities.currency}</div>
 
@@ -32,9 +32,9 @@ const Access = () => {
 
                         <div className="accessFondo">{cities.timezone}</div>
 
-                        <div className="accessFondo">{cities.population}</div>
+                        <div className="accessFondo">{cities.population}</div> */}
 
-                        <div className="accessImage">
+                        {/* <div className="accessImage">
                             <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${cities.image}`} height="600" alt="img6City-Republica-Checa-Praga.jpg" />
                         </div>
 
@@ -52,7 +52,7 @@ const Access = () => {
                         
                         <div className="accessFondo">{cities.continents}</div>
 
-                        <div className="accessFondo">{cities.region}</div>
+                        <div className="accessFondo">{cities.region}</div> */}
 
 
                         <div className='accessCommLik' >

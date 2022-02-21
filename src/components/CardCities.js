@@ -10,21 +10,21 @@ function CardCities () {
     return (
 
         <>
-        {cities.map((cities) => (
+        {cities.map((city) => (
         <div className="card">
             <div className="image">
-                { <img src={process.env.PUBLIC_URL+`/imgCiudades/${cities.image}`} /> }
+                { <img src={process.env.PUBLIC_URL+`/imgCiudades/${city.image}`} /> }
                 <div className="imageTexto">
-                    <p>{cities.name}</p>
+                    <p>{city.name}</p>
                 </div>
             </div>
             <div className="details">
                 <div className="center">
-                    <h1>{cities.name}<br /><span>{cities.country}</span></h1>
-                    <p>{cities.textShort}</p>
+                    <h1>{city.name}<br /><span>{city.country}</span></h1>
+                    <p>{city.textShort}</p>
                     <div className="ulCenter">
                         <ul>
-                            <li><Linkrouter to={`/access/${cities._id}`}>access</Linkrouter></li>
+                            <li><Linkrouter to={`/access/${city._id}`}>access</Linkrouter></li>
                         </ul>
                     </div>
                 </div>

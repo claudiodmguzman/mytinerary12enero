@@ -54,7 +54,7 @@ function App() {
         <Route path='/cardTineraryAsia' element={<CardTineraryAsia />} />
         <Route path='/cardTineraryEurope' element={<CardTineraryEurope />} />
         <Route path='/cardTineraryOceania' element={<CardTineraryOceania />} />
-        <Route path='/access' element={<Access />} />
+        <Route path='/access:id' element={<Access />} />
       </Routes>
       <Footer />
     </BrowserRouter>
