@@ -24,14 +24,14 @@
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  /* top: 0;
-	position: fixed; */
+  flex-wrap: wrap;
 }	
 
 
 body {
   background-image: url(./components/img/imgFondo/imgFondoBody.png);
   background-repeat: no-repeat;
+  /* background-size: cover; */
 }
 
 .logueo {
@@ -45,6 +45,7 @@ body {
 
 .nochtitulo {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .noch {
@@ -631,11 +632,7 @@ a.dropdown-item {
   /* width: 300px; */
 }
 
-.master {
-  display:grid;
-  justify-content: center;
-  margin-top: 79px;
-}
+
 
 .cardMasterTitulo {
   justify-content: space-evenly;
@@ -648,6 +645,13 @@ a.dropdown-item {
   margin-bottom: 45px;
 }
 
+.master {
+  display: flex;
+  justify-content: center;
+  margin-top: 79px;
+  flex-wrap: wrap;
+}
+
 .cardMaster {
   display:flex;
   justify-content: space-between;
@@ -655,7 +659,6 @@ a.dropdown-item {
 }
 
 .card {
-  display: flex;
   transform: translate(-1%,-1%);
   width: 400px;
   height: 350px;
@@ -663,7 +666,6 @@ a.dropdown-item {
   margin-left: 18px;
   margin-right: 18px;
   margin-bottom: 36px;
-  flex-wrap: nowrap;
 }
 
 .image {
@@ -710,8 +712,6 @@ a.dropdown-item {
   position: absolute;
   top: 0;
   left: 0;
-  /* width:80%; */
-  /* height: 100%; */
   transition: .5s;
   transform-origin: left;
   transform: perspective(2000px) rotateY(-90deg);
