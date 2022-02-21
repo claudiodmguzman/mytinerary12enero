@@ -663,6 +663,7 @@ a.dropdown-item {
   margin-left: 18px;
   margin-right: 18px;
   margin-bottom: 36px;
+  flex-wrap: nowrap;
 }
 
 .image {
@@ -677,6 +678,11 @@ a.dropdown-item {
   right: 5px;
   color: white;
   font-weight: bolder;
+  font-size: large;
+  background: #262626;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .card .image {

@@ -54,7 +54,7 @@ function App() {
         <Route path='/cardTineraryAsia' element={<CardTineraryAsia />} />
         <Route path='/cardTineraryEurope' element={<CardTineraryEurope />} />
         <Route path='/cardTineraryOceania' element={<CardTineraryOceania />} />
-        <Route path='/access/:id' element={<Access />} />
+        <Route path='/access' element={<Access />} />
       </Routes>
       <Footer />
     </BrowserRouter>
@@ -64,24 +64,4 @@ function App() {
 
 export default App;
 
-
-
-// <img src={process.env.PUBLIC_URL + `/image/cities/${city.name}/${city.images.banner2}`} alt={city.name} />
-
-// return (
-//   <>  
-//   <div className="cards-like">
-//       <div className="container">
-//           <div className="row"> 
-//               {city.map((city) => {
-//                   return (
-//                       <div className=" col-12 col-md-6 col-lg-4 col-xl-4">
-//                           info card
-//                       </div>
-//                   )
-//               })}
-//           </div>
-//       </div>
-//   </div>
-//   </>
                          
