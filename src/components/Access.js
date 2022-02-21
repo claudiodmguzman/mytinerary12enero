@@ -1,28 +1,45 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useStateValue } from '../StateProvider';
 import { Accordion } from 'react-bootstrap-accordion';
 import 'react-bootstrap-accordion/dist/index.css';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
+
 
 const Access = () => {
+
+    const [itineraries,setItineraries] = useState([])
 
     const [{ cities }, dispatch] = useStateValue()
 
     const { id } = useParams()
-    const citiesSelecter = cities.filter(cities._id === id)
+    const citiesSelecter = cities.filter(city => city._id === id)
 
-    console.log(citiesSelecter)
+
+    useEffect(() => {
+        citiesSelecter.map(city =>
+            axios.get(`http://localhost:4000/api/itinerarios/${city.name}`)
+                .then(response => setItineraries(response.data.response.itinerario) 
+                )
+        )
+        
+    }, [])
+
+
+    console.log(itineraries)
 
     return (
 
-                <div className="accessContainer">
 
-                    <div className='access' >
+        <div className="accessContainer">
+
+            {citiesSelecter.map((city) =>
+                <div className='access' >
 
 
-                        <div className="accessFondo">{cities.name}</div>
+                    <div className="accessFondo">{city.name}</div>
 
-                        {/* <div className="accessFondo">{cities.country}</div>
+                    {/* <div className="accessFondo">{cities.country}</div>
 
                         <div className="accessFondo">{cities.currency}</div>
 
@@ -34,7 +51,7 @@ const Access = () => {
 
                         <div className="accessFondo">{cities.population}</div> */}
 
-                        {/* <div className="accessImage">
+                    {/* <div className="accessImage">
                             <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${cities.image}`} height="600" alt="img6City-Republica-Checa-Praga.jpg" />
                         </div>
 
@@ -56,17 +73,29 @@ const Access = () => {
                         <div className="accessFondo">{cities.region}</div> */}
 
 
-                        <div className='accessCommLik' >
+                    <div className='accessCommLik' >
 
-                            <div className="accessFondo">User comments</div>
+                        <div className="accessFondo">User comments</div>
 
-                            <div className="accessFondo">Likes</div>
-
-                        </div>
+                        <div className="accessFondo">Likes</div>
 
                     </div>
+
                 </div>
-        
+            )
+
+            
+
+            }
+
+            {itineraries.map(itinerarie =>
+                
+                <div className="accessFondo">{itinerarie.nameTour}</div>
+
+                )}
+
+        </div>
+
     )
 }
 
