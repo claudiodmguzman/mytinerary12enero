@@ -133,6 +133,7 @@ a.linkDeco {
 
 
 /* LOGIN */
+
 .masterLogContainer {
   margin-top: 75px;
 }
@@ -140,10 +141,6 @@ a.linkDeco {
 .btn.focus, .btn:focus {
   box-shadow: none;
 }
-
-/* .pruebas {
- align-items: center !important;
-} */
 
 
 .dropdown-menu {
@@ -201,8 +198,6 @@ a.dropdown-item {
 }
 
 
-
-
 .texSign {
   width: 100%;
   padding: 0.25rem 1.5rem;
@@ -240,7 +235,6 @@ a.dropdown-item {
 
 .formSign {
   background: rgba(128, 128, 128, 0.219);
-  margin: 10px;
 }
 
 
