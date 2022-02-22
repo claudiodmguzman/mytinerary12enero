@@ -575,19 +575,36 @@ a.linkDeco2 {
 
 
 .access {
-  text-align: center;
-  display: block;
+  /* text-align: center;
+  display: block; */
 }
+
+.accessGralInfoImg {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.479) ;
+}
+
+.accessGralDescription {
+  text-align: justify;
+  font-size: x-large;
+  font-weight: 600;
+  color: #4d3b20;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 
 
 .accessFondo {
   display: flex;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: x-large;
   color: #4d3b20;
   padding-left: 20px;
   border-radius: 2px;
-  background: rgba(255, 255, 255, 0.479) ;
   /* background: #f1c0777e; */
 }
 
@@ -605,12 +622,14 @@ a.linkDeco2 {
 }
 
 .paccessDetail {
+  font-size: x-large;
+  color: #4d3b20;
   text-align: justify;
+  /* padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px; */
   padding: 20px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin: 20px;
-  /* width: 700px; */
 }
 
 .accessImage {

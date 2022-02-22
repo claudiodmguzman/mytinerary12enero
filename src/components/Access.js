@@ -35,33 +35,45 @@ const Access = () => {
             {citiesSelecter.map((city) =>
                 <div className='access' >
 
-                    <div className="accessFondo">{city.name}</div>
+                    <div>
+                        <div className='accessGralInfoImg'>
+                            <div>
 
-                    <div className="accessFondo">{city.country}</div>
+                                <div className="accessFondo">{city.name}</div>
 
-                    <div className="accessFondo">Currency: {city.currency}</div>
+                                <div className="accessFondo">{city.country}</div>
 
-                    <div className="accessFondo">Lenguege: {city.language}</div>
+                                <div className="accessFondo">Currency: {city.currency}</div>
 
-                    <div className="accessFondo">Demonym: {city.demonym}</div>
+                                <div className="accessFondo">Lenguege: {city.language}</div>
 
-                    <div className="accessFondo">Timezone: {city.timezone}</div>
+                                <div className="accessFondo">Demonym: {city.demonym}</div>
 
-                    <div className="accessFondo">Population: {city.population}</div>
+                                <div className="accessFondo">Timezone: {city.timezone}</div>
 
-                    <div className="accessImage">
-                        <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} height="600" alt="image of city" />
+                                <div className="accessFondo">Population: {city.population}</div>
+
+                                <div className="accessFondo">Coodinates: {city.coordinates}</div>
+
+                                <div className="accessFondo">Google Maps: {city.googlemaps}</div>
+
+                                <div className="accessFondo">Continents: {city.continents}</div>
+
+                                <div className="accessFondo">Region: {city.region}</div>
+
+                            </div>
+
+                            <div className="accessImage">
+                                <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} height="600" alt="image of city" />
+                            </div>
+
+                        </div>
+
+                        <div className="accessGralDescription">{city.description}</div>
+
                     </div>
 
-                    <div className="paccessDetail">{city.description}</div>
 
-                    <div className="accessFondo">Coodinates: {city.coordinates}</div>
-
-                    <div className="accessFondo">Google Maps: {city.googlemaps}</div>
-
-                    <div className="accessFondo">Continents: {city.continents}</div>
-
-                    <div className="accessFondo">Region: {city.region}</div>
 
 
                     <div className="accessTitleItinerary">Thinks to do...</div>
