@@ -22,7 +22,6 @@ const Access = () => {
                 .then(response => setItineraries(response.data.response.itinerario)
                 )
         )
-
     }, [])
 
 
