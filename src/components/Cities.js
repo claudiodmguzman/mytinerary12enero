@@ -18,7 +18,7 @@ function Cities() {
             </div>
 
             <div className='decoContinents'>
-                <Linkrouter className="linkDeco2" to="/continents">...go to Continents</Linkrouter>
+                <Linkrouter className="linkDeco2" to="/continents">...Search by Continents</Linkrouter>
             </div>
 
 
