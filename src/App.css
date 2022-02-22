@@ -566,17 +566,14 @@ a.linkDeco2 {
   color: #a0773a;
 }
 
+
+
+
 /* ACCESS */
 
 
 .accessContainer1 {
-  margin: 20px;
-}
-
-
-.access {
-  /* text-align: center;
-  display: block; */
+  margin: 40px;
 }
 
 .accessGralInfoImg {
@@ -584,6 +581,24 @@ a.linkDeco2 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   background: rgba(255, 255, 255, 0.479) ;
+  padding: 12px;
+}
+
+.accessFondo {
+  display: flex;
+  font-size: x-large;
+  color: #4d3b20;
+  border-radius: 2px;
+  /* background: #f1c0777e; */
+}
+
+.accessImage {
+  display: flex;
+  height: 400px;
+  width: 700px !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .accessGralDescription {
@@ -597,21 +612,19 @@ a.linkDeco2 {
   padding-bottom: 4px;
 }
 
+.accessTitleItinerary {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #795b2d;
 
-
-.accessFondo {
-  display: flex;
-  font-size: x-large;
-  color: #4d3b20;
-  padding-left: 20px;
-  border-radius: 2px;
-  /* background: #f1c0777e; */
 }
 
 .accessDetail {
   margin: 20px;
   display: contents;
-  /* word-wrap: break-word; */
 }
 
 .accessdet {
@@ -622,24 +635,12 @@ a.linkDeco2 {
 }
 
 .paccessDetail {
+  display: flex;
   font-size: x-large;
   color: #4d3b20;
+  border-radius: 2px;
   text-align: justify;
-  /* padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 4px;
-  padding-bottom: 4px; */
   padding: 20px;
-}
-
-.accessImage {
-  display: flex;
-  margin-bottom: 12px;
-  height: 400px;
-  width: 700px !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
 }
 
 
@@ -648,13 +649,7 @@ a.linkDeco2 {
   justify-content: space-around;
 }
 
-.accessTitleItinerary {
-  margin-top: 20px;
-  font-size: x-large;
-  font-weight: bolder;
-  color: #795b2d;
 
-}
 
 
 /* CARD CITIES*/
