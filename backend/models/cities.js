@@ -1,4 +1,5 @@
-const mongoose = require("mongoose") // va a almacenar los datos de las ciudades "cities"
+const mongoose = require("mongoose"); // va a almacenar los datos de las ciudades "cities"
+
 
 const citiesSchema = new mongoose.Schema ({
     name:{type:String,require:true},
@@ -10,7 +11,7 @@ const citiesSchema = new mongoose.Schema ({
     demonym:{type:String,require:true},
     population:{type:String,require:true},
     timezone:{type:String,require:true},
-    coordinates:{type:Number,require:true},
+    coordinates:{type:String,require:true},
     googlemaps:{type:String,require:true},
     continents:{type:String,require:true},
     region:{type:String,require:true},
