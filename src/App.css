@@ -595,7 +595,7 @@ a.linkDeco2 {
 }
 
 .accessDetail {
-  margin-top: 10px;
+  margin-top: 12px;
   display: contents;
   /* word-wrap: break-word; */
 }
@@ -617,6 +617,7 @@ a.linkDeco2 {
 
 .accessImage {
   display: flex;
+  margin-bottom: 12px;
   height: 400px;
   width: 700px !important;
   background-repeat: no-repeat;
@@ -628,6 +629,14 @@ a.linkDeco2 {
 .accessCommLik {
   display: flex;
   justify-content: space-around;
+}
+
+.accessTitleItinerary {
+  margin-top: 20px;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #795b2d;
+
 }
 
 

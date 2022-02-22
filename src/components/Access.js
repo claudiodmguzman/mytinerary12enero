@@ -51,10 +51,9 @@ const Access = () => {
 
                     <div className="accessFondo">Population: {city.population}</div>
 
-                    {/* <div className="accessImage">
-                        <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${cities.image}`} height="600" alt="img6City-Republica-Checa-Praga.jpg" />
-                    </div> */}
-
+                    <div className="accessImage">
+                        <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} height="600" alt="img6City-Republica-Checa-Praga.jpg" />
+                    </div>
 
                     <div className="accessDetail" >
                         <Accordion title='Expand Detail'>
@@ -70,14 +69,13 @@ const Access = () => {
 
                     <div className="accessFondo">Region: {city.region}</div>
 
+                    <div className="accessTitleItinerary">The most of MyTinerary</div>
 
-                    <div className='accessCommLik' >
+                    {itineraries.map(itinerarie =>
 
-                        <div className="accessFondo">User comments</div>
+                        <div className="accessFondo">{itinerarie.nameTour}</div>
 
-                        <div className="accessFondo">Likes</div>
-
-                    </div>
+                    )}
 
                 </div>
             )
@@ -85,12 +83,8 @@ const Access = () => {
 
 
             }
-{/* 
-            {itineraries.map(itinerarie =>
 
-                <div className="accessFondo">{itinerarie.nameTour}</div>
 
-            )} */}
 
         </div>
 
