@@ -52,7 +52,7 @@ const Access = () => {
                     <div className="accessFondo">Population: {city.population}</div>
 
                     <div className="accessImage">
-                        <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} height="600" alt="img6City-Republica-Checa-Praga.jpg" />
+                        <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} height="600" alt="image of city" />
                     </div>
 
                     <div className="accessDetail" >
@@ -71,22 +71,30 @@ const Access = () => {
 
                     <div className="accessTitleItinerary">The most of MyTinerary</div>
 
+                    {itineraries.map((itinerarie) =>
 
-                    {itineraries.map(itinerarie =>
+                        <div>
 
-                        <div className="accessFondo">{itinerarie.nameTour}</div>
+                            <div className="accessFondo">{itinerarie.nameTour}</div>
+
+                            <div className="accessFondo">{itinerarie.descriptionTour}</div>
+
+                            <div className="accessFondo">{itinerarie.priceTour}</div>
+
+                            <div className="accessFondo">{itinerarie.durationTour}</div>
+
+                            <div className="accessFondo">{itinerarie.availableLanguages}</div>
+
+                            {/* <div className="accessFondo">{itinerarie.imgTour}</div> */}
+
+                            <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
+
+                        </div>
 
                     )}
 
-
                 </div>
-            )
-
-
-
-            }
-
-
+            )}
 
         </div>
 
