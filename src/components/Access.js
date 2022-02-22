@@ -71,11 +71,13 @@ const Access = () => {
 
                     <div className="accessTitleItinerary">The most of MyTinerary</div>
 
+
                     {itineraries.map(itinerarie =>
 
                         <div className="accessFondo">{itinerarie.nameTour}</div>
 
                     )}
+
 
                 </div>
             )
