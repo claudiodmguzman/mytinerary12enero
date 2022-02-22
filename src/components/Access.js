@@ -65,12 +65,10 @@ const Access = () => {
 
                     <div className="accessFondo">Region: {city.region}</div>
 
+
                     <div className="accessTitleItinerary">Thinks to do...</div>
-
                     {itineraries.map((itinerarie) =>
-
                         <div>
-
                             <div className="accessDetail" >
                                 <Accordion title={itinerarie.nameTour}>
 
@@ -85,16 +83,10 @@ const Access = () => {
                                     <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
                                 </Accordion>
                             </div>
-
-
-
                         </div>
-
                     )}
-
                 </div>
             )}
-
         </div>
 
     )
