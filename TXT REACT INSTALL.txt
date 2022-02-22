@@ -1,0 +1,25 @@
+como ADMINISTRADOR PowerShell
+Get-ExecutionPolicy
+Set-ExecutionPolicy Unrestricted
+
+1  node --version
+2  npm --version
+3  npm install -g create-react-app
+4  create-react-app --version
+5  create-react-app "entre-comillas-Nombre del Proyecto-sin letras capitales"
+
+6  npm i react-scripts
+7  npm i react-dom
+8  npm i react-router
+9  npm i react-router-dom
+10  npm i browser-router
+
+11  npm i react-collapse
+12  npm i react-multi-carousel
+13  npm i bootstrap
+14  npm i bootstrap-collapse
+15  npm i react-bootstrap-accordion
+
+https://www.htmlquick.com/es/reference/tags/input-search.html#:~:text=El%20elemento%20input%20%2C%20teniendo%20el,sola%20l%C3%ADnea%20de%20texto%20regular.
+https://convertio.co/es/png-svg/
+https://www.istockphoto.com/es/fotos/cartograf%C3%ADa
