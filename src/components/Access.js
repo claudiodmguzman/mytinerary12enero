@@ -55,11 +55,7 @@ const Access = () => {
                         <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} height="600" alt="image of city" />
                     </div>
 
-                    <div className="accessDetail" >
-                        <Accordion title='Expand Detail'>
-                            <p className='paccessDetail' >{city.description}</p></Accordion>
-                    </div>
-
+                    <div className="paccessDetail">{city.description}</div>
 
                     <div className="accessFondo">Coodinates: {city.coordinates}</div>
 
@@ -69,25 +65,28 @@ const Access = () => {
 
                     <div className="accessFondo">Region: {city.region}</div>
 
-                    <div className="accessTitleItinerary">The most of MyTinerary</div>
+                    <div className="accessTitleItinerary">Thinks to do...</div>
 
                     {itineraries.map((itinerarie) =>
 
                         <div>
 
-                            <div className="accessFondo">{itinerarie.nameTour}</div>
+                            <div className="accessDetail" >
+                                <Accordion title={itinerarie.nameTour}>
 
-                            <div className="accessFondo">{itinerarie.descriptionTour}</div>
+                                    <div className="paccessDetail">About: {itinerarie.descriptionTour}</div>
 
-                            <div className="accessFondo">{itinerarie.priceTour}</div>
+                                    <div className="paccessDetail">Price: {itinerarie.priceTour}</div>
 
-                            <div className="accessFondo">{itinerarie.durationTour}</div>
+                                    <div className="paccessDetail">Duration: {itinerarie.durationTour}</div>
 
-                            <div className="accessFondo">{itinerarie.availableLanguages}</div>
+                                    <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
 
-                            {/* <div className="accessFondo">{itinerarie.imgTour}</div> */}
+                                    <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
+                                </Accordion>
+                            </div>
 
-                            <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
+
 
                         </div>
 

@@ -1,4 +1,5 @@
 const mongoose = require("mongoose"); // va a almacenar los datos de las ciudades "cities"
+// import { Link, Link as Linkrouter } from 'react-router-dom';
 
 
 const citiesSchema = new mongoose.Schema ({
