@@ -29,9 +29,9 @@
 
 
 body {
-  /* background-image: url(./components/img/imgFondo/imgFondoBody2.png); */
-  background-color: #f7d39d9a;
-  background-repeat: no-repeat;
+  background-image: url(./components/img/imgFondo/imgFondoBody.png);
+  /* background-color: #f3e6d256; */
+  background-repeat:repeat;
   /* background-size: cover; */
 }
 
@@ -650,7 +650,7 @@ a.linkDeco2 {
   border-radius: 10px;
 }
 
-input::placeholder {
+ input::placeholder {
   color: #ca9b55 !important;
   font-weight:normal !important;
   font-style: normal !important;
