@@ -30,11 +30,10 @@ const Access = () => {
     return (
 
 
-        <div className="accessContainer">
+        <div className="accessContainer1">
 
             {citiesSelecter.map((city) =>
                 <div className='access' >
-
 
                     <div className="accessFondo">{city.name}</div>
 

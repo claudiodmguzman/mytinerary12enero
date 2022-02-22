@@ -568,9 +568,9 @@ a.linkDeco2 {
 
 /* ACCESS */
 
-.accessContainer {
-  justify-content: center;
-  display: flex;
+
+.accessContainer1 {
+  margin: 20px;
 }
 
 
@@ -585,16 +585,14 @@ a.linkDeco2 {
   font-size: 20px;
   font-weight: bold;
   color: #4d3b20;
-  padding: 12px;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  padding-left: 20px;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.479) ;
   /* background: #f1c0777e; */
 }
 
 .accessDetail {
-  margin-top: 12px;
+  margin: 20px;
   display: contents;
   /* word-wrap: break-word; */
 }
@@ -611,7 +609,8 @@ a.linkDeco2 {
   padding: 20px;
   font-weight: bold;
   margin-top: 10px;
-  width: 700px;
+  margin: 20px;
+  /* width: 700px; */
 }
 
 .accessImage {
