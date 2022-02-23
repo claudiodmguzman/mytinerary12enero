@@ -23,7 +23,11 @@ const Navbar = () => {
 
 
                 <div className="titulo">
-                    <p>MYTinerary</p>
+                    <p>MY</p>
+                </div>
+
+                <div className="titulo2">
+                    <p>Tinerary</p>
                 </div>
 
             </div>
