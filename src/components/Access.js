@@ -71,35 +71,45 @@ const Access = () => {
 
                     </div>
 
-                    <div className="accessTitleItinerary">Thinks to Do...</div>
+                    <div>
 
-                    {itineraries.map((itinerarie) =>
+                        <div className="accessTitleItinerary">Thinks to Do...</div>
 
-                        <div className="accessDetail" >
-                            <Accordion title={itinerarie.nameTour}>
+                        {itineraries.map((itinerarie) =>
 
-                                <div className='accessGralInfoImg'>
-                                    <div>
-                                        <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
+                            <div className="accessDetail" >
+
+                                <Accordion title={itinerarie.nameTour}>
+
+                                    <div className='accessNameTour'>
+
+                                        <div className='accessNameTour1'>
+                                            <img className="accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
+                                        </div>
+
+                                        <div className='accessNameTour1'>
+
+                                            <div className="paccessDetail">{itinerarie.descriptionTour}</div>
+
+                                            <div className="paccessDetail">Price: {itinerarie.priceTour}</div>
+
+                                            <div className="paccessDetail">Duration: {itinerarie.durationTour}</div>
+
+                                            <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
+                                        </div>
                                     </div>
 
-                                    <div>
-                                        <div className="paccessDetail">{itinerarie.descriptionTour}</div>
+                                </Accordion>
+                                
+                            </div>
 
-                                        <div className="paccessDetail">Price: {itinerarie.priceTour}</div>
+                        )}
 
-                                        <div className="paccessDetail">Duration: {itinerarie.durationTour}</div>
+                    </div>
 
-                                        <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
-                                    </div>
-                                </div>
-
-                            </Accordion>
-                        </div>
-
-                    )}
                 </div>
             )}
+
         </div>
 
     )

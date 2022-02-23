@@ -590,8 +590,26 @@ font-weight: 300;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background: rgba(255, 255, 255, 0.479) ;
-  padding: 12px;
+  background: rgba(255, 255, 255, 0.753) ;
+  padding: 30px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0px 0px 26px -10px #795b2d; 
+  box-shadow: inset 0px 0px 26px -10px #795b2d;
+}
+
+.accessNameTour {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-bottom: 12px;
+}
+
+.accessNameTour1 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
 }
 
 .accessFondo {
@@ -616,10 +634,11 @@ font-weight: 300;
   font-size: x-large;
   font-weight: 600;
   color: #4d3b20;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.753);
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0px 0px 26px -10px #694F27; 
+box-shadow: inset 0px 0px 26px -10px #694F27;
 }
 
 .accessTitleItinerary {
