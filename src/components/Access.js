@@ -87,7 +87,7 @@ const Access = () => {
                                             <img className="accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
                                         </div>
 
-                                        <div className='accessNameTour1'>
+                                        <div className='accessNameTour2'>
 
                                             <div className="paccessDetail">{itinerarie.descriptionTour}</div>
 

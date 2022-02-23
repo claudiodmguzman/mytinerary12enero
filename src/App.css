@@ -606,11 +606,17 @@ font-weight: 300;
   margin-bottom: 12px;
 }
 
-.accessNameTour1 {
+/* .accessNameTour1 {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
-}
+} */
+
+.accessNameTour2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  }
 
 .accessFondo {
   display: flex;
