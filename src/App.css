@@ -484,34 +484,33 @@ a.linkDeco2 {
 }
 
 .cardTinerary {
-  display: block;
+  display: flex;
   text-align: center;
+  justify-content: center;
   margin-top: 75px;
-  font-size: 20px;
   width: 900px;
+  flex-wrap: wrap;
 }
 
-/* .tineraryTitleZero {
+
+.titulo3 {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-} */
-
-.tineraryTitle {
-  border-radius: 2px;
   color: #a0773a;
-  font-family: 'Dancing Script', cursive;
-  font-weight: bolder;
-  font-size: 90px;
+  font-family: 'Dancing Script';
+  font-size: 111px;
+}
+
+.titulo4 {
+  display: flex;
+  justify-content: center;
+  color: #a0773a;
+  font-family: 'Dancing Script';
+  font-size: 111px;
+  margin-left: 30px;
 }
 
 
-.tinerarySubTitle {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 2px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #6d532c;
-}
 
 .tineraryImgInfo {
   display: flex;
