@@ -497,16 +497,16 @@ a.linkDeco2 {
   display: flex;
   justify-content: center;
   color: #a0773a;
-  font-family: 'Dancing Script';
-  font-size: 111px;
+  font-weight: 300;
+  font-size: 100px;
 }
 
 .titulo4 {
   display: flex;
   justify-content: center;
   color: #a0773a;
-  font-family: 'Dancing Script';
-  font-size: 111px;
+font-weight: 300;
+  font-size: 100px;
   margin-left: 30px;
 }
 
@@ -692,8 +692,7 @@ a.linkDeco2 {
   justify-content: space-evenly;
   display: flex;
   color: #795b2d;
-  /* font-family: 'Dancing Script', cursive; */
-  font-weight:300;
+  font-weight:400;
   font-size: 45px;
   padding: 0;
   margin-bottom: 45px;
