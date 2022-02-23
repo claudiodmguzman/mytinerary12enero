@@ -18,8 +18,14 @@ const CardTineraryNorthAmerica = () => {
 
             <div className="tinerary" >
                 <div className="cardTinerary">
-                    <h1 className="tineraryTitle" >North America</h1>
-                    <h4 className="tinerarySubTitle" >view the itinerary by Continent</h4>
+
+                    <div className="titulo3">
+                        <p>North</p>
+                    </div>
+
+                    <div className="titulo4">
+                        <p>America</p>
+                    </div>
 
                     <div className="tineraryImgInfo" >
 
