@@ -491,15 +491,13 @@ a.linkDeco2 {
   width: 900px;
 }
 
-.tineraryTitleZero {
+/* .tineraryTitleZero {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px;
-}
+} */
 
 .tineraryTitle {
-  display: flex;
   border-radius: 2px;
   color: #a0773a;
   font-family: 'Dancing Script', cursive;
@@ -507,15 +505,6 @@ a.linkDeco2 {
   font-size: 90px;
 }
 
-.tineraryTitle2 {
-  display: flex;
-  border-radius: 2px;
-  color: #a0773a;
-  font-family: 'Dancing Script', cursive;
-  font-weight: bolder;
-  font-size: 90px;
-  margin-left: 80px;
-}
 
 .tinerarySubTitle {
   background-color: rgba(255, 255, 255, 0.5);
@@ -528,6 +517,7 @@ a.linkDeco2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
  
 }
 

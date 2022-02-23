@@ -19,12 +19,7 @@ const CardTinerarySouthAmerica = () => {
             <div className="tinerary" >
                 <div className="cardTinerary">
 
-                    <div className="tineraryTitleZero">
-
-                        <div className="tineraryTitle" >South</div>
-                        <div className="tineraryTitle2" >America</div>
-
-                    </div>
+                    <h1 className="tineraryTitle" >South America</h1>
 
                     <h4 className="tinerarySubTitle" >view the itinerary by Continent</h4>
 
