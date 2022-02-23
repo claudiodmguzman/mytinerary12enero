@@ -598,25 +598,7 @@ font-weight: 300;
   box-shadow: inset 0px 0px 26px -10px #795b2d;
 }
 
-.accessNameTour {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 30px;
-  margin-bottom: 12px;
-}
 
-/* .accessNameTour1 {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-} */
-
-.accessNameTour2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  }
 
 .accessFondo {
   display: flex;
@@ -678,6 +660,26 @@ box-shadow: inset 0px 0px 26px -10px #694F27;
   padding: 20px;
 }
 
+.accessNameTour {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.589);
+}
+
+/* .accessNameTour1 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+} */
+
+.accessNameTour2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  }
 
 .accessCommLik {
   display: flex;
