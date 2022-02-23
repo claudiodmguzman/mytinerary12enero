@@ -35,7 +35,8 @@ const Access = () => {
 
                     <div>
                         <div className='accessGralInfoImg'>
-                            <div>
+
+                            <div className='hola'>
 
                                 <div className="accessFondo">{city.name}</div>
 
@@ -62,7 +63,7 @@ const Access = () => {
                             </div>
 
                             <div className="accessImage">
-                                <img className="d-block w-100 accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} height="600" alt="image of city" />
+                                <img className="accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} height="600" alt="image of city" />
                             </div>
 
                         </div>
@@ -71,13 +72,13 @@ const Access = () => {
 
                     </div>
 
-                    <div>
+                    <div className='accessAcordion'>
 
                         <div className="accessTitleItinerary">Thinks to Do...</div>
 
                         {itineraries.map((itinerarie) =>
 
-                            <div className="accessDetail" >
+                            <div className="accessDetail">
 
                                 <Accordion title={itinerarie.nameTour}>
 
