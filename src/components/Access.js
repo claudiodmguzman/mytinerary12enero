@@ -25,8 +25,6 @@ const Access = () => {
     }, [])
 
 
-    console.log(itineraries)
-
     return (
 
 
