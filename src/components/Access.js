@@ -36,7 +36,7 @@ const Access = () => {
                     <div>
                         <div className='accessGralInfoImg'>
 
-                            <div className='hola'>
+                            <div>
 
                                 <div className="accessFondo">{city.name}</div>
 
@@ -101,7 +101,7 @@ const Access = () => {
                                     </div>
 
                                 </Accordion>
-                                
+
                             </div>
 
                         )}
