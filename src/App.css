@@ -591,7 +591,7 @@ font-weight: 300;
 .accessGralInfoImg {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background: rgba(255, 255, 255, 0.753) ;
   padding: 30px;
   margin-bottom: 12px;
@@ -676,11 +676,6 @@ font-weight: 300;
   -webkit-box-shadow: 0px 0px 10px 2px rgba(105,79,39,0.2); 
   box-shadow: 0px 0px 10px 2px rgba(105,79,39,0.2);
 }
-
-.accessNameTour1 {
-  display: flex;
-  justify-content: space-evenly;
-  }
 
 .accessCommLik {
   display: flex;

@@ -86,20 +86,16 @@ const Access = () => {
                                     <div className='accessNameTour'>
 
                                         <div>
-                                            <img className="accessImage1" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
+                                            <img className="AL NATURAL" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
                                         </div>
 
                                         <div className="paccessDetail">{itinerarie.descriptionTour}</div>
 
-                                        <div className='accessNameTour1'>
+                                        <div className="paccessDetail">Price: {itinerarie.priceTour}</div>
 
-                                            <div className="paccessDetail">Price: {itinerarie.priceTour}</div>
+                                        <div className="paccessDetail">Duration: {itinerarie.durationTour}</div>
 
-                                            <div className="paccessDetail">Duration: {itinerarie.durationTour}</div>
-
-                                            <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
-
-                                        </div>
+                                        <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
 
                                     </div>
 
