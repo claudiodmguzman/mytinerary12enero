@@ -34,6 +34,7 @@ const Access = () => {
                 <div>
 
                     <div>
+
                         <div className='accessGralInfoImg'>
 
                             <div>
