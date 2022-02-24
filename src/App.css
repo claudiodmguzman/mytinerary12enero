@@ -397,60 +397,49 @@ a.linkDeco2 {
 
 /* CARRUSEL */
 
-.carruselImage {
-  /* display: flex;
-  height: 600px;
-  width: 100% !important;
-  max-width:900px; */
-  /* height: 100%;
-  width: 100%; */
-  /* height: 100%; */
-  min-height: 200px;
-  max-height: 400px;
-  width: 100% !important;
-  max-width:700px;
-
-}
-
 
 .homesweethome {
-  display: block;
+  display: flex;
   justify-content: center;
-  justify-content: space-around;
 
 }
 
 .contenedorDescrption {
-  display: block;
-  justify-content: center;
+  display: flex;
   margin: 40px;
-  padding: 0;
+}
+
+.descriptionZero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hola {
+  display: flex;
+  margin-right: 40px;
+  max-width: 900px;
+}
+
+.hola2 {
+  display: flex;
 }
 
 .description {
   display: flex;
-  justify-content: center;
   text-align: justify;
-  font-size: 30px;
-  /* font-weight: bold; */
-  color: #6e5228;
-  font-family: 'Script';
-
 }
 
 .descrptionHome1 {
-  display: flex;
-  text-align: center;
   background-color: rgba(226, 214, 43, 0.103);
   padding: 20px;
   border-radius: 20px;
   font-size: 21px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .descrptionHome2 {
-  display: flex;
-  text-align: center;
   background-color: rgba(219, 111, 92, 0.205);
   padding: 20px;
   border-radius: 20px;
@@ -459,8 +448,6 @@ a.linkDeco2 {
 }
 
 .descrptionHome3 {
-  display: flex;
-  text-align: center;
   background-color: rgba(252, 227, 4, 0.274);
   padding: 20px;
   border-radius: 20px;
@@ -468,10 +455,16 @@ a.linkDeco2 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.carruselImage {
+  min-height: 200px;
+  max-height: 400px;
+  width: 100% !important;
+  max-width:700px;
+
+}
 
 .carrusel {
   display: flex;
-  justify-content: center;
 }
 
 .carousel-item {
@@ -482,7 +475,10 @@ a.linkDeco2 {
 
 .carousel-inner {
   border-radius: 10px;
-  width: 900px !important;
+  min-height: 200px;
+  max-height: 400px;
+  /* width: 100% !important; */
+  max-width: 400px;
 }
 
 .carruselTexto {

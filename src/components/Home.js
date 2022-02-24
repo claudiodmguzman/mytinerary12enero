@@ -8,33 +8,30 @@ const Home = () => {
 
             <div className='contenedorDescrption'>
 
-                <div className="description">
-                    <p className="descrptionHome1">A new way to travel with MyTinerary. Discover our difference and live unique adventures based on the legacy of exploration and ecological education</p>
+                <div className="descriptionZero" >
 
-                </div>
+                    <div>
 
-                <div className="description">
-                    <p className="descrptionHome2">
-Some of our trips are accompanied by experts, photographers and explorers, offering our travelers an incomparable experience</p>
+                        <p className='hola descrptionHome1'>
+                            A new way to travel with MyTinerary. Discover our difference and live unique adventures based on the legacy of exploration and ecological education</p>
 
-                </div>
+                        <p className='hola descrptionHome2'>
+                            Some of our trips are accompanied by experts, photographers and explorers, offering our travelers an incomparable experience</p>
 
-                <div className="description">
-                    <p className="descrptionHome3">
-For all those who have in mind to know new destinations, if you need inspiration to decide what trip to take, these are popular and exotic destinations</p>
+                        <p className='hola descrptionHome3'>
+                            For all those who have in mind to know new destinations, if you need inspiration to decide what trip to take, these are popular and exotic destinations</p>
 
-                </div>
+                    </div>
 
-                <div >
-                    <Carrusel/>
+                    <div className='hola2'>
+                        <Carrusel />
+                    </div>
+
                 </div>
 
             </div>
 
-            
-
         </div>
-
 
     )
 }

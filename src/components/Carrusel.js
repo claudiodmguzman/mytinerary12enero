@@ -14,9 +14,9 @@ function Carrusel() {
 
         <div className="carrusel">
 
-            <img className="carruselImage" src={img1City} alt="" />
+            {/* <img className="carruselImage" src={img1City} alt="" /> */}
 
-            {/* <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -27,45 +27,44 @@ function Carrusel() {
                 </ol>
 
 
-
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="carruselImage" src={img1City} alt="" />
+                        <img className="" src={img1City} height="400px" alt="" />
                         <div className="carousel-caption d-none d-md-block carruselTexto">
                             <h5>CAPE TOWN</h5>
                             <p>South Africa</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img className="carruselImage" src={img2City} alt="" />
+                        <img className="" src={img2City} height="400px" alt="" />
                         <div className="carousel-caption d-none d-md-block carruselTexto">
                             <h5>CHICAGO</h5>
                             <p>U.S</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img className="carruselImage" src={img3City} alt="" />
+                        <img className="" src={img3City} height="400px" alt="" />
                         <div className="carousel-caption d-none d-md-block carruselTexto">
                             <h5>LA PAZ</h5>
                             <p>Bolivia</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img className="carruselImage" src={img4City} alt="" />
+                        <img className="" src={img4City} height="400px" alt="" />
                         <div className="carousel-caption d-none d-md-block carruselTexto">
                             <h5>TOKYO</h5>
                             <p>Japan</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img className="carruselImage" src={img5City} alt="" />
+                        <img className="" src={img5City} height="400px" alt="" />
                         <div className="carousel-caption d-none d-md-block carruselTexto">
                             <h5>AMSTERDAM</h5>
                             <p>Netherlands</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img className="carruselImage" src={img6City} alt="" />
+                        <img className="" src={img6City} height="400px" alt="" />
                         <div className="carousel-caption d-none d-md-block carruselTexto">
                             <h5>PERTH</h5>
                             <p>Australia</p>
@@ -80,7 +79,7 @@ function Carrusel() {
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </a>
-            </div> */}
+            </div>
         </div>
     )
 }

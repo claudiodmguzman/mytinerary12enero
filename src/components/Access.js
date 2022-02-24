@@ -63,7 +63,7 @@ const Access = () => {
 
                             </div>
 
-                            <div className="accessImage">
+                            <div>
                                 <img className="accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} alt="image of city" />
                             </div>
 
