@@ -397,6 +397,10 @@ a.linkDeco2 {
 
 /* CARRUSEL */
 
+.carruselImage {
+  height: 600px;
+}
+
 
 .homesweethome {
   display: block;
