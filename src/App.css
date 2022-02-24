@@ -401,24 +401,21 @@ a.linkDeco2 {
 .homesweethome {
   display: flex;
   justify-content: center;
-
 }
 
-.contenedorDescrption {
-  display: flex;
-  margin: 40px;
-}
 
 .descriptionZero {
+  margin: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .hola {
   display: flex;
-  margin-right: 40px;
   max-width: 900px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .hola2 {
@@ -431,6 +428,7 @@ a.linkDeco2 {
 }
 
 .descrptionHome1 {
+  display: flex;
   background-color: rgba(226, 214, 43, 0.103);
   padding: 20px;
   border-radius: 20px;
@@ -440,6 +438,7 @@ a.linkDeco2 {
 }
 
 .descrptionHome2 {
+  display: flex;
   background-color: rgba(219, 111, 92, 0.205);
   padding: 20px;
   border-radius: 20px;
@@ -448,6 +447,7 @@ a.linkDeco2 {
 }
 
 .descrptionHome3 {
+  display: flex;
   background-color: rgba(252, 227, 4, 0.274);
   padding: 20px;
   border-radius: 20px;
