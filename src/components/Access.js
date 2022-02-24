@@ -55,7 +55,7 @@ const Access = () => {
 
                                 <div className="accessFondo">Coodinates: {city.coordinates}</div>
 
-                                <div className="accessFondo">Google Maps: {city.googlemaps}</div>
+                                {/* <div className="accessFondo">Google Maps: {city.googlemaps}</div> */}
 
                                 <div className="accessFondo">Continents: {city.continents}</div>
 
@@ -64,7 +64,7 @@ const Access = () => {
                             </div>
 
                             <div className="accessImage">
-                                <img className="accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} height="600" alt="image of city" />
+                                <img className="accessImage" src={process.env.PUBLIC_URL + `/imgCiudades/${city.image}`} alt="image of city" />
                             </div>
 
                         </div>
@@ -86,7 +86,7 @@ const Access = () => {
                                     <div className='accessNameTour'>
 
                                         <div>
-                                            <img className="AL NATURAL" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} height="600" alt="image of city" />
+                                            <img className="accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} alt="image of city" />
                                         </div>
 
                                         <div className="paccessDetail">{itinerarie.descriptionTour}</div>

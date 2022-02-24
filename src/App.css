@@ -608,8 +608,11 @@ font-weight: 300;
 
 .accessImage {
   display: flex;
-  height: 400px;
-  width: 700px !important;
+  /* height: 100%; */
+  min-height: 200px;
+  max-height: 400px;
+  width: 100% !important;
+  max-width:700px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
