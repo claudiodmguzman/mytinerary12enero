@@ -9,4 +9,4 @@ const itinerariesSchema = new mongoose.Schema ({
 
 const Itinerario = mongoose.model("itineraries",itinerariesSchema)
 
-module.exports = Itinerario;
+module.exports = Itinerario; hola
