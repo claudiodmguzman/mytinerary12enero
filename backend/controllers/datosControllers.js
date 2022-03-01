@@ -11,7 +11,7 @@ const datosController = {
             
         } catch (err) {
             error = err
-            console.log(error)
+            // console.log(error)
             
         }
 
@@ -26,7 +26,7 @@ const datosController = {
     ObtenerItinerario:async(req,res) => {
        
         let itinerario
-        console.log(req.params)
+        // console.log(req.params)
 
         const city = req.params.city
         let error = null
@@ -35,7 +35,7 @@ const datosController = {
             
         } catch (err) {
             error = err
-            console.log(error)
+            // console.log(error)
             
         }
 
