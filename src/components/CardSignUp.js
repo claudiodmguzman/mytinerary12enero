@@ -1,14 +1,22 @@
+import axios from 'axios';
 import React from 'react';
 
 
 const CardSignUp = () => {
+
+    async function NewUser (event) {
+        console.log(event)
+
+        await axios.post ("http://localhost:4000/api/signup")
+    }
+
     return (
 
         <div className='signUpInContainer'>
 
 
 
-            <form className="signUpIn">
+            <form className="signUpIn" onSubmit={NewUser}>
 
                 <label className="texSign">Before using our services you need to create an account</label>
 
