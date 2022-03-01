@@ -5,6 +5,12 @@ import React from 'react';
 const CardSignUp = () => {
 
     async function NewUser (event) {
+        event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
+        const Data = {firstName:event.target[0].value,
+                        lastName:event.target[1].value,
+                                    
+        }
+        console.log(Data)
         console.log(event)
 
         await axios.post ("http://localhost:4000/api/signup")
