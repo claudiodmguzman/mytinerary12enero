@@ -10,9 +10,9 @@ const usersControllers = {
         try {
 
             const usuarioExiste = await User.findOne({email})
-
+            console.log(req.body)
             if (usuarioExiste) {
-                res.json({sucess:false,response:"el usuario ya existe, realice el SignIn"})
+                res.json({sucess:true,response:"el usuario ya existe, realice el SignIn"})
             }
 
             else {
@@ -25,7 +25,7 @@ const usersControllers = {
                 })
                 
                 await NewUser.save()
-                res.json({sucess:true,reposnse:"usuario creado exitosamente"})
+                res.json({sucess:false,response:"usuario creado exitosamente"})
 
             }
 

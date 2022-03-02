@@ -6,14 +6,14 @@ const CardSignUp = () => {
 
     async function NewUser (event) {
         event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
-        const Data = {firstName:event.target[0].value,
-                        lastName:event.target[1].value,
-                                    
-        }
-        console.log(Data)
-        console.log(event)
+        const NuevoUsuario = {firstName:event.target[0].value,
+                            lastName:event.target[1].value,
+                            email:event.target[2].value,
+                            password:event.target[3].value}
+    
 
-        await axios.post ("http://localhost:4000/api/signup")
+        await axios.post ("http://localhost:4000/api/signup",{NuevoUsuario})
+        .then(response => alert(response.data.response))
     }
 
     return (
