@@ -3,6 +3,7 @@ const datosController = require("../controllers/datosControllers")
 const {ObtenerTodosLosDatos,ObtenerItinerario} = datosController // desestructuración del controlador de Ciudades
 const usersControllers = require("../controllers/usersControllers")
 const {nuevoUsuario} = usersControllers
+const validator = require("../controllers/validator")
 
 
 Router.route("/datos") // "datos" parte de la url de la consulta
@@ -12,7 +13,6 @@ Router.route("/itinerarios/:city")
 .get(ObtenerItinerario)
 
 Router.route("/signup")
-.post(nuevoUsuario)
+.post(validator,nuevoUsuario)
 
 module.exports = Router
-

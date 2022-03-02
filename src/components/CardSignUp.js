@@ -13,7 +13,23 @@ const CardSignUp = () => {
     
 
         await axios.post ("http://localhost:4000/api/signup",{NuevoUsuario})
-        .then(response => alert(response.data.response))
+        .then(response =>
+            
+            //  {
+            //     console.log(response.data)
+            // }
+            // ) // alert(response.data.response))
+
+            displayMessages (response.data)
+
+            )
+
+            function displayMessages (data){
+                if(data.success==="falseVAL") {
+                    console.log(data.response.error.details)
+                    data.response.error.details.map(error => alert(error.message))
+                }
+            }
     }
 
     return (
@@ -29,29 +45,29 @@ const CardSignUp = () => {
                 <div className="form-group">
 
                     <input type="text" className="form-control formSign" id="exampleDropdownFormPassword1"
-                        required placeholder="First Name" />
+                         placeholder="First Name" />
                 </div>
 
                 <div className="form-group">
 
                     <input type="text" className="form-control formSign" id="exampleDropdownFormPassword1"
-                        required placeholder="Last Name" />
+                         placeholder="Last Name" />
                 </div>
 
                 <div className="form-group">
 
-                    <input type="email" className="form-control formSign" id="exampleDropdownFormEmail1"
-                        required placeholder="email@example.com" />
-                </div>
-                <div className="form-group">
-
-                    <input type="password" className="form-control formSign" id="exampleDropdownFormPassword1"
-                        required placeholder="Password" />
+                    <input type="text" className="form-control formSign" id="exampleDropdownFormEmail1"
+                         placeholder="email@example.com" />
                 </div>
                 <div className="form-group">
 
                     <input type="password" className="form-control formSign" id="exampleDropdownFormPassword1"
-                        required placeholder="Repeat Password" />
+                         placeholder="Password" />
+                </div>
+                <div className="form-group">
+
+                    <input type="password" className="form-control formSign" id="exampleDropdownFormPassword1"
+                         placeholder="Repeat Password" />
                 </div>
 
                 <button type="submit" className="btn btn-success">Sign Up</button>
