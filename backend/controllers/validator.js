@@ -5,22 +5,23 @@ const validator = (req,res,next) => {
     console.log.apply(req.body.NuevoUsuario)
     const Schema = joi.object({
         firstName:joi.string().max(10).min(3).trim().pattern(new RegExp("[a-zA-Z]")).required().messages({
-            "string.min":"el nombre debe contener al menos 3 (tres) caracteres",
-            "string.empty":"el campo no puede estar vacío"
+            "string.min":"Nombre: el nombre debe contener al menos 3 (tres) caracteres",
+            "string.empty":"Nombre: el campo no puede estar vacío"
         }),
 
         lastName:joi.string().max(20).min(3).trim().pattern(new RegExp("[a-zA-Z]")).required().messages({
-            "string.min":"el apellido debe contener al menos 3 (tres) caracteres",
-            "string.empty":"el campo no puede estar vacío",
+            "string.min":"Apellido: el apellido debe contener al menos 3 (tres) caracteres",
+            "string.empty":"Apellido: el campo no puede estar vacío",
         }),
 
         email:joi.string().email({minDomainSegments:2}).required().messages({
-            "string.email":"formato de correo no valido",
+            "string.email":"Correo: formato de correo no valido",
+            "string.empty":"Correo: el campo no puede estar vacío",
         }),
 
-        password:joi.string().max(30).min(6).trim().pattern(new RegExp("[a-zA-Z0-9]")).required().messages({
-            "string.min":"la contraseña debe contener al menos 6 (seis) caracteres",
-            "string.pattern":"la contraseña debe ser alfanumérica",
+        password:joi.string().max(30).min(6).trim().alphanum().required().messages({
+            "string.min":"Contraseña: la contraseña debe contener al menos 6 (seis) caracteres",
+            "string.alphanum":"Contraseña: la contraseña debe ser alfanumérica",
         }),
 
     })
