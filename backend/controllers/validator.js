@@ -19,7 +19,7 @@ const validator = (req,res,next) => {
             "string.empty":"Correo: el campo no puede estar vacío",
         }),
 
-        password:joi.string().max(30).min(6).trim().pattern(new RegExp("[a-zA-Z]")).required().messages({
+        password:joi.string().max(30).min(6).trim().pattern(new RegExp("[a-zA-Z0-9]")).required().messages({
             "string.min":"Contraseña: la contraseña debe contener al menos 6 (seis) caracteres",
             "string.pattern":"Contraseña: la contraseña debe ser alfanumérica",
         }),
