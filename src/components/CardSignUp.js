@@ -2,6 +2,8 @@ import axios from 'axios';
 import React from 'react';
 
 
+
+
 const CardSignUp = () => {
 
     async function NewUser (event) {
@@ -35,8 +37,6 @@ const CardSignUp = () => {
     return (
 
         <div className='signUpInContainer'>
-
-
 
             <form className="signUpIn" onSubmit={NewUser}>
 

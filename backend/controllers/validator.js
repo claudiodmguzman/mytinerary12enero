@@ -20,6 +20,7 @@ const validator = (req,res,next) => {
         }),
 
         password:joi.string().max(30).min(6).trim().pattern(/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/).required().messages({
+            "string.empty":"Contraseña: el campo no puede estar vacío",
             "string.pattern.base":"Contraseña: la contraseña debe contener como mínimo una mayúscula, una minúscula y un número",
             "string.min":"Contraseña: la constraseña debe contener al menos 6 (seis) caracteres",
         }),
