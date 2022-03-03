@@ -15,13 +15,13 @@ const validator = (req,res,next) => {
         }),
 
         email:joi.string().email({minDomainSegments:2}).required().messages({
-            "string.email":"Correo: formato de correo no valido",
+            "string.email":"Correo: formato de correo electónico no válido",
             "string.empty":"Correo: el campo no puede estar vacío",
         }),
 
-        password:joi.string().max(30).min(6).trim().pattern(new RegExp("[a-zA-Z0-9]")).required().messages({
-            "string.min":"Contraseña: la contraseña debe contener al menos 6 (seis) caracteres",
-            "string.pattern":"Contraseña: la contraseña debe ser alfanumérica",
+        password:joi.string().max(30).min(6).trim().pattern(/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/).required().messages({
+            "string.pattern.base":"Contraseña: la contraseña debe contener como mínimo una mayúscula, una minúscula y un número",
+            "string.min":"Contraseña: la constraseña debe contener al menos 6 (seis) caracteres",
         }),
 
     })
