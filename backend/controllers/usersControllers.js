@@ -4,7 +4,7 @@ const bcryptjs = require("bcryptjs")
 const nodemailer = require("nodemailer")
 const crypto = require("crypto")
 
-async function sendEmail = (email, uniqueText) {
+async function sendEmail(email, uniqueText) {
 
     const transporter = nodemailer.createTransport({
 
@@ -19,11 +19,11 @@ async function sendEmail = (email, uniqueText) {
 
     })
 
-    const sender = "mypruebaconsulta@gmail.com",
+    const sender = "mypruebaconsulta@gmail.com"
     const mailOptions = {
         from: sender,
         to: email,
-        subjet: "MyTinerary: User e-mail verification",
+        subject: "MyTinerary: User e-mail verification",
         html: `Click <a href=http://localhost:4000/api/verify/${uniqueText}>here </a>to validate your e-mail`
     }
     await transporter.sendMail(mailOptions, function (error, response) {
@@ -34,6 +34,19 @@ async function sendEmail = (email, uniqueText) {
 
 
 const usersControllers = {
+
+    verifyEmail: async (req, res) => { //es el controlador que recibe el click del usuario en el email
+        const { uniqueText } = req.params
+        const user = await User.findOne({ uniqueText: uniqueText })
+        if (user) {
+            user.emailVerificado = true
+            await user.save()
+            res.redirect("http://localhost:3000/cardSignIn")
+        }
+        else {
+            res.json({ success: false, response: "Your e-mail could not be verified" })
+        }
+    },
 
     nuevoUsuario: async (req, res) => {
 
