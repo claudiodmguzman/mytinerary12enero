@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react';
+import swal from 'sweetalert';
 
 
 const CardSignUp = () => {
@@ -24,7 +25,7 @@ const CardSignUp = () => {
         function displayMessages(data) {
             if (data.success === "falseVAL") {
                 console.log(data.response.error.details)
-                data.response.error.details.map(error => alert(error.message))
+                data.response.error.details.map(error => swal(error.message))
             }
             else if (data.success === "trueUE") {
                 console.log(data)
