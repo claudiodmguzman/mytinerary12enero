@@ -24,9 +24,16 @@ async function sendEmail(email, uniqueText) {
         from: sender,
         to: email,
         subject: "MyTinerary: User e-mail verification",
-        html:`  <h1 style="color: #a0773a; font-family: Dancing Script; font-size: 120px; text-align: center;">MyTinerary</h1>
+        html: ` <body>
+                <h1 style="color: #a0773a; font-family: Dancing Script; font-style: italic; font-size: 80px; text-align: center;">MyTinerary</h1>
                 </br>
-                <h2>Click <a href=http://localhost:4000/api/verify/${uniqueText}>here </a>to validate your e-mail</h2>
+                <h2 style="color: #6e4c1d; font-size: 30px;text-align: center;">Click <a style="color: #f39509; font-style: italic"
+                href=http://localhost:4000/api/verify/${uniqueText}>here</a> to validate your e-mail</h2>
+                </br>
+                </br>
+                <h6 style="color: #503813; font-size: 18px;text-align: center;">All Rights Reserved Copyright - 2022</h6>
+                <h6 style="color: #503813; font-size: 16px;text-align: center;"><i>powered by claudiodmguzman</i> </h6>
+                </body>
                 `
     }
     await transporter.sendMail(mailOptions, function (error, response) {
