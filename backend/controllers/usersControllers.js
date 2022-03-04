@@ -3,6 +3,9 @@ const User = require("../models/user.js")
 const bcryptjs = require("bcryptjs")
 const nodemailer = require("nodemailer")
 const crypto = require("crypto")
+const jwt = require("jsonwebtoken")
+const { response } = require("express")
+
 
 async function sendEmail(email, uniqueText) {
 
@@ -92,7 +95,41 @@ const usersControllers = {
         }
 
         catch (error) { res.json({ success: "falseUE", response: null, error: error }) }
+    },
+
+    accesoUsuario: async (req, res) => {
+
+        const { email, password } = req.body.userData
+
+        try {
+            const usuario = await User.findOne({ email })
+
+            if (!usuario) {
+                res.json({ success: false, from: "controller", error: "el usuario y/o contraseña es incorrecto" })
+            }
+            else {
+                if (usuario.emailVerificado) {
+                    let passwordCoincide = bcryptjs.compareSync(password, usuario.password)
+
+                    if (passwordCoincide) {
+                        const token = jwt.sign({ ...usuario }, process.env.SECRETKEY)
+                        const datosUser = {
+                            firstName: usuario.firstName,
+                            lastName: usuario.lastName,
+                            email: usuario.email,
+                        }
+                        await usuario.save()
+                        res.json({ success: true, from: "controller", response: { token, datosUser } })
+                    }
+                    else { res.json({ success: false, from: "controller", error: "el usuario y/o contraseña es incorrecto" }) }
+                }
+                else { res.json({ success: false, from: "controller", error: "verifica tu e-mail para validarte" }) }
+            }
+        }
+        catch (error) { console.log(error); res.json({ success: false, response: null, error: error }) }
+
     }
+
 }
 
 module.exports = usersControllers
