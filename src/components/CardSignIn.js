@@ -26,6 +26,7 @@ const CardSignIn = () => {
                 console.log(swal(data.error))
             }
             else { console.log(data.response) }
+            //else { console.log(swal(data.response)) }
 
         }
     }

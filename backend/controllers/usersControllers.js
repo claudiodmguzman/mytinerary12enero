@@ -4,7 +4,7 @@ const bcryptjs = require("bcryptjs")
 const nodemailer = require("nodemailer")
 const crypto = require("crypto")
 const jwt = require("jsonwebtoken")
-const { response } = require("express")
+// const { response } = require("express")
 
 
 async function sendEmail(email, uniqueText) {
@@ -119,7 +119,7 @@ const usersControllers = {
                             email: usuario.email,
                         }
                         await usuario.save()
-                        res.json({ success: true, from: "controller", response: { token, datosUser } })
+                        res.json({ success: true, from: "controller", response: { token, datosUser } }) // "logueado" })
                     }
                     else { res.json({ success: false, from: "controller", error: "el usuario y/o contraseña es incorrecto" }) }
                 }
