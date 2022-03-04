@@ -1,4 +1,4 @@
-//require(la ruta del archivo de CSS, dentro del backend)
+//require("../styleBackend/styleBackend.css")
 const User = require("../models/user.js")
 const bcryptjs = require("bcryptjs")
 const nodemailer = require("nodemailer")
@@ -24,7 +24,10 @@ async function sendEmail(email, uniqueText) {
         from: sender,
         to: email,
         subject: "MyTinerary: User e-mail verification",
-        html: `Click <a href=http://localhost:4000/api/verify/${uniqueText}>here </a>to validate your e-mail`
+        html:`  <h1 style="color: #a0773a; font-family: Dancing Script; font-size: 120px; text-align: center;">MyTinerary</h1>
+                </br>
+                <h2>Click <a href=http://localhost:4000/api/verify/${uniqueText}>here </a>to validate your e-mail</h2>
+                `
     }
     await transporter.sendMail(mailOptions, function (error, response) {
         if (error) { console.log(error) }
