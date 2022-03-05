@@ -2,7 +2,7 @@ const Router = require("express").Router();
 const datosController = require("../controllers/datosControllers")
 const { ObtenerTodosLosDatos, ObtenerItinerario } = datosController // desestructuración del controlador de Ciudades
 const usersControllers = require("../controllers/usersControllers")
-const { nuevoUsuario, verifyEmail, accesoUsuario } = usersControllers
+const { nuevoUsuario, verifyEmail, accesoUsuario, cerrarCesion } = usersControllers
 const validator = require("../controllers/validator")
 
 
@@ -20,5 +20,8 @@ Router.route("/verify/:uniqueText")
 
 Router.route("/signIn")
     .post(accesoUsuario)
+
+Router.route("/signOut")
+    .post(cerrarCesion)
 
 module.exports = Router

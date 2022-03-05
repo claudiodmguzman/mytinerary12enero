@@ -84,6 +84,7 @@ const usersControllers = {
                     password: passwordHash,
                     uniqueText, //busca la coincidencia del texto
                     emailVerificado,
+                    connected:false,
                 })
 
                 if (!emailVerificado) {
@@ -118,6 +119,7 @@ const usersControllers = {
                             lastName: usuario.lastName,
                             email: usuario.email,
                         }
+                        usuario.connected=true
                         await usuario.save()
                         res.json({ success: true, from: "controller", response: { token, datosUser } }) // "logueado" })
                     }
@@ -127,6 +129,20 @@ const usersControllers = {
             }
         }
         catch (error) { console.log(error); res.json({ success: false, response: null, error: error }) }
+
+    },
+
+    cerrarCesion: async (req,res) => {
+
+        const email = req.body.email
+        console.log(req.body.email)
+
+        const user = await User.findOne({email})
+
+        user.connected=false
+
+        await user.save()
+        res.json({success:true, response:"cesión cerrada"})
 
     }
 

@@ -2,9 +2,13 @@ import axios from 'axios';
 import React from 'react';
 import { Link as Linkrouter } from 'react-router-dom';
 import swal from 'sweetalert';
+import { actionType } from '../reducer';
+import { useStateValue } from '../StateProvider';
 
 
 const CardSignIn = () => {
+
+    const [{ user }, dispatch] = useStateValue()
 
     async function loginUser(event) {
         event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
@@ -17,9 +21,11 @@ const CardSignIn = () => {
         await axios.post("http://localhost:4000/api/signIn", { userData })
             .then(response =>
 
-                displayMessages(response.data)
+                displayMessages(response.data),
+
 
             )
+
 
         function displayMessages(data) {
             if (!data.success) {
@@ -28,7 +34,13 @@ const CardSignIn = () => {
             else { console.log(data.response) }
             //else { console.log(swal(data.response)) }
 
+            dispatch({
+                type: actionType.USER,
+                user: data.response
+            })
+            
         }
+        console.log(user)
     }
 
     return (

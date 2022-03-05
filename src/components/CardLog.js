@@ -1,9 +1,26 @@
 import React from 'react';
 import imgCompassLog from './img/imgNavbar/imgCompassLog.png';
 import { Link as Linkrouter } from 'react-router-dom';
+import { useStateValue } from '../StateProvider';
+import axios from 'axios';
 
 
 const CardLog = () => {
+
+    const [{ user }, dispatch] = useStateValue()
+
+    async function cerrarCesion () {
+        const email = user.datosUser.email
+        console.log(email)
+        await axios.post("http://localhost:4000/api/signOut", {email})
+        .then(response =>
+
+            console.log(response)
+
+        )
+
+    }
+
     return (
 
         <div className="dropdown">
@@ -15,11 +32,12 @@ const CardLog = () => {
 
 
             <div className="dropdown-menu dropdown-menu-right">
-
-                <Linkrouter className="dropdown-item" to="/cardSignIn">Sign In</Linkrouter>
+                { !user?
+                    <Linkrouter className="dropdown-item" to="/cardSignIn">Sign In</Linkrouter>
+                : <div  className="dropdown-item" onClick={() => cerrarCesion()}>Sign Out</div>}
                 <div className="dropdown-divider"></div>
                 <Linkrouter className="dropdown-item" to="/cardSignUp">Sign Up</Linkrouter>
-    
+
 
             </div>
         </div>
