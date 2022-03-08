@@ -175,6 +175,12 @@ a.linkDeco {
 
 a.dropdown-item {
   color:#96733f !important;
+  font-weight: bolder;
+}
+
+.cerrarCesion {
+  color:#96733f !important;
+  font-weight: bolder;
 }
 
 .btn-primary {
