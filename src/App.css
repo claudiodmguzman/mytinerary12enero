@@ -1,3 +1,5 @@
+/* https://www.w3schools.com/csSref/tryit.asp?filename=trycss_animatable */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 90s linear;
@@ -182,6 +184,12 @@ a.dropdown-item {
   color:#96733f !important;
   font-weight: bolder;
 }
+
+/* .cerrarCesion:hover {
+  color: #ec920b !important;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+} */
 
 .btn-primary {
   font-weight: bolder;
