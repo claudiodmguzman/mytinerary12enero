@@ -183,13 +183,15 @@ a.dropdown-item {
 .cerrarCesion {
   color:#96733f !important;
   font-weight: bolder;
+  pointer-events: auto !important;
 }
 
-/* .cerrarCesion:hover {
+.cerrarCesion:hover {
   color: #ec920b !important;
   background-color: rgb(255, 255, 255);
   text-decoration: none;
-} */
+  pointer-events: auto !important;
+}
 
 .btn-primary {
   font-weight: bolder;

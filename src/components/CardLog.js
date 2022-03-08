@@ -36,6 +36,7 @@ const CardLog = () => {
                 {!user ?
                     <Linkrouter className="dropdown-item" to="/cardSignIn">Sign In</Linkrouter>
                     : <div className="dropdown-item cerrarCesion" onClick={() => cerrarCesion(window.location.reload(true))}>Sign Out</div>}
+
                 <div className="dropdown-divider"></div>
 
                 <Linkrouter className="dropdown-item" to="/cardSignUp">Sign Up</Linkrouter>
