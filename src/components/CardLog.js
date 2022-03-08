@@ -9,15 +9,15 @@ const CardLog = () => {
 
     const [{ user }, dispatch] = useStateValue()
 
-    async function cerrarCesion () {
+    async function cerrarCesion() {
         const email = user.datosUser.email
         console.log(email)
-        await axios.post("http://localhost:4000/api/signOut", {email})
-        .then(response =>
+        await axios.post("http://localhost:4000/api/signOut", { email })
+            .then(response =>
 
-            console.log(response)
+                console.log(response)
 
-        )
+            )
 
     }
 
@@ -32,11 +32,10 @@ const CardLog = () => {
 
 
             <div className="dropdown-menu dropdown-menu-right">
-                
-                { !user?
-                <Linkrouter className="dropdown-item" to="/cardSignIn">Sign In</Linkrouter>
-                : <div  className="dropdown-item cerrarCesion" onClick={() => cerrarCesion()}>Sign Out</div>}
-                
+
+                {!user ?
+                    <Linkrouter className="dropdown-item" to="/cardSignIn">Sign In</Linkrouter>
+                    : <div className="dropdown-item cerrarCesion" onClick={() => cerrarCesion(window.location.reload(true))}>Sign Out</div>}
                 <div className="dropdown-divider"></div>
 
                 <Linkrouter className="dropdown-item" to="/cardSignUp">Sign Up</Linkrouter>
