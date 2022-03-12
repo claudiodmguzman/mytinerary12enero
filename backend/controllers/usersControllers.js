@@ -106,7 +106,7 @@ const usersControllers = {
             const usuario = await User.findOne({ email })
 
             if (!usuario) {
-                res.json({ success: false, from: "controller", error: "el usuario y/o contraseña es incorrecto" })
+                res.json({ success: false, from: "controller", error: "the user and/or password is incorrect" })
             }
             else {
                 if (usuario.emailVerificado) {
@@ -123,9 +123,9 @@ const usersControllers = {
                         await usuario.save()
                         res.json({ success: true, from: "controller", response: { token, datosUser } }) // "logueado" })
                     }
-                    else { res.json({ success: false, from: "controller", error: "el usuario y/o contraseña es incorrecto" }) }
+                    else { res.json({ success: false, from: "controller", error: "the user and/or password is incorrect" }) }
                 }
-                else { res.json({ success: false, from: "controller", error: "verifica tu e-mail para validarte" }) }
+                else { res.json({ success: false, from: "controller", error: "verify your e-mail to validate yourself" }) }
             }
         }
         catch (error) { console.log(error); res.json({ success: false, response: null, error: error }) }
