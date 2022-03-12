@@ -66,18 +66,18 @@ const CardSignIn = () => {
                 </div>
 
                 <div className="form-check">
-                    <input type="checkbox" className="form-check-input formSign" id="dropdownCheck" />
-                    <label className="form-check-label" htmlFor="dropdownCheck">
+                    {/* <input type="checkbox" className="form-check-input formSign" id="dropdownCheck" /> */}
+                    {/* <label className="form-check-label" htmlFor="dropdownCheck">
                         Remember me
-                    </label>
+                    </label> */}
                 </div>
 
                 <button type="submit" className="btn btn-primary">Sign In</button>
 
 
-                <div className="dropdown-divider"></div>
-                <Linkrouter className="dropdown-item" to="#">Forgot password?</Linkrouter>
-                <div className="dropdown-divider"></div>
+                {/* <div className="dropdown-divider"></div> */}
+                {/* <Linkrouter className="dropdown-item" to="#">Forgot password?</Linkrouter> */}
+                {/* <div className="dropdown-divider"></div> */}
 
 
             </form>
