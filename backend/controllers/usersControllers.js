@@ -125,7 +125,7 @@ const usersControllers = {
                     }
                     else { res.json({ success: false, from: "controller", error: "the user and/or password is incorrect" }) }
                 }
-                else { res.json({ success: false, from: "controller", error: "verify your e-mail to validate yourself" }) }
+                else { res.json({ success: false, from: "controller", error: "check your e-mail to validate" }) }
             }
         }
         catch (error) { console.log(error); res.json({ success: false, response: null, error: error }) }
