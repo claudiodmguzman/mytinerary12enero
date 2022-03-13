@@ -1,13 +1,14 @@
 import axios from 'axios';
 import React from 'react';
 import swal from 'sweetalert';
-import GoogleLogin from 'react-google-login';
+//import GoogleLogin from 'react-google-login';
+import { GoogleLogin } from 'react-google-login';
 
 
 
 const CardSignUp = () => {
 
-    const responseGoogle = async (response) => {
+    function responseGoogle(response) {
         console.log(response);
     }
 
@@ -16,7 +17,7 @@ const CardSignUp = () => {
         // lastName: response.profileObj.familyName,
         // email: response.profileObj.email,
         // password: response.googleId+"Ab",
-        google: true,
+        // google: true,
     }
 
 
@@ -28,7 +29,7 @@ const CardSignUp = () => {
             lastName: event.target[1].value,
             email: event.target[2].value,
             password: event.target[3].value,
-            google: true
+            //google: true
         }
 
 
@@ -40,22 +41,27 @@ const CardSignUp = () => {
             )
 
         function displayMessages(data) {
-            if (data.success = "false") {
-                console.log(data.response.error.details)
-                data.response.error.details.map(error => swal(error.message))
-            }
-            else if (data.success = "false") {
-                console.log(swal(data.response))
-            }
-            else if (data.success = "false") {
-                console.log(swal(data.response))
-            }
-            else if (data.success = "true") {
-                console.log(swal(data.response))
-            }
+            console.log(data.response.error.details)
+            data.response.error.details.map(error => swal(error.message))
         }
 
-        
+        // function displayMessages(data) {
+        // if (data.success = false) {
+        // console.log(data.response.error.details)
+        // data.response.error.details.map(error => swal(error.message))
+        // }
+        // else if (data.success = false) {
+        //     console.log(swal(data.response))
+        // }
+        // else if (data.success = false) {
+        //     console.log(swal(data.response))
+        // }
+        // else if (data.success = true) {
+        //     console.log(swal(data.response))
+        // }
+        // }
+
+
     }
 
     return (
