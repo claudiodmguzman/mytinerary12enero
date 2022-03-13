@@ -4,11 +4,16 @@ import { Link as Linkrouter } from 'react-router-dom';
 import swal from 'sweetalert';
 import { actionType } from '../reducer';
 import { useStateValue } from '../StateProvider';
+import GoogleLogin from 'react-google-login';
 
 
 const CardSignIn = () => {
 
     const [{ user }, dispatch] = useStateValue()
+
+    const responseGoogle = (response) => {
+        console.log(response);
+    }
 
     async function loginUser(event) {
         event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
@@ -38,7 +43,7 @@ const CardSignIn = () => {
                 type: actionType.USER,
                 user: data.response
             })
-            
+
         }
         console.log(user)
     }
