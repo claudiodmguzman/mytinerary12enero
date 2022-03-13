@@ -85,8 +85,9 @@ const usersControllers = {
                 else {
                     res.json({ success: false, from: "CardSignUp", response: "The user already exists, perform SignIn" })
                 }
-                else {
+            }
 
+            else {
                 const uniqueText = crypto.randomBytes(15).toString("hex") //texto randon de 15 caracteres hexadecimal
                 const emailVerificado = false
                 const passwordHash = bcryptjs.hashSync(password, 10)
@@ -98,14 +99,15 @@ const usersControllers = {
                     uniqueText, //busca la coincidencia del texto
                     emailVerificado,
                     connected: false,
+                    google
                 })
 
                 if (google) {
                     NewUser.emailVerificado = true,
-                        NewUser.google = true,
-                        NewUser.connected = false,
+                    NewUser.google = true,
+                    NewUser.connected = false,
 
-                        await NewUser.save()
+                    await NewUser.save()
                     res.json({ success: true, from: "google", response: "Congratulations we have created your user with Google", data: { NewUser } })
                 }
 
@@ -119,7 +121,6 @@ const usersControllers = {
                 }
             }
         }
-
         catch (error) { res.json({ success: false, from: "CardSignUp", response: null, error: error }) }
     },
 

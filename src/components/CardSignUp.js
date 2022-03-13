@@ -94,7 +94,7 @@ const CardSignUp = () => {
                 <div className="googleBoton">
                     <GoogleLogin
                         clientId="165497680968-igja1qus1ipp2snlcl4vhg4vonm8ihat.apps.googleusercontent.com"
-                        buttonText="Login by Google"
+                        buttonText="Sign up with Google"
                         onSuccess={responseGoogle}
                         onFailure={responseGoogle}
                         cookiePolicy={'single_host_origin'}
