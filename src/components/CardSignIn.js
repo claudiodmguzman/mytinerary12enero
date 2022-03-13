@@ -58,13 +58,13 @@ const CardSignIn = () => {
 
                 <div className="form-group">
 
-                    <input type="email" className="form-control formSign" id="exampleDropdownFormEmail1" required
+                    <input type="email" className="form-control formSign" id="exampleDropdownFormEmail6"
                         placeholder="email@example.com" />
                 </div>
 
                 <div className="form-group">
 
-                    <input type="password" className="form-control formSign" id="exampleDropdownFormPassword1"
+                    <input type="password" className="form-control formSign" id="exampleDropdownFormPassword7"
                         placeholder="Password" />
                 </div>
 

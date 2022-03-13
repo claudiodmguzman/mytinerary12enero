@@ -63,13 +63,12 @@ const usersControllers = {
 
     nuevoUsuario: async (req, res) => {
         const { firstName, lastName, email, password, google } = req.body.NuevoUsuario // destructuring
-        console.log(req.body)
+        console.log(req.body.NuevoUsuario)
 
         try {
             const usuarioExiste = await User.findOne({ email })
 
             if (usuarioExiste) {
-                // res.json({ success: "falseUE", response: "The user already exists, perform SignIn" })
 
                 if (google) {
                     const passwordHash = bcryptjs.hashSync(password, 10)
@@ -129,7 +128,7 @@ const usersControllers = {
             const usuario = await User.findOne({ email })
 
             if (!usuario) {
-                res.json({ success: false, from: "controller", error: "The user and/or password is incorrect" })
+                res.json({ success: false, from: "controller", error: "The e-mail and/or password is incorrect" })
             }
             else {
                 if (usuario.emailVerificado) {
@@ -146,7 +145,7 @@ const usersControllers = {
                         await usuario.save()
                         res.json({ success: true, from: "controller", response: { token, datosUser } }) // "logueado" })
                     }
-                    else { res.json({ success: false, from: "controller", error: "The user and/or password is incorrect" }) }
+                    else { res.json({ success: false, from: "controller", error: "The e-mail and/or password is incorrect" }) }
                 }
                 else { res.json({ success: false, from: "controller", error: "Check your e-mail to validate" }) }
             }

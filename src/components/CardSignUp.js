@@ -1,8 +1,9 @@
 import axios from 'axios';
 import React from 'react';
 import swal from 'sweetalert';
-//import GoogleLogin from 'react-google-login';
-import { GoogleLogin } from 'react-google-login';
+import GoogleLogin from 'react-google-login';
+// import { GoogleLogin } from 'react-google-login';
+
 
 
 
@@ -41,25 +42,22 @@ const CardSignUp = () => {
             )
 
         function displayMessages(data) {
-            console.log(data.response.error.details)
-            data.response.error.details.map(error => swal(error.message))
-        }
+            if (data.success = false) {
+                console.log(data.response.error.details)
+                data.response.error.details.map(error => swal(error.message))
+            }
+            else if (data.success = false) {
+                console.log(swal(data.response))
+            }
 
-        // function displayMessages(data) {
-        // if (data.success = false) {
-        // console.log(data.response.error.details)
-        // data.response.error.details.map(error => swal(error.message))
-        // }
-        // else if (data.success = false) {
-        //     console.log(swal(data.response))
-        // }
-        // else if (data.success = false) {
-        //     console.log(swal(data.response))
-        // }
-        // else if (data.success = true) {
-        //     console.log(swal(data.response))
-        // }
-        // }
+            else if (data.success = false) {
+                console.log(swal(data.response))
+            }
+            
+            else if (data.success = true) {
+                console.log(swal(data.response))
+            }
+        }
 
 
     }
@@ -80,23 +78,23 @@ const CardSignUp = () => {
 
                 <div className="form-group">
 
-                    <input type="text" className="form-control formSign" id="exampleDropdownFormPassword1"
+                    <input type="text" className="form-control formSign" id="exampleDropdownFormPassword2"
                         placeholder="Last Name" />
                 </div>
 
                 <div className="form-group">
 
-                    <input type="text" className="form-control formSign" id="exampleDropdownFormEmail1"
+                    <input type="text" className="form-control formSign" id="exampleDropdownFormEmail3"
                         placeholder="email@example.com" />
                 </div>
                 <div className="form-group">
 
-                    <input type="password" className="form-control formSign" id="exampleDropdownFormPassword1"
+                    <input type="password" className="form-control formSign" id="exampleDropdownFormPassword4"
                         placeholder="Password" />
                 </div>
                 <div className="form-group">
 
-                    <input type="password" className="form-control formSign" id="exampleDropdownFormPassword1"
+                    <input type="password" className="form-control formSign" id="exampleDropdownFormPassword5"
                         placeholder="Repeat Password" />
                 </div>
 
