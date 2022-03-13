@@ -245,7 +245,11 @@ a.dropdown-item {
   width: 500px;
   text-align: center;
   display: block;
-  
+}
+
+.googleBoton {
+  justify-content: center;
+  margin-top: 12px;
 }
 
 .texSign {

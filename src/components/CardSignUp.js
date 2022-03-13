@@ -1,9 +1,14 @@
 import axios from 'axios';
 import React from 'react';
 import swal from 'sweetalert';
+import GoogleLogin from 'react-google-login';
 
 
 const CardSignUp = () => {
+
+    const responseGoogle = (response) => {
+        console.log(response);
+    }
 
     async function NewUser(event) {
         event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
@@ -76,6 +81,16 @@ const CardSignUp = () => {
                 </div>
 
                 <button type="submit" className="btn btn-success">Sign Up</button>
+
+                <div className="googleBoton">
+                    <GoogleLogin
+                        clientId="165497680968-igja1qus1ipp2snlcl4vhg4vonm8ihat.apps.googleusercontent.com"
+                        buttonText="Login by Google"
+                        onSuccess={responseGoogle}
+                        onFailure={responseGoogle}
+                        cookiePolicy={'single_host_origin'}
+                    />
+                </div>
 
             </form>
         </div>

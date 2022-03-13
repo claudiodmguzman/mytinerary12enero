@@ -52,8 +52,6 @@ const CardSignIn = () => {
 
         <div className='signUpInContainer'>
 
-
-
             <form className="signUpIn" onSubmit={loginUser}>
 
                 <label className="texSign">Hello There!</label>
@@ -79,19 +77,23 @@ const CardSignIn = () => {
 
                 <button type="submit" className="btn btn-primary">Sign In</button>
 
-
                 {/* <div className="dropdown-divider"></div> */}
                 {/* <Linkrouter className="dropdown-item" to="#">Forgot password?</Linkrouter> */}
                 {/* <div className="dropdown-divider"></div> */}
 
+                <div className="googleBoton">
+                    <GoogleLogin
+                        clientId="165497680968-igja1qus1ipp2snlcl4vhg4vonm8ihat.apps.googleusercontent.com"
+                        buttonText="Login by Google"
+                        onSuccess={responseGoogle}
+                        onFailure={responseGoogle}
+                        cookiePolicy={'single_host_origin'}
+                    />
+                </div>
 
             </form>
 
-
-
         </div>
-
-
 
     )
 }
