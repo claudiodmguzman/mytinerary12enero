@@ -10,6 +10,14 @@ const CardSignUp = () => {
         console.log(response);
     }
 
+    const googleUser = {
+        firstName: response.profileObj.givenName,
+        lastName: response.profileObj.familyName,
+        email: response.profileObj.email,
+        password: response.googleId,
+        google: true,
+    }
+
     async function NewUser(event) {
         event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
         const NuevoUsuario = {
@@ -17,6 +25,7 @@ const CardSignUp = () => {
             lastName: event.target[1].value,
             email: event.target[2].value,
             password: event.target[3].value,
+            google: true
         }
 
 

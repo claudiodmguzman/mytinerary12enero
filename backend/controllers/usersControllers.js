@@ -4,6 +4,7 @@ const bcryptjs = require("bcryptjs")
 const nodemailer = require("nodemailer")
 const crypto = require("crypto")
 const jwt = require("jsonwebtoken")
+const { response } = require("express")
 // const { response } = require("express")
 
 
@@ -63,17 +64,29 @@ const usersControllers = {
 
     nuevoUsuario: async (req, res) => {
 
-        const { firstName, lastName, email, password } = req.body.NuevoUsuario // destructuring
+        const { firstName, lastName, email, password, google } = req.body.NuevoUsuario // destructuring
+        console.log(req.body)
 
         try {
-
             const usuarioExiste = await User.findOne({ email })
-            console.log(req.body)
-            if (usuarioExiste) {
-                res.json({ success: "falseUE", response: "The user already exists, perform SignIn" })
-            }
 
-            else {
+            if (usuarioExiste) {
+                // res.json({ success: "falseUE", response: "The user already exists, perform SignIn" })
+
+                if (google) {
+                    const passwordHash = bcryptjs.hashSync(password, 10)
+                    usuarioExiste.password = passwordHash;
+                    usuarioExiste.emailVerificado = true
+                    usuarioExiste.google = true
+                    usuarioExiste.connected = false
+                    usuarioExiste.save()
+                    res.json({ success: true, from: "google", response: "We update your Sign In to be done with Google" })
+                }
+                else {
+                    res.json({ success: false, from: "CardSignUp", response: "The user already exists, perform SignIn" })
+                }
+                else {
+
                 const uniqueText = crypto.randomBytes(15).toString("hex") //texto randon de 15 caracteres hexadecimal
                 const emailVerificado = false
                 const passwordHash = bcryptjs.hashSync(password, 10)
@@ -87,26 +100,37 @@ const usersControllers = {
                     connected: false,
                 })
 
-                if (!emailVerificado) {
+                if (google) {
+                    NewUser.emailVerificado = true,
+                        NewUser.google = true,
+                        NewUser.connected = false,
+
+                        await NewUser.save()
+                    res.json({ success: true, from: "google", response: "Congratulations we have created your user with Google", data: { NewUser } })
+                }
+
+                else {
+                    NewUser.emailVerificado = false
+                    NewUser.google = false
+                    NewUser.connected = false
                     await NewUser.save()
                     await sendEmail(email, uniqueText)
-                    res.json({ success: "trueUE", response: "We have sent an e-mail to verify your e-mail address" })
+                    res.json({ success: true, from: "CardSignUp", response: "We have sent an e-mail to verify your e-mail address", data: { NewUser } })
                 }
             }
         }
 
-        catch (error) { res.json({ success: "falseUE", response: null, error: error }) }
+        catch (error) { res.json({ success: false, from: "CardSignUp", response: null, error: error }) }
     },
 
     accesoUsuario: async (req, res) => {
-
         const { email, password } = req.body.userData
 
         try {
             const usuario = await User.findOne({ email })
 
             if (!usuario) {
-                res.json({ success: false, from: "controller", error: "the user and/or password is incorrect" })
+                res.json({ success: false, from: "controller", error: "The user and/or password is incorrect" })
             }
             else {
                 if (usuario.emailVerificado) {
@@ -123,9 +147,9 @@ const usersControllers = {
                         await usuario.save()
                         res.json({ success: true, from: "controller", response: { token, datosUser } }) // "logueado" })
                     }
-                    else { res.json({ success: false, from: "controller", error: "the user and/or password is incorrect" }) }
+                    else { res.json({ success: false, from: "controller", error: "The user and/or password is incorrect" }) }
                 }
-                else { res.json({ success: false, from: "controller", error: "check your e-mail to validate" }) }
+                else { res.json({ success: false, from: "controller", error: "Check your e-mail to validate" }) }
             }
         }
         catch (error) { console.log(error); res.json({ success: false, response: null, error: error }) }
@@ -142,7 +166,7 @@ const usersControllers = {
         user.connected = false
 
         await user.save()
-        res.json({ success: true, response: "cesión cerrada" })
+        res.json({ success: true, response: "Closed assignment" })
 
     }
 
