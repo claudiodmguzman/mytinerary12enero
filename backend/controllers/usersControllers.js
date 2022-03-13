@@ -4,8 +4,7 @@ const bcryptjs = require("bcryptjs")
 const nodemailer = require("nodemailer")
 const crypto = require("crypto")
 const jwt = require("jsonwebtoken")
-const { response } = require("express")
-// const { response } = require("express")
+//const { response } = require("express")
 
 
 async function sendEmail(email, uniqueText) {
@@ -63,7 +62,6 @@ const usersControllers = {
     },
 
     nuevoUsuario: async (req, res) => {
-
         const { firstName, lastName, email, password, google } = req.body.NuevoUsuario // destructuring
         console.log(req.body)
 
@@ -104,10 +102,10 @@ const usersControllers = {
 
                 if (google) {
                     NewUser.emailVerificado = true,
-                    NewUser.google = true,
-                    NewUser.connected = false,
+                        NewUser.google = true,
+                        NewUser.connected = false,
 
-                    await NewUser.save()
+                        await NewUser.save()
                     res.json({ success: true, from: "google", response: "Congratulations we have created your user with Google", data: { NewUser } })
                 }
 

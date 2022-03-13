@@ -4,19 +4,22 @@ import swal from 'sweetalert';
 import GoogleLogin from 'react-google-login';
 
 
+
 const CardSignUp = () => {
 
-    const responseGoogle = (response) => {
+    const responseGoogle = async (response) => {
         console.log(response);
     }
 
     const googleUser = {
-        firstName: response.profileObj.givenName,
-        lastName: response.profileObj.familyName,
-        email: response.profileObj.email,
-        password: response.googleId,
+        // firstName: response.profileObj.givenName,
+        // lastName: response.profileObj.familyName,
+        // email: response.profileObj.email,
+        // password: response.googleId+"Ab",
         google: true,
     }
+
+
 
     async function NewUser(event) {
         event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
@@ -37,20 +40,22 @@ const CardSignUp = () => {
             )
 
         function displayMessages(data) {
-            if (data.success === "falseVAL") {
+            if (data.success = "false") {
                 console.log(data.response.error.details)
                 data.response.error.details.map(error => swal(error.message))
             }
-            else if (data.success === "false") {
+            else if (data.success = "false") {
                 console.log(swal(data.response))
             }
-            else if (data.success === "falseUE") {
+            else if (data.success = "false") {
                 console.log(swal(data.response))
             }
-            else if (data.success === "trueUE") {
+            else if (data.success = "true") {
                 console.log(swal(data.response))
             }
         }
+
+        
     }
 
     return (
@@ -91,16 +96,15 @@ const CardSignUp = () => {
 
                 <button type="submit" className="btn btn-success">Sign Up</button>
 
-                <div className="googleBoton">
+                <div className="externalLogin">
                     <GoogleLogin
                         clientId="165497680968-igja1qus1ipp2snlcl4vhg4vonm8ihat.apps.googleusercontent.com"
-                        buttonText="Sign up with Google"
+                        buttonText="Sign Up with Google"
                         onSuccess={responseGoogle}
                         onFailure={responseGoogle}
                         cookiePolicy={'single_host_origin'}
                     />
                 </div>
-
             </form>
         </div>
 

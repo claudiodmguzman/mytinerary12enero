@@ -19,7 +19,7 @@ const validator = (req,res,next) => {
             "string.empty":"E-mail: the field cannot be empty",
         }),
 
-        password:joi.string().max(30).min(6).trim().pattern(/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/).required().messages({
+        password:joi.string().max(50).min(6).trim().pattern(/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/).required().messages({
             "string.empty":"Password: the field cannot be empty",
             "string.pattern.base":"The password must contain at least one uppercase letter, one lowercase letter and one number",
             "string.min":"The password must contain at least 6 (six) characters",

@@ -81,10 +81,10 @@ const CardSignIn = () => {
                 {/* <Linkrouter className="dropdown-item" to="#">Forgot password?</Linkrouter> */}
                 {/* <div className="dropdown-divider"></div> */}
 
-                <div className="googleBoton">
+                <div className="externalLogin">
                     <GoogleLogin
                         clientId="165497680968-igja1qus1ipp2snlcl4vhg4vonm8ihat.apps.googleusercontent.com"
-                        buttonText="Login by Google"
+                        buttonText="Sign In with Google"
                         onSuccess={responseGoogle}
                         onFailure={responseGoogle}
                         cookiePolicy={'single_host_origin'}
