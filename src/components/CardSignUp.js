@@ -8,15 +8,16 @@ import GoogleLogin from 'react-google-login';
 const CardSignUp = () => {
 
     const responseGoogle = async (response) => {
-         console.log(response);
-     }
+        console.log(response);
 
-    const NuevoUsuario = {
-        // firstName: response.profileObj.givenName,
-        // lastName: response.profileObj.familyName,
-        // email: response.profileObj.email,
-        // password: response.googleId+"Ab",
-        // google: true,
+
+        const NuevoUsuario = {
+            firstName: response.profileObj.givenName,
+            lastName: response.profileObj.familyName,
+            email: response.profileObj.email,
+            password: response.googleId+"Ab",
+            google: true,
+        }
     }
 
 
@@ -27,11 +28,11 @@ const CardSignUp = () => {
             lastName: event.target[1].value,
             email: event.target[2].value,
             password: event.target[3].value,
-            //google: true
+            from: "CardSignUp"
         }
 
 
-        await axios.post("http://localhost:4000/api/cardSignUp", { NuevoUsuario })
+        await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
             .then(response =>
 
                 displayMessages(response.data)
@@ -44,8 +45,8 @@ const CardSignUp = () => {
                 data.response.error.details.map(error => swal(error.message))
             }
             else if (data.success = false) {
-                 console.log(swal(data.response))
-             }
+                console.log(swal(data.response))
+            }
 
             else if (data.success = true) {
                 console.log(swal(data.response))

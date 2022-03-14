@@ -96,7 +96,7 @@ const usersControllers = {
                     uniqueText, //busca la coincidencia del texto
                     emailVerificado,
                     connected: false,
-                    google
+                    from: "CardSignUp"
                 })
 
                 if (google) {

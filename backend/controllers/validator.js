@@ -25,8 +25,8 @@ const validator = (req, res, next) => {
             "string.min": "The password must contain at least 6 (six) characters",
         }),
 
-        google: joi.boolean
-
+        
+        
     })
 
     const validation = Schema.validate(req.body.NuevoUsuario, { abortEarly: true })
