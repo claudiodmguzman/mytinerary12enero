@@ -5,8 +5,6 @@ import GoogleLogin from 'react-google-login';
 // import { GoogleLogin } from 'react-google-login';
 
 
-
-
 const CardSignUp = () => {
 
     const responseGoogle = async (response) => {
@@ -20,7 +18,6 @@ const CardSignUp = () => {
         // password: response.googleId+"Ab",
         // google: true,
     }
-
 
 
     async function NewUser(event) {
