@@ -105,7 +105,7 @@ const usersControllers = {
                         NewUser.connected = false,
 
                         await NewUser.save()
-                    res.json({ success: true, from: "google", response: "Congratulations we have created your user with Google", data: { NewUser } })
+                    res.json({ success: true, from: "google", response: "Congratulations we have created your user with Google!!", data: { NewUser } })
                 }
 
                 else {
@@ -164,7 +164,7 @@ const usersControllers = {
         user.connected = false
 
         await user.save()
-        res.json({ success: true, response: "Closed assignment" })
+        res.json({ success: "trueVAL", response: "Closed assignment" })
 
     }
 
