@@ -21,26 +21,6 @@ const CardSignUp = () => {
         // google: true,
     }
 
-    // await axios.post("http://localhost:4000/api/cardSignUp", { NuevoUsuario })
-    //         .then(response =>
-
-    //             displayMessages(response.data)
-
-    //         )
-
-        // function displayMessages(data) {
-        //     if (data.success = "falseVAL") {
-        //         console.log(data.response.error.details)
-        //         data.response.error.details.map(error => swal(error.message))
-        //     }
-        //     else if (data.success = false) {
-        //          console.log(swal(data.response))
-        //      }
-        //     else if (data.success = true) {
-        //         console.log(swal(data.response))
-        //     }
-        // }
-
 
 
     async function NewUser(event) {
