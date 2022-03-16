@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import imgGoogleMaps from './img/imgIcon/imgGoogleMaps1.png';
+import imgGoogleMaps from './img/imgIcon/imgGoogleMaps.png';
 import { useStateValue } from '../StateProvider';
 import { Accordion } from 'react-bootstrap-accordion';
 import 'react-bootstrap-accordion/dist/index.css';
@@ -97,6 +97,8 @@ const Access = () => {
                                         <div className="paccessDetail">Duration: {itinerarie.durationTour}</div>
 
                                         <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
+
+                                        <div>comentarios</div>
 
                                     </div>
 
