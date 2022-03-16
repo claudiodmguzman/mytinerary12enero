@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import imgGoogleMaps from './img/imgIcon/imgGoogleMaps1.png';
 import { useStateValue } from '../StateProvider';
 import { Accordion } from 'react-bootstrap-accordion';
 import 'react-bootstrap-accordion/dist/index.css';
@@ -55,11 +56,11 @@ const Access = () => {
 
                                 <div className="accessFondo">Coodinates: {city.coordinates}</div>
 
-                                {/* <div className="accessFondo">Google Maps: {city.googlemaps}</div> */}
-
                                 <div className="accessFondo">Continents: {city.continents}</div>
 
                                 <div className="accessFondo">Region: {city.region}</div>
+
+                                <div className="accessFondo"><a className='accessHref' href={city.googlemaps} target="_blank">Visit on Google Maps <img src={imgGoogleMaps} className="" height="25" width="20" alt="link a Google Maps" /></a></div>
 
                             </div>
 
