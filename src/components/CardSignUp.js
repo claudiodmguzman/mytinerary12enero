@@ -6,12 +6,44 @@ import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 
 
-const responseFacebook = (response) => {
-    console.log(response);
-}
+
 
 
 const CardSignUp = () => {
+
+    const responseFacebook = async (response) => {
+        console.log(response);
+    
+        const NuevoUsuario = {
+            email: response.email,
+            firstName: response.name,
+            lastName: null,
+            password: response.id + "Ab",
+            from: "Facebook"
+        }
+    
+    
+        await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
+            .then(response =>
+    
+                displayMessages(response.data)
+    
+            )
+    
+        function displayMessages(data) {
+            if (data.success = "falseVAL") {
+                console.log(data.response.error.details)
+                data.response.error.details.map(error => swal(error.message))
+            }
+            else if (data.success = false) {
+                console.log(swal(data.response))
+            }
+    
+            else if (data.success = true) {
+                console.log(swal(data.response))
+            }
+        }
+    }
 
     const responseGoogle = async (response) => {
         console.log(response);
@@ -22,7 +54,7 @@ const CardSignUp = () => {
             lastName: response.profileObj.familyName,
             email: response.profileObj.email,
             password: response.googleId + "Ab",
-            //google: true,
+            from: "Google"
         }
     }
 
@@ -34,7 +66,7 @@ const CardSignUp = () => {
             lastName: event.target[1].value,
             email: event.target[2].value,
             password: event.target[3].value,
-            
+            from : "CardSignUp"
         }
 
 

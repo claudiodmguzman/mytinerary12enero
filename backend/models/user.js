@@ -2,7 +2,7 @@ const mongoose = require("mongoose") // va a almacenar los datos de las ciudades
 
 const usersSchema = new mongoose.Schema({
     firstName: { type: String, require: true },
-    lastName: { type: String, require: true },
+    lastName: { type: String, require: false },
     email: { type: String, require: true },
     password: { type: String, require: true },
     uniqueText: { type: String, require: true },

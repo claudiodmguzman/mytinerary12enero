@@ -71,7 +71,7 @@ const usersControllers = {
             if (usuarioExiste) {
 
                 if (from !== "CardSignUp") {
-                    const passwordHash = bcryptjs.hashSync(password, 20)
+                    const passwordHash = bcryptjs.hashSync(password, 10)
                     usuarioExiste.password = passwordHash
                     usuarioExiste.emailVerificado = true
                     usuarioExiste.from = from // de donde se loguea el usuario
@@ -87,7 +87,7 @@ const usersControllers = {
             else {
                 const uniqueText = crypto.randomBytes(15).toString("hex") //texto randon de 15 caracteres hexadecimal
                 const emailVerificado = false
-                const passwordHash = bcryptjs.hashSync(password, 20)
+                const passwordHash = bcryptjs.hashSync(password, 10)
                 const NewUser = new User({
                     firstName,
                     lastName,
