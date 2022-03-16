@@ -62,8 +62,11 @@ const usersControllers = {
     },
 
     nuevoUsuario: async (req, res) => {
-        const { firstName, lastName, email, password, from } = req.body.NuevoUsuario // destructuring
-        console.log(req.body.NuevoUsuario)
+        console.log(res)
+        console.log(req)
+        let { firstName, lastName, email, password, from } = req.body.NuevoUsuario // destructuring
+        //console.log(req.body.NuevoUsuario)
+        console.log(req.body)
 
         try {
             const usuarioExiste = await User.findOne({ email })
@@ -77,7 +80,7 @@ const usersControllers = {
                     usuarioExiste.from = from // de donde se loguea el usuario
                     usuarioExiste.connected = false
                     usuarioExiste.save()
-                    res.json({ success: true, response: "We update your SignUp for you to perform with " + from })
+                    res.json({ success: true, response: "We update your Sign Up for you to perform with " + from })
                 }
                 else {
                     res.json({ success: false, response: "The user name is already in use" })
