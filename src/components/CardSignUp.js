@@ -11,7 +11,7 @@ const CardSignUp = () => {
 
     const responseFacebook = async (response) => {
         console.log(response);
-    
+
         const NuevoUsuario = {
             email: response.email,
             firstName: response.name,
@@ -19,15 +19,15 @@ const CardSignUp = () => {
             password: response.id + "Ab",
             from: "Facebook",
         }
-    
-    
+
+
         await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
             .then(response =>
-    
+
                 displayMessages(response.data)
-    
+
             )
-    
+
         function displayMessages(data) {
             if (data.success === "falseVAL") {
                 console.log(data.response.error.details)
@@ -59,11 +59,11 @@ const CardSignUp = () => {
 
         await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
             .then(response =>
-    
+
                 displayMessages(response.data)
-    
+
             )
-    
+
         function displayMessages(data) {
             if (data.success === "falseVAL") {
                 console.log(data.response.error.details)
@@ -89,7 +89,7 @@ const CardSignUp = () => {
             lastName: event.target[1].value,
             email: event.target[2].value,
             password: event.target[3].value,
-            from : "CardSignUp",
+            from: "CardSignUp",
         }
 
 

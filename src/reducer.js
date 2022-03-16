@@ -1,31 +1,31 @@
 export const initialState = {
-    cities:[],
-    user:null,
+    cities: [],
+    user: null,
 
 }
 
 export const actionType = {
     CITIESDB: "CITIESDB",
-    USER:"USER",
+    USER: "USER",
 
 }
 
 const reducer = (state, action) => {
     console.log(action)
-    switch (action.type){
+    switch (action.type) {
         case "CITIESDB":
-            return{
+            return {
                 ...state,
                 cities: action.cities
             }
 
-            case "USER":
-            return{
+        case "USER":
+            return {
                 ...state,
                 user: action.user
             }
 
-            default: return state
+        default: return state
     }
 }
 

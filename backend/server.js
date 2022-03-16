@@ -8,6 +8,6 @@ require("./config/database")
 
 app.use(express.json()) //tramo intermedio que pasa los datos a una variable
 app.use(cors())
-app.use("/api",Router)
+app.use("/api", Router)
 
-app.listen("4000",()=> console.log("Servidor Inicializado en Puerto 4000"))
+app.listen("4000", () => console.log("Servidor Inicializado en Puerto 4000"))
