@@ -34,7 +34,7 @@ const CardSignUp = () => {
             lastName: event.target[1].value,
             email: event.target[2].value,
             password: event.target[3].value,
-            //from: "CardSignUp"
+            
         }
 
 
