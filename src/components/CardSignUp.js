@@ -7,8 +7,6 @@ import FacebookLogin from 'react-facebook-login';
 
 
 
-
-
 const CardSignUp = () => {
 
     const responseFacebook = async (response) => {
@@ -17,9 +15,9 @@ const CardSignUp = () => {
         const NuevoUsuario = {
             email: response.email,
             firstName: response.name,
-            lastName: null,
+            lastName: "facebook",
             password: response.id + "Ab",
-            from: "Facebook"
+            from: "facebook",
         }
     
     
@@ -31,15 +29,12 @@ const CardSignUp = () => {
             )
     
         function displayMessages(data) {
-            if (data.success = "falseVAL") {
+            if (data.success === "falseVAL") {
                 console.log(data.response.error.details)
                 data.response.error.details.map(error => swal(error.message))
             }
-            else if (data.success = false) {
-                console.log(swal(data.response))
-            }
-    
-            else if (data.success = true) {
+            else if (data.success === true) {
+                console.log(data)
                 console.log(swal(data.response))
             }
         }
@@ -54,7 +49,25 @@ const CardSignUp = () => {
             lastName: response.profileObj.familyName,
             email: response.profileObj.email,
             password: response.googleId + "Ab",
-            from: "Google"
+            from: "google"
+        }
+
+        await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
+            .then(response =>
+    
+                displayMessages(response.data)
+    
+            )
+    
+        function displayMessages(data) {
+            if (data.success === "falseVAL") {
+                console.log(data.response.error.details)
+                data.response.error.details.map(error => swal(error.message))
+            }
+            else if (data.success === true) {
+                console.log(data)
+                console.log(swal(data.response))
+            }
         }
     }
 
@@ -78,15 +91,13 @@ const CardSignUp = () => {
             )
 
         function displayMessages(data) {
-            if (data.success = "falseVAL") {
+            if (data.success === "falseVAL") {
                 console.log(data.response.error.details)
                 data.response.error.details.map(error => swal(error.message))
             }
-            else if (data.success = false) {
-                console.log(swal(data.response))
-            }
 
-            else if (data.success = true) {
+            else if (data.success === true) {
+                console.log(data)
                 console.log(swal(data.response))
             }
         }
