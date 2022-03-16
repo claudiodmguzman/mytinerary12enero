@@ -62,7 +62,7 @@ const usersControllers = {
     },
 
     nuevoUsuario: async (req, res) => {
-        const { firstName, lastName, email, password, google } = req.body.NuevoUsuario // destructuring
+        const { firstName, lastName, email, password, from } = req.body.NuevoUsuario // destructuring
         console.log(req.body.NuevoUsuario)
 
         try {
@@ -70,24 +70,24 @@ const usersControllers = {
 
             if (usuarioExiste) {
 
-                if (google) {
-                    const passwordHash = bcryptjs.hashSync(password, 10)
-                    usuarioExiste.password = passwordHash;
+                if (from !== "CardSignUp") {
+                    const passwordHash = bcryptjs.hashSync(password, 20)
+                    usuarioExiste.password = passwordHash
                     usuarioExiste.emailVerificado = true
-                    usuarioExiste.google = true
+                    usuarioExiste.from = from // de donde se loguea el usuario
                     usuarioExiste.connected = false
                     usuarioExiste.save()
-                    res.json({ success: true, from: "google", response: "We update your Sign In to be done with Google" })
+                    res.json({ success: true, response: "We update your SignUp for you to perform with " + from })
                 }
                 else {
-                    res.json({ success: false, from: "CardSignUp", response: "The user already exists, perform SignIn" })
+                    res.json({ success: false, response: "The user name is already in use" })
                 }
             }
 
             else {
                 const uniqueText = crypto.randomBytes(15).toString("hex") //texto randon de 15 caracteres hexadecimal
                 const emailVerificado = false
-                const passwordHash = bcryptjs.hashSync(password, 10)
+                const passwordHash = bcryptjs.hashSync(password, 20)
                 const NewUser = new User({
                     firstName,
                     lastName,
@@ -96,21 +96,19 @@ const usersControllers = {
                     uniqueText, //busca la coincidencia del texto
                     emailVerificado,
                     connected: false,
-                    from: "CardSignUp"
+                    from,
                 })
 
-                if (google) {
-                    NewUser.emailVerificado = true,
-                        NewUser.google = true,
-                        NewUser.connected = false,
-
-                        await NewUser.save()
-                    res.json({ success: true, from: "google", response: "Congratulations we have created your user with Google!!", data: { NewUser } })
+                if (from !== "CardSignUp") {
+                    NewUser.emailVerificado = true
+                    NuevoUsuario.from = from
+                    NewUser.connected = false
+                    await NewUser.save()
+                    res.json({ success: true, data: { NewUser }, response: "Congratulations we have created your user with " + from })
                 }
-
                 else {
                     NewUser.emailVerificado = false
-                    NewUser.google = false
+                    NewUser.from = from
                     NewUser.connected = false
                     await NewUser.save()
                     await sendEmail(email, uniqueText)

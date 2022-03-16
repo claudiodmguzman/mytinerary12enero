@@ -3,6 +3,12 @@ import React from 'react';
 import swal from 'sweetalert';
 import GoogleLogin from 'react-google-login';
 // import { GoogleLogin } from 'react-google-login';
+import FacebookLogin from 'react-facebook-login';
+
+
+const responseFacebook = (response) => {
+    console.log(response);
+}
 
 
 const CardSignUp = () => {
@@ -15,7 +21,7 @@ const CardSignUp = () => {
             firstName: response.profileObj.givenName,
             lastName: response.profileObj.familyName,
             email: response.profileObj.email,
-            password: response.googleId+"Ab",
+            password: response.googleId + "Ab",
             //google: true,
         }
     }
@@ -100,6 +106,14 @@ const CardSignUp = () => {
                         onFailure={responseGoogle}
                         cookiePolicy={'single_host_origin'}
                     />
+                </div>
+
+                <div className="externalLogin">
+                    <FacebookLogin
+                        appId="280004064145534"
+                        autoLoad={true}
+                        fields="name,email,picture"
+                        callback={responseFacebook} />
                 </div>
             </form>
         </div>
