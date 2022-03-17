@@ -3,18 +3,25 @@ import { useParams } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
 import CardCities from './CardCities'
 import { Link as Linkrouter } from 'react-router-dom'
+import { actionType } from '../reducer';
 
 
 function Cities() {
     const [{ cities }, dispatch] = useStateValue()
 
+    const inputSearch = (event) => {
+        dispatch({
+            type: actionType.FILTER,
+            value: event.target.value,
+        })
+    }
 
     return (
 
         <div>
 
             <div className='search'>
-                <input type="search" name="cityCountrySearch" className="formSearch card-filter" placeholder="enter the name of the city or the country you want to search" />
+                <input type="text" onChange={inputSearch} name="cityCountrySearch" className="formSearch card-filter" placeholder="enter the name of the city or the country you want to search" />
             </div>
 
             <div className='decoContinents'>
