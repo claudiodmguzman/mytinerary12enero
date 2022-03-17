@@ -7,14 +7,15 @@ import axios from 'axios';
 
 function Coment() {
 
-    const [{ cities }, {user}, dispatch] = useStateValue()
+    const [{ cities }, { user }, dispatch] = useStateValue()
 
     const submitComent = (event) => {
         event.preventDefault()
         //console.log(event.target[0].value)
 
         const dataComents = {
-            itinerario:itineraries[0]._id,
+            itinerario: itineraries[0]._id,
+            //itinerario: itineraries, // trae todos itinerarios (como un array)
             mensage: event.target[0].value,
             //user:user.datosUser.id, (queda comentado porque no me funcioana el logIn)
             user: user,
@@ -40,21 +41,21 @@ function Coment() {
 
         <form onSubmit={submitComent}>
 
-            <div className="comentario">
+                <div className="comentario">
 
-                <div className='fromComentario'>FROM's comment</div>
+                    <div className='fromComentario'>NAME's comment</div>
 
-                <div><textarea name="textarea" className='textComentario' placeholder='write us...'></textarea></div>
+                    <div><textarea name="textarea" className='textComentario' placeholder='write your beautiful comment here...'></textarea></div>
 
-                <div className='botonesComentario'>
-                    <div><button type="submit" className="btn btn-outline-primary botonComentario">send</button></div>
+                    <div className='botonesComentario'>
+                        <div><button type="submit" className="btn btn-outline-primary botonComentario">send</button></div>
 
-                    <div><button type="submit" className="btn btn-outline-warning botonComentario">edit</button></div>
+                        <div><button type="submit" className="btn btn-outline-warning botonComentario">edit</button></div>
 
-                    <div><button type="submit" className="btn btn-outline-danger botonComentario">delete</button></div>
+                        <div><button type="submit" className="btn btn-outline-danger botonComentario">delete</button></div>
+                    </div>
+
                 </div>
-
-            </div>
 
         </form>
     )

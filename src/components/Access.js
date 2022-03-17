@@ -103,7 +103,8 @@ const Access = () => {
 
                                     </div>
 
-                                    <Coment itinerario={itineraries._id}/>                
+                                    <Coment />
+                                    {/* <Coment itinerario={itineraries._id}/> */}
                                     
                                 </Accordion>
 
