@@ -12,8 +12,33 @@ const CardSignIn = () => {
 
     const [{ user }, dispatch] = useStateValue()
 
-    const responseGoogle = (response) => {
+    const responseGoogle = async (response) => {
         console.log(response);
+
+        const userData = {
+            email: response.profileObj.email,
+            password: response.profileObj.googleId + "Ab",
+        }
+
+        await axios.post("http://localhost:4000/api/signIn", { userData })
+            .then(response =>
+
+                displayMessages(response.data),
+            )
+
+        function displayMessages(data) {
+            if (!data.success) {
+                console.log(swal(data.error))
+            }
+            else { console.log(data.response) }
+            //else { console.log(swal(data.response)) }
+
+            dispatch({
+                type: actionType.USER,
+                user: data.response
+            })
+
+        }
     }
 
     const responseFacebook = async (response) => {
