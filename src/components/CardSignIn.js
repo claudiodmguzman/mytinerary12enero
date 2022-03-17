@@ -24,7 +24,7 @@ const CardSignIn = () => {
             password: response.id + "Ab",
         }
 
-        await axios.post("http://localhost:4000/api/cardSignIn", { userData })
+        await axios.post("http://localhost:4000/api/signIn", { userData })
             .then(response =>
 
                 displayMessages(response.data),
@@ -53,7 +53,7 @@ const CardSignIn = () => {
         }
 
 
-        await axios.post("http://localhost:4000/api/cardSignIn", { userData})
+        await axios.post("http://localhost:4000/api/signIn", { userData})
             .then(response =>
 
                 displayMessages(response.data),
@@ -69,7 +69,7 @@ const CardSignIn = () => {
             dispatch({
                 type: actionType.USER,
                 user: data.response
-                
+
             })
 
         }

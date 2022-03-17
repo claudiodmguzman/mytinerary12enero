@@ -51,7 +51,7 @@ const CardSignUp = () => {
             firstName: response.profileObj.givenName,
             lastName: response.profileObj.familyName,
             email: response.profileObj.email,
-            password: response.googleId + "Ab",
+            password: response.profileObj.googleId + "Ab",
             from: "Google",
         }
 
@@ -102,17 +102,17 @@ const CardSignUp = () => {
         function displayMessages(data) {
             if (data.success === "falseVAL") {
                 console.log(data.response.error.details)
-                //data.response.error.details.map(error => swal(error.message))
+                data.response.error.details.map(error => swal(error.message))
             }
 
             else if (data.success === true) {
                 console.log(data)
-                //console.log(swal(data.response))
+                console.log(swal(data.response))
             }
 
             else if (data.success === false) {
                 console.log(data)
-                //console.log(swal(data.response))
+                console.log(swal(data.response))
             }
         }
     }
