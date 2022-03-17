@@ -63,7 +63,7 @@ const usersControllers = {
     nuevoUsuario: async (req, res) => {
         console.log(res)
         console.log(req)
-        let { firstName, lastName, email, password, from } = req.body.NuevoUsuario // destructuring
+        let { firstName, lastName, email, password, from } = req.body.NuevoUsuario; // destructuring
         //console.log(req.body.NuevoUsuario)
         console.log(req.body)
 
@@ -140,6 +140,7 @@ const usersControllers = {
                             firstName: usuario.firstName,
                             lastName: usuario.lastName,
                             email: usuario.email,
+                            id:usuario._id,
                         }
                         usuario.connected = true
                         await usuario.save()

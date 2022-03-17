@@ -12,8 +12,6 @@ const datosController = {
         } catch (err) {
             error = err
             console.log(error)
-            
-            
         }
 
         res.json({

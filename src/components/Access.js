@@ -5,13 +5,16 @@ import { Accordion } from 'react-bootstrap-accordion';
 import 'react-bootstrap-accordion/dist/index.css';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import Coment from './Coment';
 
 
 const Access = () => {
 
+    
+
     const [itineraries, setItineraries] = useState([])
 
-    const [{ cities }, dispatch] = useStateValue()
+    const [{ cities }, dispatch] = useStateValue() //agregue {USER}
 
     const { id } = useParams()
     const citiesSelecter = cities.filter(city => city._id === id)
@@ -100,22 +103,8 @@ const Access = () => {
 
                                     </div>
 
-                                    <div className="comentario">
-
-                                        <div className='fromComentario'>from</div>
-
-                                        <div><textarea name="textarea" className='textComentario' placeholder='write us...'></textarea></div>
-
-                                        <div className='botonesComentario'>
-                                            <div><button type="button" class="btn btn-outline-primary botonComentario">send</button></div>
-
-                                            <div><button type="button" class="btn btn-outline-warning botonComentario">edit</button></div>
-
-                                            <div><button type="button" class="btn btn-outline-danger botonComentario">delete</button></div>
-                                        </div>
-
-                                    </div>
-
+                                    <Coment />
+                                    
                                 </Accordion>
 
 
