@@ -28,7 +28,6 @@ function Cities() {
                 <Linkrouter className="linkDeco2" to="/continents">...Search by Continents</Linkrouter>
             </div>
 
-
             <div className="master">
 
                 <CardCities />

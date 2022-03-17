@@ -47,8 +47,6 @@ const CardSignUp = () => {
 
     const responseGoogle = async (response) => {
         console.log(response);
-
-
         const NuevoUsuario = {
             firstName: response.profileObj.givenName,
             lastName: response.profileObj.familyName,
@@ -84,6 +82,7 @@ const CardSignUp = () => {
 
     async function NewUser(event) {
         event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
+        
         const NuevoUsuario = {
             firstName: event.target[0].value,
             lastName: event.target[1].value,
@@ -169,7 +168,7 @@ const CardSignUp = () => {
                 <div className="externalLogin">
                     <FacebookLogin
                         appId="280004064145534"
-                        autoLoad={true}
+                        autoLoad={false}
                         fields="name,email,picture"
                         callback={responseFacebook} />
                 </div>

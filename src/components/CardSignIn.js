@@ -5,6 +5,7 @@ import swal from 'sweetalert';
 import { actionType } from '../reducer';
 import { useStateValue } from '../StateProvider';
 import GoogleLogin from 'react-google-login';
+import FacebookLogin from 'react-facebook-login';
 
 
 const CardSignIn = () => {
@@ -15,6 +16,35 @@ const CardSignIn = () => {
         console.log(response);
     }
 
+    const responseFacebook = async (response) => {
+        console.log(response);
+
+        const userData = {
+            email: response.email,
+            password: response.id + "Ab",
+        }
+
+        await axios.post("http://localhost:4000/api/signIn", { userData })
+            .then(response =>
+
+                displayMessages(response.data),
+            )
+
+        function displayMessages(data) {
+            if (!data.success) {
+                console.log(swal(data.error))
+            }
+            else { console.log(data.response) }
+            //else { console.log(swal(data.response)) }
+
+            dispatch({
+                type: actionType.USER,
+                user: data.response
+            })
+
+        }
+    }
+
     async function loginUser(event) {
         event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
         const userData = {
@@ -23,14 +53,11 @@ const CardSignIn = () => {
         }
 
 
-        await axios.post("http://localhost:4000/api/signIn", { userData })
+        await axios.post("http://localhost:4000/api/signIn", { userData})
             .then(response =>
 
                 displayMessages(response.data),
-
-
             )
-
 
         function displayMessages(data) {
             if (!data.success) {
@@ -89,6 +116,14 @@ const CardSignIn = () => {
                         onFailure={responseGoogle}
                         cookiePolicy={'single_host_origin'}
                     />
+                </div>
+
+                <div className="externalLogin">
+                    <FacebookLogin
+                        appId="280004064145534"
+                        autoLoad={false}
+                        fields="name,email,picture"
+                        callback={responseFacebook} />
                 </div>
 
             </form>
