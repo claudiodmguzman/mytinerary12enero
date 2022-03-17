@@ -14,7 +14,7 @@ const Access = () => {
 
     const [itineraries, setItineraries] = useState([])
 
-    const [{ cities }, dispatch] = useStateValue() //agregue {USER}
+    const [{ cities }, dispatch] = useStateValue()
 
     const { id } = useParams()
     const citiesSelecter = cities.filter(city => city._id === id)
@@ -103,7 +103,7 @@ const Access = () => {
 
                                     </div>
 
-                                    <Coment />
+                                    <Coment itinerario={itineraries._id}/>                
                                     
                                 </Accordion>
 

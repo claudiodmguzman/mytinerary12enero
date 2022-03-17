@@ -1,28 +1,40 @@
-import React from 'react';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
-import { actionType } from '../reducer';
+import 'react-bootstrap-accordion/dist/index.css';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 
 function Coment() {
 
-    const [itineraries, setItineraries] = useState([])
-
-    const [{ cities },{user}, dispatch] = useStateValue() 
+    const [{ cities }, {user}, dispatch] = useStateValue()
 
     const submitComent = (event) => {
         event.preventDefault()
-        
+        //console.log(event.target[0].value)
+
         const dataComents = {
             itinerario:itineraries[0]._id,
-            mensage:event.target[0].value,
+            mensage: event.target[0].value,
             //user:user.datosUser.id, (queda comentado porque no me funcioana el logIn)
-            user:user,
-             
+            user: user,
+
         }
         console.log(dataComents)
     }
+
+    const [itineraries, setItineraries] = useState([])
+    const { id } = useParams()
+    const citiesSelecter = cities.filter(city => city._id === id)
+
+    useEffect(() => {
+        citiesSelecter.map(city =>
+            axios.get(`http://localhost:4000/api/itinerarios/${city.name}`)
+                .then(response => setItineraries(response.data.response.itinerario)
+                )
+        )
+    }, [])
+
 
     return (
 
