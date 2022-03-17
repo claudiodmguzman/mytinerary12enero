@@ -24,7 +24,7 @@ const CardSignIn = () => {
             password: response.id + "Ab",
         }
 
-        await axios.post("http://localhost:4000/api/signIn", { userData })
+        await axios.post("http://localhost:4000/api/cardSignIn", { userData })
             .then(response =>
 
                 displayMessages(response.data),
@@ -53,7 +53,7 @@ const CardSignIn = () => {
         }
 
 
-        await axios.post("http://localhost:4000/api/signIn", { userData})
+        await axios.post("http://localhost:4000/api/cardSignIn", { userData})
             .then(response =>
 
                 displayMessages(response.data),
@@ -63,8 +63,8 @@ const CardSignIn = () => {
             if (!data.success) {
                 console.log(swal(data.error))
             }
-            else { console.log(data.response) }
-            //else { console.log(swal(data.response)) }
+            //else { console.log(data.response) }
+            else { console.log(swal(data.response)) }
 
             dispatch({
                 type: actionType.USER,
