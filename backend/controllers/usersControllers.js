@@ -64,13 +64,14 @@ const usersControllers = {
         console.log(res)
         console.log(req)
         let { firstName, lastName, email, password, from } = req.body.NuevoUsuario; // destructuring
-        //console.log(req.body.NuevoUsuario)
+        console.log(req.body.NuevoUsuario)
         console.log(req.body)
 
         try {
             const usuarioExiste = await User.findOne({ email })
 
             if (usuarioExiste) {
+                
 
                 if (from !== "CardSignUp") {
                     const passwordHash = bcryptjs.hashSync(password, 20)

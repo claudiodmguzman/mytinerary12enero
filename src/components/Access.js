@@ -101,6 +101,7 @@ const Access = () => {
 
                                         <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
 
+
                                     </div>
 
                                     <Coment />
