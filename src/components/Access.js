@@ -98,11 +98,27 @@ const Access = () => {
 
                                         <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
 
-                                        <div>comentarios</div>
+                                    </div>
+
+                                    <div className="comentario">
+
+                                        <div className='fromComentario'>from</div>
+
+                                        <div><textarea name="textarea" className='textComentario' placeholder='write us...'></textarea></div>
+
+                                        <div className='botonesComentario'>
+                                            <div><button type="button" class="btn btn-outline-primary botonComentario">send</button></div>
+
+                                            <div><button type="button" class="btn btn-outline-warning botonComentario">edit</button></div>
+
+                                            <div><button type="button" class="btn btn-outline-danger botonComentario">delete</button></div>
+                                        </div>
 
                                     </div>
 
                                 </Accordion>
+
+
 
                             </div>
 
