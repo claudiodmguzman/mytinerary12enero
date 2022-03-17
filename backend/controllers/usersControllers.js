@@ -165,7 +165,6 @@ const usersControllers = {
 
         await user.save()
         res.json({ success: "trueVAL", response: "Closed assignment" })
-
     }
 
 }

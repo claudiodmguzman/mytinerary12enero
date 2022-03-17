@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-//import swal from 'sweetalert';
+import swal from 'sweetalert';
 import GoogleLogin from 'react-google-login';
 // import { GoogleLogin } from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
@@ -31,16 +31,16 @@ const CardSignUp = () => {
         function displayMessages(data) {
             if (data.success === "falseVAL") {
                 console.log(data.response.error.details)
-                //data.response.error.details.map(error => swal(error.message))
+                data.response.error.details.map(error => swal(error.message))
             }
             else if (data.success === true) {
                 console.log(data)
-                //console.log(swal(data.response))
+                console.log(swal(data.response))
             }
 
             else if (data.success === false) {
                 console.log(data)
-                //console.log(swal(data.response))
+                console.log(swal(data.response))
             }
         }
     }
@@ -65,16 +65,16 @@ const CardSignUp = () => {
         function displayMessages(data) {
             if (data.success === "falseVAL") {
                 console.log(data.response.error.details)
-                //data.response.error.details.map(error => swal(error.message))
+                data.response.error.details.map(error => swal(error.message))
             }
             else if (data.success === true) {
                 console.log(data)
-                //console.log(swal(data.response))
+                console.log(swal(data.response))
             }
 
             else if (data.success === false) {
                 console.log(data)
-                //console.log(swal(data.response))
+                console.log(swal(data.response))
             }
         }
     }

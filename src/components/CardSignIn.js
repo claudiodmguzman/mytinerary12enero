@@ -69,6 +69,7 @@ const CardSignIn = () => {
             dispatch({
                 type: actionType.USER,
                 user: data.response
+                
             })
 
         }
