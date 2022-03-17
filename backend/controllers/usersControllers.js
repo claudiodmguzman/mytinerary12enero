@@ -83,7 +83,7 @@ const usersControllers = {
                     res.json({ success: true, response: "We update your Sign Up for you to perform with " + from })
                 }
                 else {
-                    res.json({ success: false, response: "The user name is already in use" })
+                    res.json({ success: false, response: "The e-mail is already in use" })
                 }
             }
 
