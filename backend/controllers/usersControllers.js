@@ -165,7 +165,7 @@ const usersControllers = {
         user.connected = false
 
         await user.save()
-        res.json({ success: "trueVAL", message: "Closed assignment" })
+        res.json({ success: true, message: "Closed assignment" })
     }
 
 }
