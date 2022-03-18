@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React from 'react';
-import { Link as Linkrouter } from 'react-router-dom';
+//import { Link as Linkrouter } from 'react-router-dom';
 import swal from 'sweetalert';
-import { actionType } from '../reducer';
+//import { actionType } from '../reducer';
 import { useStateValue } from '../StateProvider';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
@@ -27,17 +27,19 @@ const CardSignIn = () => {
             )
 
         function displayMessages(data) {
-            if (!data.success) {
-                console.log(swal(data.error))
+            if (data.success === "falseVAL") {
+                console.log(data.response.error.details)
+                data.response.error.details.map(error => swal(error.message))
             }
-            else { console.log(data.response) }
-            //else { console.log(swal(data.response)) }
+            else if (data.success === true) {
+                console.log(data)
+                console.log(swal(data.response))
+            }
 
-            dispatch({
-                type: actionType.USER,
-                user: data.response
-            })
-
+            else if (data.success === false) {
+                console.log(data)
+                console.log(swal(data.response))
+            }
         }
     }
 
@@ -56,17 +58,19 @@ const CardSignIn = () => {
             )
 
         function displayMessages(data) {
-            if (!data.success) {
-                console.log(swal(data.error))
+            if (data.success === "falseVAL") {
+                console.log(data.response.error.details)
+                data.response.error.details.map(error => swal(error.message))
             }
-            else { console.log(data.response) }
-            //else { console.log(swal(data.response)) }
+            else if (data.success === true) {
+                console.log(data)
+                console.log(swal(data.response))
+            }
 
-            dispatch({
-                type: actionType.USER,
-                user: data.response
-            })
-
+            else if (data.success === false) {
+                console.log(data)
+                console.log(swal(data.response))
+            }
         }
     }
 
@@ -78,25 +82,26 @@ const CardSignIn = () => {
         }
 
 
-        await axios.post("http://localhost:4000/api/signIn", { userData})
+        await axios.post("http://localhost:4000/api/signIn", { userData })
             .then(response =>
 
                 displayMessages(response.data),
             )
 
         function displayMessages(data) {
-            if (!data.success) {
-                console.log(swal(data.error))
+            if (data.success === "falseVAL") {
+                console.log(data.response.error.details)
+                data.response.error.details.map(error => swal(error.message))
             }
-            //else { console.log(data.response) }
-            else { console.log(swal(data.response)) }
+            else if (data.success === true) {
+                console.log(data)
+                console.log(swal(data.response))
+            }
 
-            dispatch({
-                type: actionType.USER,
-                user: data.response
-
-            })
-
+            else if (data.success === false) {
+                console.log(data)
+                console.log(swal(data.response))
+            }
         }
         console.log(user)
     }

@@ -72,7 +72,6 @@ const usersControllers = {
 
             if (usuarioExiste) {
                 
-
                 if (from !== "CardSignUp") {
                     const passwordHash = bcryptjs.hashSync(password, 20)
                     usuarioExiste.password = passwordHash
