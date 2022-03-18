@@ -56,7 +56,7 @@ const usersControllers = {
             res.redirect("http://localhost:3000/cardSignIn")
         }
         else {
-            res.json({ success: false, response: "Your e-mail could not be verified" })
+            res.json({ success: false, message: "Your e-mail could not be verified" })
         }
     },
 
@@ -79,10 +79,10 @@ const usersControllers = {
                     usuarioExiste.from = from // de donde se loguea el usuario
                     usuarioExiste.connected = false
                     usuarioExiste.save()
-                    res.json({ success: true, response: "We update your Sign Up for you to perform with " + from })
+                    res.json({ success: true, message: "We update your Sign Up for you to perform with " + from })
                 }
                 else {
-                    res.json({ success: false, response: "The e-mail is already in use" })
+                    res.json({ success: false, message: "The e-mail is already in use" })
                 }
             }
 
@@ -106,7 +106,7 @@ const usersControllers = {
                     NuevoUsuario.from = from
                     NewUser.connected = false
                     await NewUser.save()
-                    res.json({ success: true, data: { NewUser }, response: "Congratulations we have created your user with " + from })
+                    res.json({ success: true, data: { NewUser }, message: "Congratulations we have created your user with " + from })
                 }
                 else {
                     NewUser.emailVerificado = false
@@ -114,7 +114,7 @@ const usersControllers = {
                     NewUser.connected = false
                     await NewUser.save()
                     await sendEmail(email, uniqueText)
-                    res.json({ success: true, from: "CardSignUp", response: "We have sent an e-mail to verify your e-mail address", data: { NewUser } })
+                    res.json({ success: true, from: "CardSignUp", message: "We have sent an e-mail to verify your e-mail address", data: { NewUser } })
                 }
             }
         }
@@ -128,7 +128,7 @@ const usersControllers = {
             const usuario = await User.findOne({ email })
 
             if (!usuario) {
-                res.json({ success: false, from: "controller", error: "The e-mail and/or password is incorrect" })
+                res.json({ success: false, from: "controller", message: "The e-mail and/or password is incorrect" })
             }
             else {
                 if (usuario.emailVerificado) {
@@ -146,9 +146,9 @@ const usersControllers = {
                         await usuario.save()
                         res.json({ success: true, from: "controller", response: { token, datosUser } }) // "logueado" })
                     }
-                    else { res.json({ success: false, from: "controller", error: "The e-mail and/or password is incorrect" }) }
+                    else { res.json({ success: false, from: "controller", message: "The e-mail and/or password is incorrect" }) }
                 }
-                else { res.json({ success: false, from: "controller", error: "Check your e-mail to validate" }) }
+                else { res.json({ success: false, from: "controller", message: "Check your e-mail to validate" }) }
             }
         }
         catch (error) { console.log(error); res.json({ success: false, response: null, error: error }) }
@@ -165,7 +165,7 @@ const usersControllers = {
         user.connected = false
 
         await user.save()
-        res.json({ success: "trueVAL", response: "Closed assignment" })
+        res.json({ success: "trueVAL", message: "Closed assignment" })
     }
 
 }
