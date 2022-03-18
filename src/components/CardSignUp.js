@@ -9,9 +9,9 @@ import FacebookLogin from 'react-facebook-login';
 
 const CardSignUp = () => {
 
+
     const responseFacebook = async (response) => {
         console.log(response);
-
         const NuevoUsuario = {
             email: response.email,
             firstName: response.name,
@@ -19,31 +19,16 @@ const CardSignUp = () => {
             password: response.id + "Ab",
             from: "Facebook",
         }
-
-
         await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
             .then(response =>
-
                 displayMessages(response.data)
-
             )
-
         function displayMessages(data) {
-            if (data.success === "falseVAL") {
-                console.log(data.response.error.details)
-                data.response.error.details.map(error => swal(error.message))
-            }
-            else if (data.success === true) {
-                console.log(data)
-                console.log(swal(data.response))
-            }
-
-            else if (data.success === false) {
-                console.log(data)
-                console.log(swal(data.response))
-            }
+            console.log(data)
+            swal(data.message)
         }
     }
+
 
     const responseGoogle = async (response) => {
         console.log(response);
@@ -54,35 +39,19 @@ const CardSignUp = () => {
             password: response.profileObj.googleId + "Ab",
             from: "Google",
         }
-
         await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
             .then(response =>
-
                 displayMessages(response.data)
-
             )
-
         function displayMessages(data) {
-            if (data.success === "falseVAL") {
-                console.log(data.response.error.details)
-                data.response.error.details.map(error => swal(error.message))
-            }
-            else if (data.success === true) {
-                console.log(data)
-                console.log(swal(data.response))
-            }
-
-            else if (data.success === false) {
-                console.log(data)
-                console.log(swal(data.response))
-            }
+            console.log(data)
+            swal(data.message)
         }
     }
 
 
     async function NewUser(event) {
         event.preventDefault() // previene el comportamiento por defecto del botón submit, que es limpiar el formulario
-        
         const NuevoUsuario = {
             firstName: event.target[0].value,
             lastName: event.target[1].value,
@@ -90,32 +59,16 @@ const CardSignUp = () => {
             password: event.target[3].value,
             from: "CardSignUp",
         }
-
-
         await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
             .then(response =>
-
                 displayMessages(response.data)
-
             )
-
         function displayMessages(data) {
-            if (data.success === "falseVAL") {
-                console.log(data.response.error.details)
-                data.response.error.details.map(error => swal(error.message))
-            }
-
-            else if (data.success === true) {
-                console.log(data)
-                console.log(swal(data.response))
-            }
-
-            else if (data.success === false) {
-                console.log(data)
-                console.log(swal(data.response))
-            }
+            console.log(data)
+            swal(data.message)
         }
     }
+
 
     return (
 
