@@ -10,15 +10,10 @@ import Coment from './Coment';
 
 const Access = () => {
 
-    
-
     const [itineraries, setItineraries] = useState([])
-
     const [{ cities }, dispatch] = useStateValue()
-
     const { id } = useParams()
     const citiesSelecter = cities.filter(city => city._id === id)
-
 
     useEffect(() => {
         citiesSelecter.map(city =>
@@ -30,7 +25,6 @@ const Access = () => {
 
 
     return (
-
 
         <div className="accessContainer1">
 

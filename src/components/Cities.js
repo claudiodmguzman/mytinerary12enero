@@ -7,6 +7,7 @@ import { actionType } from '../reducer';
 
 
 function Cities() {
+    
     const [{ cities }, dispatch] = useStateValue()
 
     const inputSearch = (event) => {

@@ -2,14 +2,12 @@ import React from 'react';
 import CardContinents from './CardContinents';
 import { useParams } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
+import { Link as Linkrouter } from 'react-router-dom'
 import { actionType } from '../reducer';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+
 
 
 const Continents = () => {
-
-    
 
     
     return (
