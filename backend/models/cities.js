@@ -17,6 +17,8 @@ const citiesSchema = new mongoose.Schema ({
     continents:{type:String,require:true},
     region:{type:String,require:true},
     image:{type:String,require:true},
+    imageGlobo:{type:String,require:true},
+    imageContinent:{type:String,require:true},
 })
 
 const City = mongoose.model("Cities",citiesSchema)
