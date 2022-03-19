@@ -43,7 +43,7 @@ const CardContinents = () => {
     <div>
       {/* <h1 className="cardMasterTitulo">Continents</h1> */}
 
-      {continentSelecter.map((continents) =>
+      {/* {continentSelecter.map((continents) => */}
 
         <div className='ContinentsContainer'>
 
@@ -53,7 +53,7 @@ const CardContinents = () => {
               <Linkrouter to="/cardTinerarySouthAmerica"><img src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${""continente"".image}`} alt="imagen del continente en forma de globo terraqueo" /></Linkrouter>
               </div> */}
 
-            <Accordion title="cont">
+            <Accordion title="Render Name Continent">
               <>
                 {cities.map((cityCont) => (
                   <ul className='cardUlContinent'>
@@ -64,8 +64,11 @@ const CardContinents = () => {
             </Accordion>
 
           </div >
+
         </div>
-      )}
+
+      {/* )} */}
+
     </div>
 
   )
