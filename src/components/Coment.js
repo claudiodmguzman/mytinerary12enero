@@ -9,21 +9,6 @@ function Coment() {
 
     const [{ cities }, { user }, dispatch] = useStateValue()
 
-    const submitComent = (event) => {
-        event.preventDefault()
-        //console.log(event.target[0].value)
-
-        const dataComents = {
-            itinerario: itineraries[0]._id,
-            //itinerario: itineraries, // trae todos itinerarios (como un array)
-            mensage: event.target[0].value,
-            //user:user.datosUser.id, (queda comentado porque no me funcioana el logIn)
-            user: user,
-
-        }
-        console.log(dataComents)
-    }
-
     const [itineraries, setItineraries] = useState([])
     const { id } = useParams()
     const citiesSelecter = cities.filter(city => city._id === id)
@@ -35,6 +20,22 @@ function Coment() {
                 )
         )
     }, [])
+
+    const submitComent = (event) => {
+        event.preventDefault()
+        //console.log(event.target[0].value)
+
+        const dataComents = {
+            itinerario: itineraries[0]._id,
+            mensage: event.target[0].value,
+            //user:user.datosUser.id, (queda comentado porque no me funcioana el logIn)
+            user: user,
+
+        }
+        console.log(dataComents)
+    }
+
+    
 
 
     return (
