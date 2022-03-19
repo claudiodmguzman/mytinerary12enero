@@ -14,6 +14,7 @@ export const actionType = {
 
 const reducer = (state, action) => {
     console.log(action)
+    
     switch (action.type) {
         case "CITIESDB":
             return {

@@ -1,11 +1,10 @@
 import axios from 'axios';
 import React from 'react';
-//import { Link as Linkrouter } from 'react-router-dom';
 import swal from 'sweetalert';
-//import { actionType } from '../reducer';
 import { useStateValue } from '../StateProvider';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
+import { actionType } from '../reducer';
 
 
 const CardSignIn = () => {
@@ -27,7 +26,16 @@ const CardSignIn = () => {
             )
         function displayMessages(data) {
             console.log(data)
-            swal(data.message)
+            if (!data.success) {
+                swal(data.message)
+            }
+            else {
+                swal(data.message)
+                dispatch({
+                    type: actionType.USER,
+                    user: data.response,
+                })
+            }
         }
     }
 
@@ -45,7 +53,16 @@ const CardSignIn = () => {
             )
         function displayMessages(data) {
             console.log(data)
-            swal(data.message)
+            if (!data.success) {
+                swal(data.message)
+            }
+            else {
+                swal(data.message)
+                dispatch({
+                    type: actionType.USER,
+                    user: data.response,
+                })
+            }
         }
     }
 
@@ -63,7 +80,16 @@ const CardSignIn = () => {
             )
         function displayMessages(data) {
             console.log(data)
-            swal(data.message)
+            if (!data.success) {
+                swal(data.message)
+            }
+            else {
+                swal(data.message)
+                dispatch({
+                    type: actionType.USER,
+                    user: data.response,
+                })
+            }
         }
     }
 
