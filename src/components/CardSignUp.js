@@ -79,32 +79,28 @@ const CardSignUp = () => {
                 <label className="texSign">Before using our services you need to create an account</label>
 
                 <div className="form-group">
-
                     <input type="text" className="form-control formSign" id="exampleDropdownFormPassword1"
                         placeholder="First Name" />
                 </div>
 
                 <div className="form-group">
-
                     <input type="text" className="form-control formSign" id="exampleDropdownFormPassword2"
                         placeholder="Last Name" />
                 </div>
 
                 <div className="form-group">
-
                     <input type="text" className="form-control formSign" id="exampleDropdownFormEmail3"
                         placeholder="email@example.com" />
                 </div>
                 <div className="form-group">
-
                     <input type="password" className="form-control formSign" id="exampleDropdownFormPassword4"
                         placeholder="Password" />
                 </div>
-                <div className="form-group">
 
+                {/* <div className="form-group">
                     <input type="password" className="form-control formSign" id="exampleDropdownFormPassword5"
                         placeholder="Repeat Password" />
-                </div>
+                </div> */}
 
                 <button type="submit" className="btn btn-success">Sign Up</button>
 
