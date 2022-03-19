@@ -145,7 +145,8 @@ const usersControllers = {
                         }
                         usuario.connected = true
                         await usuario.save()
-                        res.json({ success: true, from: "controller", response: { token, datosUser }, message: "Welcome back " + usuario.firstName })
+                        res.json({
+                            success: true, from: "controller", response: { token, datosUser }, message: "Welcome back " + usuario.firstName.toUpperCase() })
                     }
                     else { res.json({ success: false, from: "controller", message: "The e-mail and/or password is incorrect" }) }
                 }
@@ -153,7 +154,6 @@ const usersControllers = {
             }
         }
         catch (error) { console.log(error); res.json({ success: false, response: null, message: "An error has occurred try again later" }) }
-
     },
 
     cerrarCesion: async (req, res) => {

@@ -11,7 +11,6 @@ const comentControllers = {
         let { itinerario, mensage, user } = req.body.dataComents;
         console.log(dataComents)
     }
-
 }
 
 
