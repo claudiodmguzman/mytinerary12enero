@@ -71,7 +71,7 @@ const usersControllers = {
             const usuarioExiste = await User.findOne({ email })
 
             if (usuarioExiste) {
-                
+
                 if (from !== "CardSignUp") {
                     const passwordHash = bcryptjs.hashSync(password, 20)
                     usuarioExiste.password = passwordHash
@@ -118,11 +118,12 @@ const usersControllers = {
                 }
             }
         }
-        catch (error) { res.json({ success: false, from: "CardSignUp", response: null, error: error }) }
+        catch (error) { res.json({ success: false, from: "CardSignUp", message: "The e-mail is already in use", error: error }) }
     },
 
     accesoUsuario: async (req, res) => {
         const { email, password } = req.body.userData
+        console.log(req.body)
 
         try {
             const usuario = await User.findOne({ email })
@@ -140,18 +141,18 @@ const usersControllers = {
                             firstName: usuario.firstName,
                             lastName: usuario.lastName,
                             email: usuario.email,
-                            id:usuario._id,
+                            id: usuario._id,
                         }
                         usuario.connected = true
                         await usuario.save()
-                        res.json({ success: true, from: "controller", response: { token, datosUser } }) // "logueado" })
+                        res.json({ success: true, from: "controller", response: { token, datosUser }, message: "Welcome back " + usuario.firstName })
                     }
                     else { res.json({ success: false, from: "controller", message: "The e-mail and/or password is incorrect" }) }
                 }
                 else { res.json({ success: false, from: "controller", message: "Check your e-mail to validate" }) }
             }
         }
-        catch (error) { console.log(error); res.json({ success: false, response: null, error: error }) }
+        catch (error) { console.log(error); res.json({ success: false, response: null, message: "An error has occurred try again later" }) }
 
     },
 

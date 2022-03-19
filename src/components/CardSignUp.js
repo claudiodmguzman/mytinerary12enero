@@ -10,14 +10,14 @@ import FacebookLogin from 'react-facebook-login';
 const CardSignUp = () => {
 
 
-    const responseFacebook = async (response) => {
+    const responseGoogle = async (response) => {
         console.log(response);
         const NuevoUsuario = {
-            email: response.email,
-            firstName: response.name,
-            lastName: "facebook",
-            password: response.id + "Ab",
-            from: "Facebook",
+            firstName: response.profileObj.givenName,
+            lastName: response.profileObj.familyName,
+            email: response.profileObj.email,
+            password: response.profileObj.googleId + "Ab",
+            from: "Google",
         }
         await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
             .then(response =>
@@ -30,14 +30,14 @@ const CardSignUp = () => {
     }
 
 
-    const responseGoogle = async (response) => {
+    const responseFacebook = async (response) => {
         console.log(response);
         const NuevoUsuario = {
-            firstName: response.profileObj.givenName,
-            lastName: response.profileObj.familyName,
-            email: response.profileObj.email,
-            password: response.profileObj.googleId + "Ab",
-            from: "Google",
+            email: response.email,
+            firstName: response.name,
+            lastName: "facebook",
+            password: response.id + "Ab",
+            from: "Facebook",
         }
         await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
             .then(response =>

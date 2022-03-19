@@ -19,6 +19,7 @@ const CardSignIn = () => {
         const userData = {
             email: response.profileObj.email,
             password: response.profileObj.googleId + "Ab",
+            from: "Google",
         }
         await axios.post("http://localhost:4000/api/signIn", { userData })
             .then(response =>
@@ -36,6 +37,7 @@ const CardSignIn = () => {
         const userData = {
             email: response.email,
             password: response.id + "Ab",
+            from: "Facebook",
         }
         await axios.post("http://localhost:4000/api/signIn", { userData })
             .then(response =>
@@ -53,6 +55,7 @@ const CardSignIn = () => {
         const userData = {
             email: event.target[0].value,
             password: event.target[1].value,
+            from: "CardSignIn",
         }
         await axios.post("http://localhost:4000/api/signIn", { userData })
             .then(response =>
