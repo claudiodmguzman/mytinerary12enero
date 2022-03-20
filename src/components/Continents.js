@@ -9,7 +9,7 @@ import axios from 'axios';
 
 const Continents = () => {
 
-    
+    const [{ cities }, dispatch] = useStateValue()
 
     
     return (
