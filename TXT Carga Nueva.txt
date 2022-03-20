@@ -1,8 +1,10 @@
 Cities = Continentes
- cities = continentes
+ cities = Continentes
 
 City = Contynente
 city = contynente
+
+filterCity = filterContynente
 
 citiesSchema = continentesSchema
 

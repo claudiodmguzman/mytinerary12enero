@@ -36,6 +36,17 @@ function App() {
 
   }, [])
 
+  useEffect(() => {
+    axios.get("http://localhost:4000/api/datosContinentes")
+      .then(response => {
+        dispatch({
+          type: actionType.CONTINENTESDB,
+          continentes: response.data.response.continentes
+        })
+      })
+
+  }, [])
+
   
   return (
 

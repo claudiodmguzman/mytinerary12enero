@@ -1,7 +1,9 @@
 export const initialState = {
     cities: [],
+    continentes:[],
     user: null,
     filterCity: [],
+    filterContynente:[],
 
 }
 
@@ -9,18 +11,26 @@ export const actionType = {
     CITIESDB: "CITIESDB",
     USER: "USER",
     FILTER: "FILTER",
+    CONTINENTESDB: "CONTINENTESDB",
 
 }
 
 const reducer = (state, action) => {
     console.log(action)
-    
+
     switch (action.type) {
         case "CITIESDB":
             return {
                 ...state,
                 cities: action.cities,
                 filterCity: action.cities,
+            }
+
+        case "CONTINENTESDB":
+            return {
+                ...state,
+                continentes: action.continentes,
+                filterContynente: action.continentes,
             }
 
         case "USER":
