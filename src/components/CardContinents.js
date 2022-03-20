@@ -14,13 +14,14 @@ import img6 from './img/imgContinentes/img6-Oceania.png';
 
 const CardContinents = () => {
 
-   const [{ filterContynente }, dispatch] = useStateValue()
+   //const [{ filterContynente }, { filterCity }, dispatch] = useStateValue()
+   const [{ filterCity }, dispatch] = useStateValue()
 
 
    return (
-      
-      <>
-         {filterContynente?.map((contynente) => (
+
+      // <>
+      //    {filterContynente?.map((contynente) => (
 
             <div>
                {/* <h1 className="cardMasterTitulo">Continents</h1> */}
@@ -30,22 +31,22 @@ const CardContinents = () => {
                         {/* <Linkrouter className='item-Continent' to={`/access/${contynente._id}`}><img className="accessImage" src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${contynente.imageGlobo}`} alt="Imagen Globo del Continente" /></Linkrouter> */}
                      </div>
 
-
-
-                     <Accordion title={contynente.nameContinents}>
-
-                        <ul className='cardUlContinent'>
-                           <li><Linkrouter className='item-Continent' to={`/access/${contynente._id}`}>{contynente.nameCityContinents}</Linkrouter></li>
-                        </ul>
-
+                     <Accordion title="{contynente.nameContinents}">
+                        <>
+                           {filterCity?.map((city) => (
+                              <ul className='cardUlContinent'>
+                                 <li><Linkrouter className='item-Continent' to={`/access/${city._id}`}>{city.name}</Linkrouter></li>
+                              </ul>
+                           ))}
+                        </>
                      </Accordion>
 
                   </div >
                </div>
             </div>
 
-         ))}
-      </>
+      //    ))}
+      // </>
 
    )
 }
