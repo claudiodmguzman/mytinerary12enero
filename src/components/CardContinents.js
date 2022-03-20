@@ -10,8 +10,8 @@ import axios from 'axios';
 
 const CardContinents = () => {
 
-   const [{ filterContynente }, dispatch] = useStateValue()
-   const [{ continentes }] = useStateValue()
+   const [{ filterContynente }] = useStateValue()
+   const [{ continentes }, dispatch] = useStateValue()
    const [Cities, setCities] = useState([])
    const { id } = useParams()
    const continentesSelecter = continentes.filter(contynente => contynente._id === id)
@@ -27,14 +27,11 @@ const CardContinents = () => {
 
    return (
 
-
-
       <div>
 
-         {/* <h1 className="cardMasterTitulo">Continents</h1> */}
          < div className='ContinentsContainer' >
             <>
-               {filterContynente?.map((contynente) => (
+               {filterContynente.map((contynente) => (
 
                   <div className='cardContinentsContainer'>
 
@@ -47,17 +44,30 @@ const CardContinents = () => {
 
                         <Accordion title={contynente.nameContinents}>
                            <>
-                              {Cities.map((cityContinente) => (
+                              {Cities.map((cityContinente) => 
                                  <ul className='cardUlContinent'>
-                                    <li><Linkrouter className='item-Continent' to={`/access/${cityContinente._id}`}>{cityContinente.name}</Linkrouter></li>
+                                    <li><Linkrouter className='item-Continent'>{cityContinente.name}</Linkrouter></li>
+                                    {/* <li><Linkrouter className='item-Continent' to={`/access/${cityContinente._id}`}>{cityContinente.name}</Linkrouter></li> */}
                                  </ul>
-                              ))}
+                              )}
                            </>
                         </Accordion>
 
                      </div>
 
+
+
+
                   </div >
+
+               ))}
+            </>
+         </div>
+         <div>
+            <>
+               {Cities.map((cityContinente) => (
+                  <p>{cityContinente.nameContinents}</p>
+
                ))}
             </>
          </div>

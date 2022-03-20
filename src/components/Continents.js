@@ -1,12 +1,12 @@
 import React from 'react';
 import CardContinents from './CardContinents';
-import CardTinerary from './CardTinerary';
-import { useStateValue } from '../StateProvider';
+//import CardTinerary from './CardTinerary';
+//import { useStateValue } from '../StateProvider';
 
 
 const Continents = () => {
 
-   const [{ continentes }, dispatch] = useStateValue()
+   // const [{ continentes }, dispatch] = useStateValue()
 
    return (
 
