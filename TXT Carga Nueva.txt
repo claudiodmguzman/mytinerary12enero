@@ -9,3 +9,10 @@ citiesSchema = continentesSchema
 datos = datosContinentes
 
 ObtenerTodosLosDatos = ObtenerContinentes
+
+
+"nameContinents:"",
+"nameCityContinents:"",
+"nameCountryContinents:"",
+"imageGlobo:"",
+"imageContinent:"",
