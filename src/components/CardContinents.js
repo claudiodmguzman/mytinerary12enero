@@ -39,6 +39,7 @@ const CardContinents = () => {
                   <div className='cardContinentsContainer'>
 
                      <div className='imgCardContinent'>
+                        {/* <Linkrouter to={`/CardTinerary"${contynente.nameContinents}`}><img src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${contynente.imageGlobo}`} alt="Imagen Globo del Continente" /></Linkrouter> */}
                         <Linkrouter to="/CardTineraryAfrica"><img src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${contynente.imageGlobo}`} alt="Imagen Globo del Continente" /></Linkrouter>
                      </div>
 
