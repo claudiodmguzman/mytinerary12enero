@@ -9,27 +9,27 @@ import axios from 'axios';
 
 const Continents = () => {
 
-    const [{ cities }, dispatch] = useStateValue()
-
-    
-    return (
-
-        <div>
-
-            <nav>
-
-                <h1 className="cardMasterTitulo">Continents</h1>
-
-            </nav>
-
-            <div>
-                <CardContinents />
-            </div>
-
-        </div>
+   const [{ cities }, dispatch] = useStateValue()
 
 
-    )
+   return (
+
+      <div>
+
+         <nav>
+
+            <h1 className="cardMasterTitulo">Continents</h1>
+
+         </nav>
+
+         <div>
+            <CardContinents />
+         </div>
+
+      </div>
+
+
+   )
 }
 
 export default Continents;

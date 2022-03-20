@@ -1,0 +1,11 @@
+Cities = Continentes
+ cities = continentes
+
+City = Contynente
+city = contynente
+
+citiesSchema = continentesSchema
+
+datos = datosContinentes
+
+ObtenerTodosLosDatos = ObtenerContinentes
