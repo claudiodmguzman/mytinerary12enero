@@ -29,14 +29,14 @@ const CardContinents = () => {
                   <div className='cardContinentsContainer'>
 
                      <div className='imgCardContinent'>
-                        <Linkrouter className='item-Continent' to="/CardTineraryAfrica"><img className="accessImage" src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${contynente.imageGlobo}`} alt="Imagen Globo del Continente" /></Linkrouter>
+                        <Linkrouter className='item-Continent' to="/CardTineraryAfrica"><img className='imgCardContinent' src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${contynente.imageGlobo}`} alt="Imagen Globo del Continente" /></Linkrouter>
                      </div>
 
                      <Accordion title={contynente.nameContinents}>
                        <>
-                           {filterCity?.map((city) => (
+                           {filterCity?.map((cityContinente) => (
                               <ul className='cardUlContinent'>
-                                 <li><Linkrouter className='item-Continent' to={`/access/${city._id}`}>{city.name}</Linkrouter></li>
+                                 <li><Linkrouter className='item-Continent' to={`/access/${cityContinente._id}`}>{cityContinente.name}</Linkrouter></li>
                               </ul>
                            ))}
                         </> 
