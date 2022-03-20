@@ -1,6 +1,6 @@
 const Router = require("express").Router();
 const datosController = require("../controllers/datosControllers")
-const { ObtenerTodosLosDatos, ObtenerItinerario, ObtenerContinentes } = datosController // desestructuración del controlador
+const { ObtenerTodosLosDatos, ObtenerItinerario, ObtenerContinentes, ObtenerContinentario } = datosController // desestructuración del controlador
 const usersControllers = require("../controllers/usersControllers")
 const { nuevoUsuario, verifyEmail, accesoUsuario, cerrarCesion } = usersControllers
 const validator = require("../controllers/validator")
@@ -14,6 +14,9 @@ Router.route("/itinerarios/:city")
 
 Router.route("/datosContinentes")
     .get(ObtenerContinentes)
+
+Router.route("/continentarios/:contynente")
+    .get(ObtenerContinentario)
 
 Router.route("/cardSignUp")
     .post(validator, nuevoUsuario)

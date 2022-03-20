@@ -1,5 +1,5 @@
 Cities = Continentes
- cities = Continentes
+ cities = continentes
 
 City = Contynente
 city = contynente
