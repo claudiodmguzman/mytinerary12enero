@@ -15,7 +15,7 @@ import img6 from './img/imgContinentes/img6-Oceania.png';
 const CardContinents = () => {
 
    const [{ filterContynente }, dispatch] = useStateValue()
-   //const [{ filterCity }, dispatch] = useStateValue()
+   const [{ filterCity }] = useStateValue()
 
 
    return (
@@ -27,18 +27,19 @@ const CardContinents = () => {
                {/* <h1 className="cardMasterTitulo">Continents</h1> */}
                <div className='ContinentsContainer'>
                   <div className='cardContinentsContainer'>
+
                      <div className='imgCardContinent'>
-                        <Linkrouter className='item-Continent' to={`/access/${contynente._id}`}><img className="accessImage" src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${contynente.imageGlobo}`} alt="Imagen Globo del Continente" /></Linkrouter>
+                        <Linkrouter className='item-Continent' to="/CardTineraryAfrica"><img className="accessImage" src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${contynente.imageGlobo}`} alt="Imagen Globo del Continente" /></Linkrouter>
                      </div>
 
                      <Accordion title={contynente.nameContinents}>
-                        {/* <>
+                       <>
                            {filterCity?.map((city) => (
                               <ul className='cardUlContinent'>
                                  <li><Linkrouter className='item-Continent' to={`/access/${city._id}`}>{city.name}</Linkrouter></li>
                               </ul>
                            ))}
-                        </> */}
+                        </> 
                      </Accordion>
 
                   </div >
