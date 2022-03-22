@@ -37,9 +37,9 @@ const Access = () => {
 
                             <div>
 
-                                <div className="accessFondo">{city.name}</div>
+                                <div className="accessFondo accName">{city.name}</div>
 
-                                <div className="accessFondo">{city.country}</div>
+                                <div className="accessFondo accCountry">{city.country}</div>
 
                                 <div className="accessFondo">Currency: {city.currency}</div>
 

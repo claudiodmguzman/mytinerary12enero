@@ -636,7 +636,15 @@ font-weight: 300;
   display: flex;
   font-size: x-large;
   color: #4d3b20;
-  
+}
+
+.accName {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.accCountry {
+  font-weight: 700;
 }
 
 .accessHref {
@@ -768,6 +776,11 @@ font-weight: 300;
 
 .botonComentario {
   margin-top: 12px;
+}
+
+.botonComentario:hover {
+  opacity: .7;
+  border-radius: 100%;
 }
 
 .accessCommLik {

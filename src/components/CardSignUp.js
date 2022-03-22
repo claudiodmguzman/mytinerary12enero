@@ -66,7 +66,17 @@ const CardSignUp = () => {
         function displayMessages(data) {
             console.log(data)
             swal(data.message)
-        }
+         }
+
+        // function displayMessages(data) {
+        //     console.log(data)
+        //     if (!data.success.error) {
+        //         alert(data.success.error.message)
+        //     }
+        //     else if (data.success.error) {
+        //         alert(data.success.error.message)
+        //     }
+        // }
     }
 
 
