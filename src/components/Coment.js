@@ -27,13 +27,14 @@ function Coment() {
         //console.log(event.target[0].value)
 
         const dataComents = {
-            itinerario: itineraries[0]._id,
-            mensage: event.target[0].value,
-            user:user.datosUser.id,
+            itinerarioComent: itineraries[0]._id,
+            mensageComent: event.target[0].value,
+            userComent:user.datosUser.id,
 
         }
         //console.log(dataComents)
         await axios.post("http://localhost:4000/api/coment", { dataComents })
+        .then(response => console.log(response))
            
     }
 
