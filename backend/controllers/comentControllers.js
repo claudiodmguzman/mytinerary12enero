@@ -69,5 +69,4 @@ const comentControllers = {
     },
 }
 
-
 module.exports = comentControllers
