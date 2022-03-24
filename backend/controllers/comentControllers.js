@@ -15,8 +15,28 @@ const comentControllers = {
             user: userComent,
             comentaryUser: mensageComent,
         }).save()
-            .then(response => res.json({ response }))
+        let comentario
+        try {
+            comentario = await Comentario.find({ itinerario: itinerarioComent }).populate("user")
 
+        } catch (error) {
+            console.log(error)
+
+        }
+        res.json({ success: true, response: { comentario } })
+    },
+
+    obtenerComentario: async (req, res) => {
+        let id = req.params.id;
+        let comentario
+        try {
+            comentario = await Comentario.find({ itinerario: id }).populate("user")
+
+        } catch (error) {
+            console.log(error)
+
+        }
+        res.json({ success: true, response: { comentario } })
     }
 }
 

@@ -7,62 +7,86 @@ import axios from 'axios';
 
 function Coment() {
 
-    const [{ cities },  dispatch] = useStateValue()
-    const [ { user }] = useStateValue()
 
-    const [itineraries, setItineraries] = useState([])
-    const { id } = useParams()
-    const citiesSelecter = cities.filter(city => city._id === id)
+   const [{ cities }, dispatch] = useStateValue()
+   const [{ user }] = useStateValue()
 
-    useEffect(() => {
-        citiesSelecter.map(city =>
-            axios.get(`http://localhost:4000/api/itinerarios/${city.name}`)
-                .then(response => setItineraries(response.data.response.itinerario)
-                )
-        )
-    }, [])
+   const [itineraries, setItineraries] = useState([])
 
-    const submitComent = async (event) => {
-        event.preventDefault()
-        //console.log(event.target[0].value)
+   const { id } = useParams()
+   const citiesSelecter = cities.filter(city => city._id === id)
 
-        const dataComents = {
-            itinerarioComent: itineraries[0]._id,
-            mensageComent: event.target[0].value,
-            userComent:user.datosUser.id,
-
-        }
-        //console.log(dataComents)
-        await axios.post("http://localhost:4000/api/coment", { dataComents })
-        .then(response => console.log(response))
-           
-    }
-
-    
+   useEffect(() => {
+      citiesSelecter.map(city =>
+         axios.get(`http://localhost:4000/api/itinerarios/${city.name}`)
+            .then(response => setItineraries(response.data.response.itinerario)
+            )
+      )
+   }, [])
 
 
-    return (
+   const [coment, setComent] = useState()
+   
 
-        <form onSubmit={submitComent}>
+   const submitComent = async (event) => {
+      event.preventDefault()
+      //console.log(event.target[0].value)
 
-                <div className="comentario">
+      const dataComents = {
+         itinerarioComent: itineraries[0]._id,
+         mensageComent: event.target[0].value,
+         userComent: user.datosUser.id,
+         
 
-                    <div className='fromComentario'>NAME's comment</div>
+      }
+      //console.log(dataComents)
+      await axios.post("http://localhost:4000/api/coment", { dataComents })
+         .then(response => setComent(response.data.response.comentario))
 
-                    <div><textarea name="textarea" className='textComentario' placeholder='write your beautiful comment here...'></textarea></div>
+   }
 
-                    <div className='botonesComentario'>
-                        <div><button type="submit" className="btn btn-outline-primary botonComentario">send</button></div>
+   useEffect(() => {
+      let id = itineraries
+      axios.get(`http://localhost:4000/api/coment/${id}`)
+         .then(response => {
+           setComent(response.data.response.comentario)
+         })
 
-                        <div><button type="submit" className="btn btn-outline-warning botonComentario">edit</button></div>
+   }, [])
 
-                        <div><button type="submit" className="btn btn-outline-danger botonComentario">delete</button></div>
-                    </div>
 
-                </div>
+   return (
 
-        </form>
-    )
+      <form onSubmit={submitComent}>
+
+         <div className="comentario">
+
+            <>
+               {coment?.map(itemComent =>
+                  <div>
+
+                     <div className='fromComentario'>{itemComent.user.firstName}</div>
+
+                     <div><p name="textarea" className='textComentario'>{itemComent.coment}</p></div>
+                  </div>
+               )}
+            </>
+
+            <div><textarea name="textarea" className='textComentario' placeholder='write your beautiful comment here...'></textarea></div>
+
+            <div className='botonesComentario'>
+               <div><button type="submit" className="btn btn-outline-primary botonComentario">send</button></div>
+
+               <div><button type="submit" className="btn btn-outline-warning botonComentario">edit</button></div>
+
+               <div><button type="submit" className="btn btn-outline-danger botonComentario">delete</button></div>
+            </div>
+
+         </div>
+
+      </form>
+
+   )
 }
 
 export default Coment;
