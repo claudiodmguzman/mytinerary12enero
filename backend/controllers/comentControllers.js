@@ -50,7 +50,23 @@ const comentControllers = {
 
         }
         res.json({ success: true, response: { comentario } })
-    }
+    },
+
+    modificarComentario: async (req, res) => {
+        let id = req.params.id
+        console.log(req.body)
+        let newComents = req.body.data
+        console.log(newComents)
+        let comentario
+        try {
+            comentario = await Comentario.findOneAndUpdate({ _id: id, {comentaryUser: newComents }})
+
+        } catch (error) {
+            console.log(error)
+
+        }
+        res.json({ success: true, response: { comentario } })
+    },
 }
 
 

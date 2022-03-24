@@ -7,10 +7,9 @@ const usersControllers = require("../controllers/usersControllers");
 const { nuevoUsuario, verifyEmail, accesoUsuario, cerrarCesion } = usersControllers;
 
 const comentControllers = require("../controllers/comentControllers");
-const { cargarComentario, obtenerComentario, borrarComentario } = comentControllers;
+const { cargarComentario, obtenerComentario, borrarComentario, modificarComentario } = comentControllers;
 
 const validator = require("../controllers/validator");
-
 
 
 Router.route("/datos") // "datos" parte de la url de la consulta
@@ -43,5 +42,6 @@ Router.route("/coment")
 Router.route("/coment/:id")
     .get(obtenerComentario)
     .delete(borrarComentario)
+    .put(modificarComentario)
 
 module.exports = Router

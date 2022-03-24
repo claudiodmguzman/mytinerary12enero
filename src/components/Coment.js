@@ -27,6 +27,8 @@ function Coment() {
 
    const [coment, setComent] = useState()
 
+   const [cambio, setCambio] = useState()
+
    const [reload, setReload] = useState(false)
 
    const submitComent = async (event) => {
@@ -41,7 +43,9 @@ function Coment() {
       }
       //console.log(dataComents)
       await axios.post("http://localhost:4000/api/coment", { dataComents })
-         .then(response => setComent(response.data.response.comentario))
+         .then(response =>
+            setComent(response.data.response.comentario))
+      setReload(!reload)
 
    }
 
@@ -50,16 +54,29 @@ function Coment() {
       axios.get(`http://localhost:4000/api/coment/${id}`)
          .then(response => {
             setComent(response.data.response.comentario)
-            //setReload(!reload)
          })
+      console.log(coment)
 
    }, [reload])
 
-   const borrarComentario =(id)=>{
+
+   const borrarComentario = (id) => {
       axios.delete(`http://localhost:4000/api/coment/${id}`)
-         .then(response => {
-         })
+      setReload(!reload)
    }
+
+   const handelChange = (event) => {
+      setCambio(event.target.value)
+   }
+
+   const modificarComentario = (id) => {
+      console.log(id)
+      console.log(cambio)
+      let data = cambio
+      axios.put(`http://localhost:4000/api/coment/${id}`, { data })
+      setReload(!reload)
+   }
+
 
 
    return (
@@ -72,14 +89,14 @@ function Coment() {
                {coment?.map(itemComent =>
                   <div>
 
-                     <div className='fromComentario'>{itemComent.user.firstName}</div>
+                     {/* <div className='fromComentario'>{itemComent.user.firstName}</div> */}
 
-                     <div><input className='textComentario' defaultValue={itemComent.comentaryUse}></input></div>
+                     <div><input className='textComentarioUser' onKeyUp={handelChange} defaultValue={itemComent.comentaryUse}></input></div>
 
                      <div className='botonesComentario'>
-                        <div><button className="btn btn-outline-warning botonComentario">edit</button></div>
+                        <div><button className="btn btn-outline-warning botonComentario" onClick={() => modificarComentario(itemComent._id)}>edit</button></div>
 
-                        <div><button className="btn btn-outline-danger botonComentario" onClick={borrarComentario}>delete</button></div>
+                        <div><button className="btn btn-outline-danger botonComentario" onClick={() => borrarComentario(itemComent._id)}>delete</button></div>
                      </div>
                   </div>
                )}
@@ -89,10 +106,6 @@ function Coment() {
 
             <div className='botonesComentario'>
                <div><button type="submit" className="btn btn-outline-primary botonComentario">send</button></div>
-
-               {/* <div><button type="submit" className="btn btn-outline-warning botonComentario">edit</button></div>
-
-               <div><button type="submit" className="btn btn-outline-danger botonComentario">delete</button></div> */}
             </div>
 
          </div>
