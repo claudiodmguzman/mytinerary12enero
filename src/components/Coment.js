@@ -74,6 +74,7 @@ function Coment() {
       console.log(cambio)
       let data = cambio
       axios.put(`http://localhost:4000/api/coment/${id}`, { data })
+      .then (response => console.log(response))
       setReload(!reload)
    }
 

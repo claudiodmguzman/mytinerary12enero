@@ -36,7 +36,7 @@ const comentControllers = {
             console.log(error)
 
         }
-        res.json({ success: true, response: { comentario } })
+        res.json({ success: true, response: { comentario }, message: "Your comment has been uploaded" })
     },
 
     borrarComentario: async (req, res) => {
@@ -49,7 +49,7 @@ const comentControllers = {
             console.log(error)
 
         }
-        res.json({ success: true, response: { comentario } })
+        res.json({ success: true, response: { comentario }, message: "Your comment has been deleted" })
     },
 
     modificarComentario: async (req, res) => {
@@ -65,7 +65,7 @@ const comentControllers = {
             console.log(error)
 
         }
-        res.json({ success: true, response: { comentario } })
+        res.json({ success: true, response: { comentario }, message: "Your comment has been modified" })
     },
 }
 
