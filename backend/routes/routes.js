@@ -1,8 +1,11 @@
 const Router = require("express").Router();
+const { cargarComentario } = require("../controllers/comentControllers");
 const datosController = require("../controllers/datosControllers")
 const { ObtenerTodosLosDatos, ObtenerItinerario, ObtenerContinentes, ObtenerContinentario } = datosController // desestructuración del controlador
 const usersControllers = require("../controllers/usersControllers")
 const { nuevoUsuario, verifyEmail, accesoUsuario, cerrarCesion } = usersControllers
+const comentControllers = require("../controllers/comentControllers")
+const {cargarComentario} = comentControllers
 const validator = require("../controllers/validator")
 
 
@@ -29,5 +32,8 @@ Router.route("/signIn")
 
 Router.route("/signOut")
     .post(cerrarCesion)
+
+Router.route("/coment")
+    .post(cargarComentario)
 
 module.exports = Router

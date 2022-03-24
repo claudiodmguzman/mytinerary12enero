@@ -7,7 +7,8 @@ import axios from 'axios';
 
 function Coment() {
 
-    const [{ cities }, { user }, dispatch] = useStateValue()
+    const [{ cities },  dispatch] = useStateValue()
+    const [ { user }] = useStateValue()
 
     const [itineraries, setItineraries] = useState([])
     const { id } = useParams()
@@ -28,11 +29,14 @@ function Coment() {
         const dataComents = {
             itinerario: itineraries[0]._id,
             mensage: event.target[0].value,
-            //user:user.datosUser.id, (queda comentado porque no me funcioana el logIn)
-            user: user,
+            user:user.datosUser.id,
 
         }
-        console.log(dataComents)
+        //console.log(dataComents)
+        await axios.post("http://localhost:4000/api/coment", { dataComents })
+            .then(response =>
+                displayMessages(response.data)
+            )
     }
 
     
