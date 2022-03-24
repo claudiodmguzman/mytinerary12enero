@@ -55,11 +55,11 @@ const comentControllers = {
     modificarComentario: async (req, res) => {
         let id = req.params.id
         console.log(req.body)
-        let newComents = req.body.data
+        let newComents = { comentaryUser: req.body.data }
         console.log(newComents)
         let comentario
         try {
-            comentario = await Comentario.findOneAndUpdate({ _id: id, {comentaryUser: newComents }})
+            comentario = await Comentario.findOneAndUpdate({ _id: id }, newComents)
 
         } catch (error) {
             console.log(error)
