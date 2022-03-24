@@ -22,7 +22,7 @@ function Coment() {
         )
     }, [])
 
-    const submitComent = (event) => {
+    const submitComent = async (event) => {
         event.preventDefault()
         //console.log(event.target[0].value)
 
@@ -34,9 +34,7 @@ function Coment() {
         }
         //console.log(dataComents)
         await axios.post("http://localhost:4000/api/coment", { dataComents })
-            .then(response =>
-                displayMessages(response.data)
-            )
+           
     }
 
     

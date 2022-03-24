@@ -9,7 +9,7 @@ const comentControllers = {
 
     cargarComentario: async (req, res) => {
         let { itinerario, mensage, user } = req.body.dataComents;
-        console.log(dataComents)
+        console.log(req.body.dataComents)
     }
 }
 

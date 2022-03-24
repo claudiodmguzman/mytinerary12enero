@@ -1,5 +1,4 @@
 const Router = require("express").Router();
-const { cargarComentario } = require("../controllers/comentControllers");
 const datosController = require("../controllers/datosControllers")
 const { ObtenerTodosLosDatos, ObtenerItinerario, ObtenerContinentes, ObtenerContinentario } = datosController // desestructuración del controlador
 const usersControllers = require("../controllers/usersControllers")
