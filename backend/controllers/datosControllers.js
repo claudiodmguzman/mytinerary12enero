@@ -60,7 +60,7 @@ const datosController = {
         const contynente = req.params.contynente
         let error = null
         try {
-            continentario = await Cities.find({continents:contynente})
+            continentario = await Cities.find({name:contynente})
         } catch (err) {
             error = err
             console.log(error) 

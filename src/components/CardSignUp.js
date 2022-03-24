@@ -65,7 +65,7 @@ const CardSignUp = () => {
             )
         function displayMessages(data) {
             console.log(data)
-            swal(data.message)
+            // swal(data.message)
          }
 
         // function displayMessages(data) {

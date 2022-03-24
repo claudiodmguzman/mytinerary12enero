@@ -18,7 +18,7 @@ const CardContinents = () => {
 
    useEffect(() => {
       continentesSelecter.map(contynente =>
-         axios.get(`http://localhost:4000/api/continentarios/${contynente.continents}`)
+         axios.get(`http://localhost:4000/api/continentarios/${contynente.nameContinents}`)
             .then(response => setCities(response.data.response.continentario)
             )
       )

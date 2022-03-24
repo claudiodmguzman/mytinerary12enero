@@ -5,7 +5,6 @@ const crypto = require("crypto")
 const jwt = require("jsonwebtoken")
 
 
-
 async function sendEmail(email, uniqueText) {
 
     const transporter = nodemailer.createTransport({

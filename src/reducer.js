@@ -9,10 +9,10 @@ export const initialState = {
 
 export const actionType = {
     CITIESDB: "CITIESDB",
+    CONTINENTESDB: "CONTINENTESDB",
     USER: "USER",
     FILTER: "FILTER",
-    CONTINENTESDB: "CONTINENTESDB",
-
+    
 }
 
 const reducer = (state, action) => {
