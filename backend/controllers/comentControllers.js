@@ -37,6 +37,19 @@ const comentControllers = {
 
         }
         res.json({ success: true, response: { comentario } })
+    },
+
+    borrarComentario: async (req, res) => {
+        let id = req.params.id;
+        let comentario
+        try {
+            comentario = await Comentario.findOneAndDelete({ _id: id })
+
+        } catch (error) {
+            console.log(error)
+
+        }
+        res.json({ success: true, response: { comentario } })
     }
 }
 

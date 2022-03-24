@@ -1,15 +1,16 @@
 const Router = require("express").Router();
 
-const datosController = require("../controllers/datosControllers")
-const { ObtenerTodosLosDatos, ObtenerItinerario, ObtenerContinentes, ObtenerContinentario } = datosController // desestructuración del controlador
+const datosController = require("../controllers/datosControllers");
+const { ObtenerTodosLosDatos, ObtenerItinerario, ObtenerContinentes, ObtenerContinentario } = datosController; // desestructuración del controlador
 
-const usersControllers = require("../controllers/usersControllers")
-const { nuevoUsuario, verifyEmail, accesoUsuario, cerrarCesion } = usersControllers
+const usersControllers = require("../controllers/usersControllers");
+const { nuevoUsuario, verifyEmail, accesoUsuario, cerrarCesion } = usersControllers;
 
-const comentControllers = require("../controllers/comentControllers")
-const { cargarComentario, obtenerComentario } = comentControllers
+const comentControllers = require("../controllers/comentControllers");
+const { cargarComentario, obtenerComentario, borrarComentario } = comentControllers;
 
 const validator = require("../controllers/validator");
+
 
 
 Router.route("/datos") // "datos" parte de la url de la consulta
@@ -41,5 +42,6 @@ Router.route("/coment")
 
 Router.route("/coment/:id")
     .get(obtenerComentario)
+    .delete(borrarComentario)
 
 module.exports = Router

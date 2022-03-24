@@ -26,17 +26,17 @@ function Coment() {
 
 
    const [coment, setComent] = useState()
-   
+
+   const [reload, setReload] = useState(false)
 
    const submitComent = async (event) => {
       event.preventDefault()
       //console.log(event.target[0].value)
 
       const dataComents = {
-         itinerarioComent: itineraries[0]._id,
+         itinerarioComent: itineraries._id,
          mensageComent: event.target[0].value,
          userComent: user.datosUser.id,
-         
 
       }
       //console.log(dataComents)
@@ -49,10 +49,17 @@ function Coment() {
       let id = itineraries
       axios.get(`http://localhost:4000/api/coment/${id}`)
          .then(response => {
-           setComent(response.data.response.comentario)
+            setComent(response.data.response.comentario)
+            //setReload(!reload)
          })
 
-   }, [])
+   }, [reload])
+
+   const borrarComentario =(id)=>{
+      axios.delete(`http://localhost:4000/api/coment/${id}`)
+         .then(response => {
+         })
+   }
 
 
    return (
@@ -67,7 +74,13 @@ function Coment() {
 
                      <div className='fromComentario'>{itemComent.user.firstName}</div>
 
-                     <div><p name="textarea" className='textComentario'>{itemComent.coment}</p></div>
+                     <div><input className='textComentario' defaultValue={itemComent.comentaryUse}></input></div>
+
+                     <div className='botonesComentario'>
+                        <div><button className="btn btn-outline-warning botonComentario">edit</button></div>
+
+                        <div><button className="btn btn-outline-danger botonComentario" onClick={borrarComentario}>delete</button></div>
+                     </div>
                   </div>
                )}
             </>
@@ -77,9 +90,9 @@ function Coment() {
             <div className='botonesComentario'>
                <div><button type="submit" className="btn btn-outline-primary botonComentario">send</button></div>
 
-               <div><button type="submit" className="btn btn-outline-warning botonComentario">edit</button></div>
+               {/* <div><button type="submit" className="btn btn-outline-warning botonComentario">edit</button></div>
 
-               <div><button type="submit" className="btn btn-outline-danger botonComentario">delete</button></div>
+               <div><button type="submit" className="btn btn-outline-danger botonComentario">delete</button></div> */}
             </div>
 
          </div>

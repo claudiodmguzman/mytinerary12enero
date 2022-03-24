@@ -6,6 +6,7 @@ const comentariosSchema = new mongoose.Schema({
     comentaryUser: { type: String, require: true },
 })
 
+
 const Comentario = mongoose.model("comentario", comentariosSchema)
 
 module.exports = Comentario;
