@@ -7,3 +7,4 @@ mongoose.connect(process.env.MONGO_URI,
 
     .then(()=>console.log("Base de Datos Conectada"))
     .catch((error=>console.error(error)))
+    
