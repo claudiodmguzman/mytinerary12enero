@@ -67,13 +67,14 @@ const usersControllers = {
         console.log(req.body.NuevoUsuario)
         console.log(req.body)
 
+
         try {
             const usuarioExiste = await User.findOne({ email })
 
             if (usuarioExiste) {
 
                 if (from !== "CardSignUp") {
-                    const passwordHash = bcryptjs.hashSync(password, 20)
+                    const passwordHash = bcryptjs.hashSync(password, 10)
                     usuarioExiste.password = passwordHash
                     usuarioExiste.emailVerificado = true
                     usuarioExiste.from = from // de donde se loguea el usuario
@@ -89,7 +90,7 @@ const usersControllers = {
             else {
                 const uniqueText = crypto.randomBytes(15).toString("hex") //texto randon de 15 caracteres hexadecimal
                 const emailVerificado = false
-                const passwordHash = bcryptjs.hashSync(password, 20)
+                const passwordHash = bcryptjs.hashSync(password, 10)
                 const NewUser = new User({
                     firstName,
                     lastName,
@@ -127,15 +128,19 @@ const usersControllers = {
 
         try {
             const usuario = await User.findOne({ email })
-
+            console.log(usuario)
             if (!usuario) {
                 res.json({ success: false, from: "controller", message: "The e-mail and/or password is incorrect" })
             }
             else {
                 if (usuario.emailVerificado) {
+                    console.log("verificacion de email 20:24")
                     let passwordCoincide = bcryptjs.compareSync(password, usuario.password)
-
+                    console.log(passwordCoincide)
                     if (passwordCoincide) {
+
+                        console.log("password coinccide")
+                        
                         const token = jwt.sign({ ...usuario }, process.env.SECRETKEY)
                         const datosUser = {
                             firstName: usuario.firstName,
@@ -145,6 +150,7 @@ const usersControllers = {
                         }
                         usuario.connected = true
                         await usuario.save()
+                        console.log(usuario)
                         res.json({
                             success: true, from: "controller", response: { token, datosUser }, message: "Welcome back " + usuario.firstName.toUpperCase() })
                     }

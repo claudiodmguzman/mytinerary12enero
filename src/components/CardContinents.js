@@ -11,7 +11,7 @@ import axios from 'axios';
 const CardContinents = () => {
 
    const [{ filterContynente }] = useStateValue()
-   const [{ continentes }, dispatch] = useStateValue()
+   const [{ continentes, cities }, dispatch] = useStateValue()
    const [Cities, setCities] = useState([])
    const { id } = useParams()
    const continentesSelecter = continentes.filter(contynente => contynente._id === id)
@@ -25,6 +25,13 @@ const CardContinents = () => {
    }, [])
 
 
+
+
+
+
+
+
+   console.log(cities)
    return (
 
       <div>
@@ -44,9 +51,12 @@ const CardContinents = () => {
 
                         <Accordion title={contynente.nameContinents}>
                            <>
-                              {Cities.map((cityContinente) => 
+                              {cities?.map((city) =>
+
+                                 city.continents.includes(contynente.nameContinents) &&
+
                                  <ul className='cardUlContinent'>
-                                    <li><Linkrouter className='item-Continent'>{cityContinente.name}</Linkrouter></li>
+                                    <li><Linkrouter className='item-Continent'>{city.name}</Linkrouter></li>
                                     {/* <li><Linkrouter className='item-Continent' to={`/access/${cityContinente._id}`}>{cityContinente.name}</Linkrouter></li> */}
                                  </ul>
                               )}
@@ -63,14 +73,14 @@ const CardContinents = () => {
                ))}
             </>
          </div>
-         <div>
+         {/* <div>
             <>
                {Cities.map((cityContinente) => (
                   <p>{cityContinente.nameContinents}</p>
 
                ))}
             </>
-         </div>
+         </div> */}
 
       </div >
 
