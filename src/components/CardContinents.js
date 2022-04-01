@@ -43,45 +43,31 @@ const CardContinents = () => {
                   <div className='cardContinentsContainer'>
 
                      <div className='imgCardContinent'>
-                        {/* <Linkrouter to={`/CardTinerary"${contynente.nameContinents}`}><img src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${contynente.imageGlobo}`} alt="Imagen Globo del Continente" /></Linkrouter> */}
                         <Linkrouter to="/CardTineraryAfrica"><img src={process.env.PUBLIC_URL + `/imgContinentesGlobo/${contynente.imageGlobo}`} alt="Imagen Globo del Continente" /></Linkrouter>
                      </div>
 
                      <div>
 
                         <Accordion title={contynente.nameContinents}>
+
                            <>
+
                               {cities?.map((city) =>
 
                                  city.continents.includes(contynente.nameContinents) &&
+                                 <div ><Linkrouter className='item-Continent' to={`/access/${city._id}`}>{city.name}</Linkrouter></div>
 
-                                 <ul className='cardUlContinent'>
-                                    <li><Linkrouter className='item-Continent'>{city.name}</Linkrouter></li>
-                                    {/* <li><Linkrouter className='item-Continent' to={`/access/${cityContinente._id}`}>{cityContinente.name}</Linkrouter></li> */}
-                                 </ul>
                               )}
+
                            </>
+
                         </Accordion>
 
                      </div>
-
-
-
-
                   </div >
-
                ))}
             </>
          </div>
-         {/* <div>
-            <>
-               {Cities.map((cityContinente) => (
-                  <p>{cityContinente.nameContinents}</p>
-
-               ))}
-            </>
-         </div> */}
-
       </div >
 
 
