@@ -1,5 +1,6 @@
 import React from 'react';
 import imgCompassLog from './img/imgNavbar/imgCompassLog.png';
+import imgCompassLogOut from './img/imgNavbar/imgCompassLogOut.png';
 import { Link as Linkrouter } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
 import axios from 'axios';
@@ -37,7 +38,9 @@ const CardLog = () => {
 
             <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button"
                 className="btn btn bg-transparent">
-                <img src={imgCompassLog} width="40" height="40" alt="ícono de Logueo SignIn y SignUp" />
+                {!user ?
+                    <img src={imgCompassLogOut} width="40" height="40" alt="ícono de Logueo SignIn y SignUp" />
+                    : <img onClick={() => cerrarCesion()} src={imgCompassLog} width="40" height="40" alt="ícono de Logueo SignIn y SignUp" />}
             </button>
 
 
