@@ -40,7 +40,7 @@ const CardLog = () => {
                 className="btn btn bg-transparent">
                 {!user ?
                     <img src={imgCompassLogOut} width="40" height="40" alt="ícono de Logueo SignIn y SignUp" />
-                    : <img onClick={() => cerrarCesion()} src={imgCompassLog} width="40" height="40" alt="ícono de Logueo SignIn y SignUp" />}
+                    : <img className="App-logoIn" onClick={() => cerrarCesion()} src={imgCompassLog} width="80" height="80" alt="ícono de Logueo SignIn y SignUp" />}
             </button>
 
 

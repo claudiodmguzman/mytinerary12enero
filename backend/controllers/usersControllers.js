@@ -134,13 +134,9 @@ const usersControllers = {
             }
             else {
                 if (usuario.emailVerificado) {
-                    console.log("verificacion de email 20:24")
                     let passwordCoincide = bcryptjs.compareSync(password, usuario.password)
                     console.log(passwordCoincide)
                     if (passwordCoincide) {
-
-                        console.log("password coinccide")
-                        
                         const token = jwt.sign({ ...usuario }, process.env.SECRETKEY)
                         const datosUser = {
                             firstName: usuario.firstName,
@@ -150,7 +146,6 @@ const usersControllers = {
                         }
                         usuario.connected = true
                         await usuario.save()
-                        console.log(usuario)
                         res.json({
                             success: true, from: "controller", response: { token, datosUser }, message: "Welcome back " + usuario.firstName.toUpperCase() })
                     }
