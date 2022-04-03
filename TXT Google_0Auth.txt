@@ -1,7 +1,0 @@
-ID CLIENTE
-165497680968-igja1qus1ipp2snlcl4vhg4vonm8ihat.apps.googleusercontent.com
-
-SECRETO DEL CLLIENTE
-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
-
-
