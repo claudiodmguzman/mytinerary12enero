@@ -194,21 +194,27 @@ a.dropdown-item {
 }
 
 .btn-primary {
-  font-weight: bolder;
-  border: 2px solid white;
-  margin-top: 12px;
-  width: 150px;
-  border-radius: 5px;
-  padding: 4px;
+  margin-top: 12px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  width: 175.5px !important;
+  height: 50px !important;
+  border-radius: 2px !important;
+  padding: 10px !important;
+  box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px !important;
+  border: 1px solid transparent !important;
 } 
 
 .btn-success {
-  font-weight: bolder;
-  border: 2px solid white;
-  margin-top: 12px;
-  width: 150px;
-  border-radius: 5px;
-  padding: 4px;
+  margin-top: 12px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  width: 175.5px !important;
+  height: 50px !important;
+  border-radius: 2px !important;
+  padding: 10px !important;
+  box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px !important;
+  border: 1px solid transparent !important;
   }
 
 .form-control {
@@ -251,6 +257,26 @@ a.dropdown-item {
   justify-content: center;
   margin-top: 12px;
 }
+
+
+.kep-login-facebook {
+ text-transform:capitalize !important;
+ font-size: 14px !important;
+ font-weight: 500 !important;
+ margin-top: 12px !;
+ width: 175.5px !important;
+ height: 50px !important;
+ border-radius: 2px !important;
+ padding: 10px !important;
+ box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px !important;
+ border: 1px solid transparent !important;
+}
+
+.kep-login-facebook:hover {
+  cursor: pointer !important;
+  opacity: 0.9 !important;
+}
+
 
 .texSign {
   padding: 0.25rem 1.5rem;

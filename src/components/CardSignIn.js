@@ -124,7 +124,7 @@ const CardSignIn = () => {
                     </label> */}
                 </div>
 
-                <button type="submit" className="btn btn-primary">Sign In</button>
+                <button type="submit" className="btn btn-primary">SignIn With MyItinerary</button>
 
                 {/* <div className="dropdown-divider"></div> */}
                 {/* <Linkrouter className="dropdown-item" to="#">Forgot password?</Linkrouter> */}
@@ -133,7 +133,7 @@ const CardSignIn = () => {
                 <div className="externalLogin">
                     <GoogleLogin
                         clientId="165497680968-igja1qus1ipp2snlcl4vhg4vonm8ihat.apps.googleusercontent.com"
-                        buttonText="Sign In with Google"
+                        buttonText="Login With Google" // SIGN IN
                         onSuccess={responseGoogle}
                         onFailure={responseGoogle}
                         cookiePolicy={'single_host_origin'}

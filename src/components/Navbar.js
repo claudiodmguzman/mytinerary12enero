@@ -27,7 +27,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="titulo2">
-                    <p>Tinerary</p>
+                    <p>Itinerary</p>
                 </div>
 
             </div>
