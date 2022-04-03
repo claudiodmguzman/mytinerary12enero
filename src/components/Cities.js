@@ -22,7 +22,7 @@ function Cities() {
         <div>
 
             <div className='search'>
-                <input type="text" onChange={inputSearch} name="cityCountrySearch" className="formSearch card-filter" placeholder="enter the name of the city or the country you want to search" />
+                <input type="text" onChange={inputSearch} name="cityCountrySearch" className="formSearch card-filter" placeholder="enter the name of the city you want to search" />
             </div>
 
             <div className='decoContinents'>

@@ -4,6 +4,7 @@ import { Link as Linkrouter } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
 import axios from 'axios';
 import { actionType } from '../reducer';
+import swal from 'sweetalert';
 
 
 const CardLog = () => {
@@ -13,18 +14,22 @@ const CardLog = () => {
     async function cerrarCesion() {
         const email = user.datosUser.email
         console.log(email)
-        
+
         await axios.post("http://localhost:4000/api/signOut", { email })
             .then(response =>
-
-                dispatch({
-                    type: actionType.USER,
-                    user: null
-                })
-
+                displayMessages(response.data),
             )
-
+        function displayMessages(data) {
+            console.log(data)
+            swal(data.message)
+            dispatch({
+                type: actionType.USER,
+                user: null
+            })
+        }
     }
+
+
 
     return (
 
