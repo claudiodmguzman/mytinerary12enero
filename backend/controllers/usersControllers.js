@@ -172,7 +172,7 @@ const usersControllers = {
         user.connected = false
 
         await user.save()
-        res.json({ success: true, message: "Closed assignment" })
+        res.json({ success: true, message: "Closed Caeson. Thank you for visiting MyTinerary" })
     }
 
 }
