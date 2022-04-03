@@ -460,6 +460,19 @@ a.linkDeco2 {
 
 /* CARRUSEL */
 
+.cardCarrusel {
+  width: 350px;
+  height: 350px;
+  background: #333;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  margin: 2px;
+}
+
 
 .homesweethome {
   display: flex;
@@ -528,6 +541,9 @@ a.linkDeco2 {
 
 .carrusel {
   display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .carousel-item {

@@ -4,16 +4,16 @@ import Carrusel from './Carrusel';
 const Home = () => {
     return (
 
-        <div className="homesweethome">
-
-            <div>
+        <div>
+        
+            <div className="homesweethome">
 
                 <div className="descriptionZero" >
 
                     <div>
 
                         <p className='hola descrptionHome1'>
-                            A new way to travel with MyTinerary. Discover our difference and live unique adventures based on the legacy of exploration and ecological education</p>
+                            A new way to travel with MyItinerary. Discover our difference and live unique adventures based on the legacy of exploration and ecological education</p>
 
                         <p className='hola descrptionHome2'>
                             Some of our trips are accompanied by experts, photographers and explorers, offering our travelers an incomparable experience</p>
@@ -23,13 +23,12 @@ const Home = () => {
 
                     </div>
 
-                    <div className='hola2'>
-                        <Carrusel />
-                    </div>
-
                 </div>
 
             </div>
+
+            <Carrusel />
+
 
         </div>
 

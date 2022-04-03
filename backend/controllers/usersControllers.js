@@ -147,7 +147,7 @@ const usersControllers = {
                         usuario.connected = true
                         await usuario.save()
                         res.json({
-                            success: true, from: "controller", response: { token, datosUser }, message: "Welcome back " + usuario.firstName.toUpperCase() })
+                            success: true, from: "controller", response: { token, datosUser }, message: "Welcome " + usuario.firstName.toUpperCase() + " to MyItinerary"})
                     }
                     else { res.json({ success: false, from: "controller", message: "The e-mail and/or password is incorrect" }) }
                 }
@@ -167,7 +167,7 @@ const usersControllers = {
         user.connected = false
 
         await user.save()
-        res.json({ success: true, message: "Closed Caeson. Thank you for visiting MyTinerary" })
+        res.json({ success: true, message: "Closed Caeson. Thank you for visiting MyItinerary" })
     }
 
 }
