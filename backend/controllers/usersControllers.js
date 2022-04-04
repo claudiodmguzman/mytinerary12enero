@@ -25,7 +25,7 @@ async function sendEmail(email, uniqueText) {
     const mailOptions = {
         from: sender,
         to: email,
-        subject: "MyTinerary: User e-mail verification",
+        subject: "MyItinerary: User e-mail verification",
         html: ` <div style="margin: 8px; padding: 8px; background: #f8cd7c;">
                 <h1 style="color: #a0773a; font-family: Dancing Script; font-style: italic; font-size: 80px; text-align: center;">MyTinerary</h1>
                 </br>

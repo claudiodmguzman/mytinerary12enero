@@ -460,19 +460,6 @@ a.linkDeco2 {
 
 /* CARRUSEL */
 
-.cardCarrusel {
-  width: 350px;
-  height: 350px;
-  background: #333;
-  color: #fff;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-  margin: 2px;
-}
-
 
 .homesweethome {
   display: flex;
@@ -531,33 +518,14 @@ a.linkDeco2 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.carruselImage {
-  min-height: 200px;
-  max-height: 400px;
-  width: 100% !important;
-  max-width:700px;
-
-}
-
-.carrusel {
-  display: flex;
+.homeCarrusel {
+  display: block;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-bottom: 12px;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  align-items: center;
-}
-
-.carousel-item {
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
-
-.carousel-inner {
-  border-radius: 10px;
-  min-height: 200px;
-  max-height: 400px;
-  /* width: 100% !important; */
-  max-width: 400px;
 }
 
 .carruselTexto {
@@ -565,6 +533,99 @@ a.linkDeco2 {
   border-radius: 20px;
   padding: 0;
 }
+
+.carruselImage {
+  display: flex;
+  min-height: 400px;
+  max-height: 400px;
+  border: 1px solid black;
+}
+
+
+.container {
+  display: flex;
+  /* position: absolute; */
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 210px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  /* box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5); */
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url(./components/img/imgCiudades/citiesAfrica/img1City-Sudafrica-Ciudad-del-Cabo.jpg);
+  transform: rotateY(  0deg) translateZ(400px); }
+.carousel__face:nth-child(2) { 
+  background-image: url(./components/img/imgCiudades//citiesAmericaNorte/img1City-Mexico-Ciudad-de-Mexico.jpg);
+    transform: rotateY( 30deg) translateZ(400px); }
+.carousel__face:nth-child(3) {
+  background-image: url(./components/img/imgCiudades/citiesAmericaSur/img6City-Colombia-Cartagena-de-Indias.png);
+  transform: rotateY( 60deg) translateZ(400px); }
+.carousel__face:nth-child(4) {
+  background-image: url(./components/img/imgCiudades/citiesAsia/img4City-Japon-Tokio.jpg);
+  transform: rotateY(90deg) translateZ(400px); }
+.carousel__face:nth-child(5) { 
+  background-image: url(./components/img/imgCiudades/citiesEuropa/img5City-Paises-Bajos-Amsterdam.jpg);
+ transform: rotateY(120deg) translateZ(400px); }
+.carousel__face:nth-child(6) { 
+  background-image: url(./components/img/imgCiudades/citiesOceania/img4City-Australia-Melbourne.jpg);
+ transform: rotateY(150deg) translateZ(400px); }
+ .carousel__face:nth-child(7) {
+  background-image: url(./components/img/imgCiudades/citiesAfrica/img1City-Sudafrica-Ciudad-del-Cabo.jpg);
+  transform: rotateY(180deg) translateZ(400px); }
+.carousel__face:nth-child(8) { 
+  background-image: url(./components/img/imgCiudades//citiesAmericaNorte/img1City-Mexico-Ciudad-de-Mexico.jpg);
+    transform: rotateY(210deg) translateZ(400px); }
+.carousel__face:nth-child(9) {
+  background-image: url(./components/img/imgCiudades/citiesAmericaSur/img6City-Colombia-Cartagena-de-Indias.png);
+  transform: rotateY(240deg) translateZ(400px); }
+.carousel__face:nth-child(10) {
+  background-image: url(./components/img/imgCiudades/citiesAsia/img4City-Japon-Tokio.jpg);
+  transform: rotateY(270deg) translateZ(400px); }
+.carousel__face:nth-child(11) { 
+  background-image: url(./components/img/imgCiudades/citiesEuropa/img5City-Paises-Bajos-Amsterdam.jpg);
+ transform: rotateY(300deg) translateZ(400px); }
+.carousel__face:nth-child(12) { 
+  background-image: url(./components/img/imgCiudades/citiesOceania/img4City-Australia-Melbourne.jpg);
+ transform: rotateY(330deg) translateZ(400px); }
+.carousel__face:nth-child(13) { 
+  background-image: url(./components/img/imgCiudades/citiesAfrica/img4City-Kenia-Nairobi.jpg);
+ transform: rotateY(360deg) translateZ(400px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
 
 /* CARD TINERARY */
 
