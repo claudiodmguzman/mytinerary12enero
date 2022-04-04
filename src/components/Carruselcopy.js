@@ -5,19 +5,19 @@ function Carrusel() {
     return (
         <div class="container">
             <div class="carousel">
-                <div class="carousel__face"><span>1</span></div>
-                <div class="carousel__face"><span>2</span></div>
-                <div class="carousel__face"><span>3</span></div>
-                <div class="carousel__face"><span>4</span></div>
-                <div class="carousel__face"><span>5</span></div>
-                <div class="carousel__face"><span>6</span></div>
-                <div class="carousel__face"><span>7</span></div>
-                <div class="carousel__face"><span>8</span></div>
-                <div class="carousel__face"><span>9</span></div>
-                <div class="carousel__face"><span>10</span></div>
-                <div class="carousel__face"><span>11</span></div>
-                <div class="carousel__face"><span>12</span></div>
-                <div class="carousel__face"><span>13</span></div>
+                <div class="carousel__face"><span>Cape Town</span></div>
+                <div class="carousel__face"><span>Mexico City</span></div>
+                <div class="carousel__face"><span>Cartagena de Indias</span></div>
+                <div class="carousel__face"><span>Tokyo</span></div>
+                <div class="carousel__face"><span>Amsterdam</span></div>
+                <div class="carousel__face"><span>Melbourne</span></div>
+                <div class="carousel__face"><span>Seoul</span></div>
+                <div class="carousel__face"><span>La Paz</span></div>
+                <div class="carousel__face"><span>City of Buenos Aires</span></div>
+                <div class="carousel__face"><span>Port Vila</span></div>
+                <div class="carousel__face"><span>Guadalajara</span></div>
+                <div class="carousel__face"><span>Taipei City</span></div>
+                <div class="carousel__face"><span>Nairobi</span></div>
             </div>
         </div>
     )
