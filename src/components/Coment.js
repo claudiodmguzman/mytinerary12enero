@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 
-function Coment() {
+function Coment(props) {
 
 
    const [{ cities }, dispatch] = useStateValue()
@@ -36,12 +36,13 @@ function Coment() {
       //console.log(event.target[0].value)
 
       const dataComents = {
-         itinerarioComent: itineraries._id,
+         itinerarioComent: props.itinerario,
          mensageComent: event.target[0].value,
          userComent: user.datosUser.id,
 
       }
-      //console.log(dataComents)
+      console.log(dataComents)
+      console.log(props)
       await axios.post("http://localhost:4000/api/coment", { dataComents })
          .then(response =>
             setComent(response.data.response.comentario))
@@ -50,7 +51,7 @@ function Coment() {
    }
 
    useEffect(() => {
-      let id = itineraries
+      let id = props.itinerario
       axios.get(`http://localhost:4000/api/coment/${id}`)
          .then(response => {
             setComent(response.data.response.comentario)
@@ -74,7 +75,7 @@ function Coment() {
       console.log(cambio)
       let data = cambio
       axios.put(`http://localhost:4000/api/coment/${id}`, { data })
-      .then (response => console.log(response))
+         .then(response => console.log(response))
       setReload(!reload)
    }
 
@@ -82,36 +83,43 @@ function Coment() {
 
    return (
 
-      <form onSubmit={submitComent}>
+      <>
 
-         <div className="comentario">
+         <div>
+            {coment?.map(itemComent =>
+               <div>
 
-            <>
-               {coment?.map(itemComent =>
-                  <div>
+                  <div className='fromComentario'>{itemComent.user.firstName}</div>
 
-                     {/* <div className='fromComentario'>{itemComent.user.firstName}</div> */}
+                  <div><input className='textComentarioUser' onKeyUp={handelChange} defaultValue={itemComent.comentaryUser}></input></div>
 
-                     <div><input className='textComentarioUser' onKeyUp={handelChange} defaultValue={itemComent.comentaryUse}></input></div>
+                  <div className='botonesComentario'>
+                     <div><button className="btn btn-outline-warning botonComentario" onClick={() => modificarComentario(itemComent._id)}>edit</button></div>
 
-                     <div className='botonesComentario'>
-                        <div><button className="btn btn-outline-warning botonComentario" onClick={() => modificarComentario(itemComent._id)}>edit</button></div>
-
-                        <div><button className="btn btn-outline-danger botonComentario" onClick={() => borrarComentario(itemComent._id)}>delete</button></div>
-                     </div>
+                     <div><button className="btn btn-outline-danger botonComentario" onClick={() => borrarComentario(itemComent._id)}>delete</button></div>
                   </div>
-               )}
-            </>
-
-            <div><textarea name="textarea" className='textComentario' placeholder='write your beautiful comment here...'></textarea></div>
-
-            <div className='botonesComentario'>
-               <div><button type="submit" className="btn btn-outline-primary botonComentario">send</button></div>
-            </div>
+               </div>
+            )}
 
          </div>
 
-      </form>
+         <form onSubmit={submitComent}>
+
+            <div className="comentario">
+
+
+
+               <div><textarea name="textarea" className='textComentario' placeholder='write your beautiful comment here...'></textarea></div>
+
+               <div className='botonesComentario'>
+                  <div><button type="submit" className="btn btn-outline-primary botonComentario">send</button></div>
+               </div>
+
+            </div>
+
+         </form>
+
+      </>
    )
 }
 

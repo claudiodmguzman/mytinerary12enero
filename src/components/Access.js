@@ -23,9 +23,9 @@ const Access = () => {
         )
     }, [])
 
-
+    console.log(itineraries)
     return (
-
+        
         <div className="accessContainer1">
 
             {citiesSelecter.map((city) =>
@@ -98,8 +98,8 @@ const Access = () => {
 
                                     </div>
 
-                                    <Coment />
-                                    {/* <Coment itinerario={itineraries._id}/> */}
+                                    {/* <Coment /> */}
+                                    <Coment itinerario={itinerarie._id}/>
                                     
                                 </Accordion>
 
