@@ -541,8 +541,8 @@ a.linkDeco2 {
 
 .carruselImage {
   display: flex;
-  min-height: 400px;
-  max-height: 400px;
+  /* min-height: 400px;
+  max-height: 400px; */
 }
 
 
@@ -565,7 +565,7 @@ a.linkDeco2 {
   position: absolute;
   width: 210px;
   height: 187px;
-  top: 20px;
+  top: 10px;
   left: 10px;
   right: 10px;
   background-size: cover;
