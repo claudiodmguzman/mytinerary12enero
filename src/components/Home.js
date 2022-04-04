@@ -1,6 +1,5 @@
 import React from 'react';
-// import Carrusel from './Carrusel';
-import Carrusel from './Carruselcopy'
+import Carrusel from './Carrusel'
 
 const Home = () => {
     return (
