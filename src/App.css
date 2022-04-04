@@ -903,12 +903,15 @@ a.linkDeco2 {
 
 .fromComentario {
   margin-bottom: 4px;
+  text-align: center;
+  font-weight: bolder;
+
 }
 
 .textComentario {
   display: flex;
   text-decoration: none;
-  text-align: justify;
+  text-align: center;
   background: transparent;
   border: 1px solid rgb(230, 228, 228);
   border-radius: 4px;

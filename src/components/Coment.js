@@ -89,7 +89,7 @@ function Coment(props) {
             {coment?.map(itemComent =>
                <div>
 
-                  <div className='fromComentario'>{itemComent.user.firstName}</div>
+                  <div className='fromComentario'>{itemComent.user.firstName.toUpperCase()}</div>
 
                   <div><input className='textComentarioUser' onKeyUp={handelChange} defaultValue={itemComent.comentaryUser}></input></div>
 
@@ -106,8 +106,6 @@ function Coment(props) {
          <form onSubmit={submitComent}>
 
             <div className="comentario">
-
-
 
                <div><textarea name="textarea" className='textComentario' placeholder='write your beautiful comment here...'></textarea></div>
 
