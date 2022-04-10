@@ -79,7 +79,7 @@ function Coment(props) {
       setReload(!reload)
    }
 
-
+   var d = new Date();
 
    return (
 
@@ -88,8 +88,12 @@ function Coment(props) {
          <div>
             {coment?.map(itemComent =>
                <div>
-
-                  <div className='fromComentario'>{itemComent.user.firstName.toUpperCase()}</div>
+                  <div className='fromComentarioAndInfo'>
+                     <div className='fromComentario'>{itemComent.user.firstName.toUpperCase()}</div>
+                     <div className='fromComentarioInfo'>{"from " + itemComent.user.from}</div>
+                     <div className='fromComentarioInfo'>fecha</div>
+                     <div className='fromComentarioInfo'>hora</div>
+                  </div>
 
                   <div><input className='textComentarioUser' onKeyUp={handelChange} defaultValue={itemComent.comentaryUser}></input></div>
 
@@ -107,7 +111,7 @@ function Coment(props) {
 
             <div className="comentario">
 
-               <div><input type="text" className='textComentario' placeholder='write your beautiful comment here...'/></div>
+               <div><input type="text" className='textComentario' placeholder='write your beautiful comment here...' /></div>
 
                <div className='botonesComentario'>
                   <div><button type="submit" className="btn btn-outline-primary botonComentarioSend">send</button></div>
