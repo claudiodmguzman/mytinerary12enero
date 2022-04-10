@@ -903,20 +903,20 @@ a.linkDeco2 {
 
 .fromComentario {
   margin-bottom: 4px;
-  text-align: center;
+  margin-top: 10px;
   font-weight: bolder;
-
+  padding-left: 10px;
 }
 
 .textComentario {
   display: flex;
   text-decoration: none;
-  text-align: center;
+  /* text-align: center; */
   background: transparent;
   border: 1px solid rgb(230, 228, 228);
   border-radius: 4px;
   width: 100% !important;
-  height: 100px;
+  height: 50px;
   font-size: large;
   padding: 10px;
 }
@@ -924,31 +924,46 @@ a.linkDeco2 {
 .textComentarioUser {
   display: flex;
   text-decoration: none;
-  text-align: justify;
+  /* text-align: justify; */
   background: transparent;
-  border: 1px solid rgb(230, 228, 228);
-  border-radius: 4px;
-  width: 80% !important;
-  height: 100px;
+  /* border: 1px solid rgb(230, 228, 228); */
+  border: none !important;
+  width: 100% !important;
+  /* height: 100px; */
   font-size: large;
   font-style: italic;
-  padding: 10px;
+  padding-left: 20px;
 }
 
 .botonesComentario {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 .botonComentario {
-  margin-top: 12px;
+  margin: 6px;
+  opacity: .7;
 }
 
-.botonComentario:hover {
+.botonComentarioSend {
+  margin-top: 6px;
   opacity: .7;
-  border-radius: 100%;
 }
+
+.botonComentarioSend:hover {
+  border-radius: 0 100px 100px 0;
+}
+
+.edit:hover {
+  border-radius: 100px 100px 0 0;
+}
+
+.delete:hover {
+  border-radius: 0 0 100px 100px;
+}
+
+
 
 .accessCommLik {
   display: flex;

@@ -94,9 +94,9 @@ function Coment(props) {
                   <div><input className='textComentarioUser' onKeyUp={handelChange} defaultValue={itemComent.comentaryUser}></input></div>
 
                   <div className='botonesComentario'>
-                     <div><button className="btn btn-outline-warning botonComentario" onClick={() => modificarComentario(itemComent._id)}>edit</button></div>
+                     <div><button className="btn btn-outline-warning botonComentario edit" onClick={() => modificarComentario(itemComent._id)}>edit</button></div>
 
-                     <div><button className="btn btn-outline-danger botonComentario" onClick={() => borrarComentario(itemComent._id)}>delete</button></div>
+                     <div><button className="btn btn-outline-danger botonComentario delete" onClick={() => borrarComentario(itemComent._id)}>delete</button></div>
                   </div>
                </div>
             )}
@@ -107,10 +107,10 @@ function Coment(props) {
 
             <div className="comentario">
 
-               <div><textarea name="textarea" className='textComentario' placeholder='write your beautiful comment here...'></textarea></div>
+               <div><input type="text" className='textComentario' placeholder='write your beautiful comment here...'/></div>
 
                <div className='botonesComentario'>
-                  <div><button type="submit" className="btn btn-outline-primary botonComentario">send</button></div>
+                  <div><button type="submit" className="btn btn-outline-primary botonComentarioSend">send</button></div>
                </div>
 
             </div>

@@ -31,7 +31,7 @@ const Access = () => {
             {citiesSelecter.map((city) =>
                 <div>
 
-                    <div>
+                    {/* <div>
 
                         <div className='accessGralInfoImg'>
 
@@ -69,11 +69,11 @@ const Access = () => {
 
                         <div className="accessGralDescription">{city.description}</div>
 
-                    </div>
+                    </div> */}
 
                     <div className='accessAcordion'>
 
-                        <div className="accessTitleItinerary">Thinks to Do...</div>
+                        {/* <div className="accessTitleItinerary">Thinks to Do...</div> */}
 
                         {itineraries.map((itinerarie) =>
 
@@ -81,7 +81,7 @@ const Access = () => {
 
                                 <Accordion title={itinerarie.nameTour}>
 
-                                    <div className='accessNameTour'>
+                                    {/* <div className='accessNameTour'>
 
                                         <div>
                                             <img className="accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} alt="image of city" />
@@ -96,7 +96,7 @@ const Access = () => {
                                         <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
 
 
-                                    </div>
+                                    </div> */}
 
                                     {/* <Coment /> */}
                                     <Coment itinerario={itinerarie._id}/>
