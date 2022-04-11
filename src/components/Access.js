@@ -25,7 +25,7 @@ const Access = () => {
 
     console.log(itineraries)
     return (
-        
+
         <div className="accessContainer1">
 
             {citiesSelecter.map((city) =>
@@ -84,8 +84,9 @@ const Access = () => {
                                     <div className='accessNameTour'>
 
                                         <div>
+
                                             <img className="accessImage" src={process.env.PUBLIC_URL + `/imgTour/${itinerarie.imgTour}`} alt="image of city" />
-                                            <div className="paccessLikes"><p>+1♠</p></div>
+                                            
                                         </div>
 
                                         <div className="paccessDetail">{itinerarie.descriptionTour}</div>
@@ -96,11 +97,13 @@ const Access = () => {
 
                                         <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
 
+                                        <div className="accessLikes"><p className="paccessLikes">♠</p></div>
+
                                     </div>
 
                                     {/* <Coment /> */}
-                                    <Coment itinerario={itinerarie._id}/>
-                                    
+                                    <Coment itinerario={itinerarie._id} />
+
                                 </Accordion>
 
 

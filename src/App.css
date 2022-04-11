@@ -824,6 +824,21 @@ a.linkDeco2 {
   box-shadow: 0px 0px 10px 2px rgba(105, 79, 39, 0.2);
 }
 
+.accessLikes {
+  width: 120px;
+}
+
+.paccessLikes {
+  font-size: xx-large;
+  color: #4d3b20;
+  text-align: center;
+  padding: 20px;
+  margin: 12px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 0px 26px -10px #694F27;
+  box-shadow: inset 0px 0px 26px -10px #694F27;
+}
 .accessGralDescription {
   text-align: justify;
   font-size: x-large;
@@ -875,7 +890,6 @@ a.linkDeco2 {
   display: flex;
   font-size: x-large;
   color: #4d3b20;
-  border-radius: 2px;
   text-align: justify;
   padding: 20px;
   margin: 12px;
