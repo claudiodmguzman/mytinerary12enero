@@ -95,7 +95,7 @@ const Access = () => {
 
                                         <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
 
-                                        <div className="paccessDetail">Likes: <p>♠</p></div>
+                                        <div className="paccessDetail">Likes: <p></p></div>
 
                                     </div>
 
