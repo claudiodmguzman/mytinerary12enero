@@ -91,8 +91,8 @@ function Coment(props) {
                   <div className='fromComentarioAndInfo'>
                      <div className='fromComentario'>{itemComent.user.firstName.toUpperCase()}</div>
                      <div className='fromComentarioInfo'>{"from " + itemComent.user.from}</div>
-                     <div className='fromComentarioInfo'>fecha</div>
-                     <div className='fromComentarioInfo'>hora</div>
+                     {/* <div className='fromComentarioInfo'>fecha</div>
+                     <div className='fromComentarioInfo'>hora</div> */}
                   </div>
 
                   <div><input className='textComentarioUser' onKeyUp={handelChange} defaultValue={itemComent.comentaryUser}></input></div>
