@@ -79,7 +79,8 @@ const CardSignIn = () => {
                 displayMessages(response.data),
             )
         function displayMessages(data) {
-            console.log(data)
+            // console.log(data)
+            localStorage.setItem("token", data.response.token)
             if (!data.success) {
                 swal(data.message)
             }
@@ -93,10 +94,10 @@ const CardSignIn = () => {
         }
     }
 
-    
 
 
-    console.log(user)
+
+    // console.log(user)
 
 
     return (

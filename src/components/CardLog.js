@@ -23,6 +23,7 @@ const CardLog = () => {
         function displayMessages(data) {
             console.log(data)
             swal(data.message)
+            localStorage.removeItem("token" , )
             dispatch({
                 type: actionType.USER,
                 user: null

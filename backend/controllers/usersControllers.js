@@ -137,7 +137,6 @@ const usersControllers = {
                     let passwordCoincide = bcryptjs.compareSync(password, usuario.password)
                     console.log(passwordCoincide)
                     if (passwordCoincide) {
-                        const token = jwt.sign({ ...usuario }, process.env.SECRETKEY)
                         const datosUser = {
                             firstName: usuario.firstName,
                             lastName: usuario.lastName,
@@ -146,8 +145,10 @@ const usersControllers = {
                         }
                         usuario.connected = true
                         await usuario.save()
+                        const token = jwt.sign({ ...datosUser }, process.env.SECRETKEY, {expiresIn:60*60*24})
                         res.json({
-                            success: true, from: "controller", response: { token, datosUser }, message: "Welcome " + usuario.firstName.toUpperCase() + " to MyItinerary"})
+                            success: true, from: "controller", response: { token, datosUser }, message: "Welcome " + usuario.firstName.toUpperCase() + " to MyItinerary"
+                        })
                     }
                     else { res.json({ success: false, from: "controller", message: "The e-mail and/or password is incorrect" }) }
                 }
