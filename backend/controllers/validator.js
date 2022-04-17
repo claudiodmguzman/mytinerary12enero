@@ -32,7 +32,7 @@ const validator = (req, res, next) => {
     const validation = Schema.validate(req.body.NuevoUsuario, { abortEarly: true })
 
     if (validation.error) {
-        return res.json({ success: false, response: validation })
+        return res.json({ success: false, validadorSignUp: validation })
     }
 
     next()

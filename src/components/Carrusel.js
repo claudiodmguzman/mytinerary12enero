@@ -3,8 +3,8 @@ import React from 'react';
 function Carrusel() {
 
     return (
-        <div class="container">
-            <div class="carousel">
+        <div className="container">
+            <div className="carousel">
                 <div class="carousel__face"><span className='carruselTexto'>Cape Town</span></div>
                 <div class="carousel__face"><span className='carruselTexto'>Mexico City</span></div>
                 <div class="carousel__face"><span className='carruselTexto'>Cartagena de Indias</span></div>

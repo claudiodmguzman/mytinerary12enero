@@ -64,19 +64,10 @@ const CardSignUp = () => {
                 displayMessages(response.data)
             )
         function displayMessages(data) {
-            console.log(data)
-            swal(data.message)
-         }
+            console.log(data.validadorSignUp.error.details[0].message)
+            swal(data.validadorSignUp.error.details[0].message)
+        }
 
-        // function displayMessages(data) {
-        //     console.log(data)
-        //     if (!data.success.error) {
-        //         alert(data.success.error.message)
-        //     }
-        //     else if (data.success.error) {
-        //         alert(data.success.error.message)
-        //     }
-        // }
     }
 
 
