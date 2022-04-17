@@ -14,9 +14,6 @@ function Cities() {
         dispatch({
             type: actionType.FILTER,
             value: event.target.value,
-
-
-
         })
     }
 
@@ -28,7 +25,7 @@ function Cities() {
         })
     }, [])
 
-    
+
 
     return (
 
