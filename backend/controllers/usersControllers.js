@@ -173,20 +173,20 @@ const usersControllers = {
 
     verificarToken: async (req, res) => { //tal cual viene del payload desde jwt Debugger
         if (!req.error) {
-            res.jason({
+            res.json({
                 success: true,
-                respuesta: {
+                datosUser: {
                     firstName: req.user.firstName,
                     lastName: req.user.lastName,
                     email: req.user.email,
                     id: req.user.email
                 },
-                message: "Welcome back " + usuario.firstName.toUpperCase() + " to MyItinerary"
+                // message: "Welcome back " + usuario.firstName.toUpperCase() + " to MyItinerary"
                 // message: "Welcome back " + req.usuario.firstName.toUpperCase() + " to MyItinerary"
             })
         }
         else {
-            res.jason({success:false, message: "Please Sign In again"})
+            res.json({ success: false, message: "Please Sign In again" })
         }
     }
 

@@ -14,8 +14,7 @@ const CardLog = () => {
 
     async function cerrarCesion() {
         const email = user.datosUser.email
-        console.log(email)
-
+        // console.log(email)
         await axios.post("http://localhost:4000/api/signOut", { email })
             .then(response =>
                 displayMessages(response.data),
@@ -23,11 +22,13 @@ const CardLog = () => {
         function displayMessages(data) {
             console.log(data)
             swal(data.message)
-            localStorage.removeItem("token" , )
-            dispatch({
-                type: actionType.USER,
-                user: null
-            })
+            if (data.success) {
+                localStorage.removeItem("token")
+                dispatch({
+                    type: actionType.USER,
+                    user: null
+                })
+            }
         }
     }
 

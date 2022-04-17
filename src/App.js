@@ -45,26 +45,29 @@ function App() {
         })
       })
 
-  }, [])
 
-  if (localStorage.getItem("token") !== null) {
-    const token = localStorage.getItem("token")
-    const user = axios.get("http://localhost:4000/api/signInToken", {
-      headers: {
-        "Authorization": "Bearer" + token // método de autorizacion estandar para autoriza y autentificar al usuario
-      }
-    })
+    if (localStorage.getItem("token") !== null) {
+      const token = localStorage.getItem("token")
+      axios.get("http://localhost:4000/api/signInToken", {
+        headers: {
+          'Authorization': 'Bearer ' + token // método de autorizacion estandar para autoriza y autentificar al usuario
+        }
+      })
+      // console.log(token)
+        .then(user => {
     if (user.data.success) {
-      dispatch ({
-        type: actionType.USER,
-        user: user.data.response
+          dispatch({
+            type: actionType.USER,
+            user: user.data
+          })
+        }
+        else {
+          localStorage.removeItem("token")
+        }
       })
     }
-    else {
-      localStorage.removeItem("token")
-    }
 
-  }
+  }, [])
 
 
   return (
