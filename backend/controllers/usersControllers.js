@@ -181,8 +181,8 @@ const usersControllers = {
                     email: req.user.email,
                     id: req.user.email
                 },
-                // message: "Welcome back " + usuario.firstName.toUpperCase() + " to MyItinerary"
-                // message: "Welcome back " + req.usuario.firstName.toUpperCase() + " to MyItinerary"
+                // success: true, message: "Welcome back " + user.firstName.toUpperCase() + " to MyItinerary"
+                // success: true, message: "Welcome back " + req.user.firstName.toUpperCase() + " to MyItinerary"
             })
         }
         else {
