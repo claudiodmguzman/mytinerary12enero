@@ -80,11 +80,12 @@ const CardSignIn = () => {
             )
         function displayMessages(data) {
             // console.log(data)
-            localStorage.setItem("token", data.response.token)
+            
             if (!data.success) {
                 swal(data.message)
             }
             else {
+                localStorage.setItem("token", data.response.token)
                 swal(data.message)
                 dispatch({
                     type: actionType.USER,

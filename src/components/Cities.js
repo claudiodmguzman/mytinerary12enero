@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
 import CardCities from './CardCities'
@@ -7,15 +7,28 @@ import { actionType } from '../reducer';
 
 
 function Cities() {
-    
+
     const [{ cities }, dispatch] = useStateValue()
 
     const inputSearch = (event) => {
         dispatch({
             type: actionType.FILTER,
             value: event.target.value,
+
+
+
         })
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        dispatch({
+            type: actionType.FILTER,
+            value: "",
+        })
+    }, [])
+
+    
 
     return (
 
