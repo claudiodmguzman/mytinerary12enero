@@ -145,7 +145,7 @@ const usersControllers = {
                         }
                         usuario.connected = true
                         await usuario.save()
-                        const token = jwt.sign({ ...datosUser }, process.env.SECRETKEY, {expiresIn:60*60*24})
+                        const token = jwt.sign({ ...datosUser }, process.env.SECRETKEY, { expiresIn: 60 * 60 * 24 })
                         res.json({
                             success: true, from: "controller", response: { token, datosUser }, message: "Welcome " + usuario.firstName.toUpperCase() + " to MyItinerary"
                         })
@@ -169,6 +169,25 @@ const usersControllers = {
 
         await user.save()
         res.json({ success: true, message: "Closed Caeson. Thank you for visiting MyItinerary" })
+    },
+
+    verificarToken: async (req, res) => { //tal cual viene del payload desde jwt Debugger
+        if (!req.error) {
+            res.jason({
+                success: true,
+                respuesta: {
+                    firstName: req.user.firstName,
+                    lastName: req.user.lastName,
+                    email: req.user.email,
+                    id: req.user.email
+                },
+                message: "Welcome back " + usuario.firstName.toUpperCase() + " to MyItinerary"
+                // message: "Welcome back " + req.usuario.firstName.toUpperCase() + " to MyItinerary"
+            })
+        }
+        else {
+            res.jason({success:false, message: "Please Sign In again"})
+        }
     }
 
 }

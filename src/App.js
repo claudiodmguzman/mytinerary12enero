@@ -18,12 +18,12 @@ import CardTineraryAfrica from './components/CardTineraryAfrica';
 import CardTineraryAsia from './components/CardTineraryAsia';
 import CardTineraryEurope from './components/CardTineraryEurope';
 import CardTineraryOceania from './components/CardTineraryOceania';
-import axios from 'axios'; 
+import axios from 'axios';
 
 
 function App() {
 
-  const [{cities}, dispatch]=useStateValue()
+  const [{ cities }, dispatch] = useStateValue()
 
   useEffect(() => {
     axios.get("http://localhost:4000/api/datos")
@@ -47,7 +47,26 @@ function App() {
 
   }, [])
 
-  
+  if (localStorage.getItem("token") !== null) {
+    const token = localStorage.getItem("token")
+    const user = axios.get("http://localhost:4000/api/signInToken", {
+      headers: {
+        "Authorization": "Bearer" + token // método de autorizacion estandar para autoriza y autentificar al usuario
+      }
+    })
+    if (user.data.success) {
+      dispatch ({
+        type: actionType.USER,
+        user: user.data.response
+      })
+    }
+    else {
+      localStorage.removeItem("token")
+    }
+
+  }
+
+
   return (
 
     <BrowserRouter>
@@ -75,4 +94,3 @@ function App() {
 
 export default App;
 
-                         

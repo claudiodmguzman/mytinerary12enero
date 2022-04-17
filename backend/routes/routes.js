@@ -1,10 +1,12 @@
 const Router = require("express").Router();
 
+const passport = require("../config/passport")
+
 const datosController = require("../controllers/datosControllers");
 const { ObtenerTodosLosDatos, ObtenerItinerario, ObtenerContinentes, ObtenerContinentario } = datosController; // desestructuración del controlador
 
 const usersControllers = require("../controllers/usersControllers");
-const { nuevoUsuario, verifyEmail, accesoUsuario, cerrarCesion } = usersControllers;
+const { nuevoUsuario, verifyEmail, accesoUsuario, cerrarCesion, verificarToken } = usersControllers;
 
 const comentControllers = require("../controllers/comentControllers");
 const { cargarComentario, obtenerComentario, borrarComentario, modificarComentario } = comentControllers;
@@ -43,5 +45,8 @@ Router.route("/coment/:id")
     .get(obtenerComentario)
     .delete(borrarComentario)
     .put(modificarComentario)
+
+Router.route("/signInToken")
+    .get(passport.authenticate("jwt", { session: false }), verificarToken) // jwt: tipo de token
 
 module.exports = Router
