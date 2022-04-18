@@ -8,6 +8,7 @@ const itinerariesSchema = new mongoose.Schema ({
     priceTour:{type:String,require:true},
     durationTour:{type:String,require:true},
     imgTour:{type:String,require:true},
+    likes:{type: Array},
 })
 
 const Itinerario = mongoose.model("itineraries",itinerariesSchema)
