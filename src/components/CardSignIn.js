@@ -5,6 +5,7 @@ import { useStateValue } from '../StateProvider';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import { actionType } from '../reducer';
+import { Link as Linkrouter } from 'react-router-dom';
 
 
 const CardSignIn = () => {
@@ -129,6 +130,8 @@ const CardSignIn = () => {
                 </div>
 
                 <button type="submit" className="btn btn-primary">SignIn With MyItinerary</button>
+
+                {/* <Linkrouter className="dropdown-item" to="/cardSignUp">Sign Up</Linkrouter> */}
 
                 {/* <div className="dropdown-divider"></div> */}
                 {/* <Linkrouter className="dropdown-item" to="#">Forgot password?</Linkrouter> */}
