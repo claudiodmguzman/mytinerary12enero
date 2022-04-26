@@ -11,6 +11,7 @@ import Likes from './Likes';
 
 const Access = () => {
 
+
     const [itineraries, setItineraries] = useState([])
     const [{ cities }, dispatch] = useStateValue()
     const { id } = useParams()
@@ -100,7 +101,7 @@ const Access = () => {
 
                                         {/* <div className="accessLikes"><p className="paccessLikes">♠<Likes itinerario={itinerarie._id} /></p></div> */}
                                         {/* <Likes itinerario={itinerarie._id} /> */}
-                                        <Likes />
+                                        <Likes likes={itinerarie.likes}/>
 
                                     </div>
 

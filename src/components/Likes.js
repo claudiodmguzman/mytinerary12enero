@@ -4,19 +4,34 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 
-function Likes (props) {
+
+function Likes(props) {
+
+    const [{ user }, dispatch] = useStateValue()
+
+    // const [like, setLike] = useState(0)
+
+    const likeDisLike = async () => {
+        await axios.put(`http://localhost:4000/api/likeDisLike/${user.id}`)
+        .then(response => console.log(response))
+    }
+  
 
 
-   
- 
     return (
- 
-       <>
 
-          <div className="accessLikes"><p className="paccessLikes">♠</p></div>
+        <>
 
-       </>
+            <div className="accessLikes">
+
+
+                <button className="accessLikes" onClick={likeDisLike}>♠</button>
+
+
+            </div>
+
+        </>
     )
- }
- 
- export default Likes;
+}
+
+export default Likes;
