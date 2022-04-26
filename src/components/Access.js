@@ -6,6 +6,7 @@ import 'react-bootstrap-accordion/dist/index.css';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Coment from './Coment';
+import Likes from './Likes';
 
 
 const Access = () => {
@@ -97,7 +98,9 @@ const Access = () => {
 
                                         <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
 
-                                        <div className="accessLikes"><p className="paccessLikes">♠</p></div>
+                                        {/* <div className="accessLikes"><p className="paccessLikes">♠<Likes itinerario={itinerarie._id} /></p></div> */}
+                                        {/* <Likes itinerario={itinerarie._id} /> */}
+                                        <Likes />
 
                                     </div>
 
