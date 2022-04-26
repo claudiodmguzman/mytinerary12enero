@@ -3,7 +3,7 @@ const Router = require("express").Router();
 const passport = require("../config/passport")
 
 const datosController = require("../controllers/datosControllers");
-const { ObtenerTodosLosDatos, ObtenerItinerario, ObtenerContinentes, ObtenerContinentario } = datosController; // desestructuración del controlador
+const { ObtenerTodosLosDatos, ObtenerItinerario, ObtenerContinentes, ObtenerContinentario, likeDisLike } = datosController; // desestructuración del controlador
 
 const usersControllers = require("../controllers/usersControllers");
 const { nuevoUsuario, verifyEmail, accesoUsuario, cerrarCesion, verificarToken } = usersControllers;
@@ -48,5 +48,8 @@ Router.route("/coment/:id")
 
 Router.route("/signInToken")
     .get(passport.authenticate("jwt", { session: false }), verificarToken) // jwt: tipo de token
+
+Router.route("/likeDisLike/:id")
+    .put(passport.authenticate("jwt", { session: false }), likeDisLike)
 
 module.exports = Router

@@ -179,16 +179,15 @@ const usersControllers = {
                     firstName: req.user.firstName,
                     lastName: req.user.lastName,
                     email: req.user.email,
-                    id: req.user.email
+                    id: req.user.email,
                 },
-                // success: true, message: "Welcome back " + user.firstName.toUpperCase() + " to MyItinerary"
-                // success: true, message: "Welcome back " + req.user.firstName.toUpperCase() + " to MyItinerary"
+                message: "Welcome back " + req.user.firstName.toUpperCase() + " to MyItinerary"
             })
         }
         else {
             res.json({ success: false, message: "Please Sign In again" })
         }
-    }
+    },
 
 }
 
