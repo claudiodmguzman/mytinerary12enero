@@ -83,7 +83,7 @@ const datosController = {
         let itinerary
         
         try {
-            itinerary = await Itinerario.find({ _id: id })
+            itinerary = await Itinerario.findOne({ _id: id })
           
             if (itinerary.likes.includes(user)) {
                 
