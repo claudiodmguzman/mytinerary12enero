@@ -179,7 +179,7 @@ const usersControllers = {
                     firstName: req.user.firstName,
                     lastName: req.user.lastName,
                     email: req.user.email,
-                    id: req.user.email,
+                    id: req.user.id
                 },
                 message: "Welcome back " + req.user.firstName.toUpperCase() + " to MyItinerary"
             })
