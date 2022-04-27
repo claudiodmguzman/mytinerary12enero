@@ -76,12 +76,14 @@ const datosController = {
 
     likeDisLike: async (req, res) => {
         const id = req.params.id;
-        const user = req.body.user
+        const user = req.user._id
         let itinerary
 
         try {
             itinerary = await Itinerario.find({ _id: id })
+            console.log(user)
             if (itinerary.likes.includes(user)) {
+                
                 Itinerario.findOneAndUpdate({ _id: id }, { $pull: { likes: user } }, { new: true })
                     .then(response => res.json({ success: true, response: response.likes }))
                     .catch(error => console.log(error))

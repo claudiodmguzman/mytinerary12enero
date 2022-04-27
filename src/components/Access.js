@@ -101,7 +101,8 @@ const Access = () => {
 
                                         {/* <div className="accessLikes"><p className="paccessLikes">♠<Likes itinerario={itinerarie._id} /></p></div> */}
                                         {/* <Likes itinerario={itinerarie._id} /> */}
-                                        <Likes likes={itinerarie.likes}/>
+
+                                        <Likes likes={itinerarie._id}/>
 
                                     </div>
 

@@ -7,7 +7,7 @@ import axios from 'axios';
 
 function Likes(props) {
 
-    const likes = props.itinerario
+    const likes = props.likes
 
     const [{ cities }, dispatch] = useStateValue()
     const [{ user }] = useStateValue()
@@ -33,7 +33,7 @@ function Likes(props) {
         const token = localStorage.getItem("token")
         console.log(user)
         console.log(props)
-        await axios.put(`http://localhost:4000/api/likeDisLike/${user.datosUser.id}`,{}, {
+        await axios.put(`http://localhost:4000/api/likeDisLike/${likes}`,{}, {
             headers: {
               'Authorization': 'Bearer ' + token // método de autorizacion estandar para autoriza y autentificar al usuario
             }
