@@ -50,7 +50,7 @@ function Likes(props) {
 
         <>
 
-            <div>
+            <div className='accessLikes'>
 
 
                 <button className="paccessLikesRojo" onClick={likeDisLike}>❤ {likes}</button>

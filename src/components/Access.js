@@ -99,12 +99,11 @@ const Access = () => {
 
                                         <div className="paccessDetail">Available Languages: {itinerarie.availableLanguages}</div>
 
-                                        {/* <div className="accessLikes"><p className="paccessLikes">♠<Likes itinerario={itinerarie._id} /></p></div> */}
-                                        {/* <Likes itinerario={itinerarie._id} /> */}
-
                                         <Likes likes={itinerarie._id}/>
 
                                     </div>
+
+                                    {/* <Likes likes={itinerarie._id} /> */}
 
                                     {/* <Coment /> */}
                                     <Coment itinerario={itinerarie._id} />
