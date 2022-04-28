@@ -55,6 +55,12 @@ function Likes(props) {
 
                 <button className="paccessLikesRojo" onClick={likeDisLike}>❤ {likes}</button>
                 
+                {/* <button>
+                    {!user ?
+                        <div className="paccessLikes">❤ {likes}</div> :
+
+                        <div className="paccessLikesRojo" onClick={() => likeDisLike}>❤ {likes}</div>}
+                </button> */}
 
             </div>
 
