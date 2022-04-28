@@ -826,7 +826,7 @@ a.linkDeco2 {
 }
 
 .accessLikes {
-  width: 120px;
+  width: 200px;
 }
 
 .paccessLikes {
@@ -843,6 +843,8 @@ a.linkDeco2 {
 }
 
 .paccessLikesRojo {
+  width: 120px;
+  height: 120px;
   font-size: xx-large;
   color: rgba(255, 0, 0, 0.884);
   text-align: center;
