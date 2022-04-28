@@ -104,8 +104,16 @@ function Coment(props) {
       setReload(!reload)
    }
 
+   // const dataComents = {
+   //    itinerarioComent: props.itinerario,
+   //    mensageComent: event.target[0].value,
+   //    userComent: user.datosUser.id,
+
+   // }
 
 
+   console.log(coment)
+   console.log(user)
    return (
 
       <>
@@ -118,13 +126,24 @@ function Coment(props) {
                      <div className='fromComentarioInfo'>{"from " + itemComent.user.from}</div>
                   </div>
 
-                  <div><input className='textComentarioUser' onKeyUp={handelChange} defaultValue={itemComent.comentaryUser}></input></div>
 
-                  <div className='botonesComentario'>
-                     <div><button className="btn btn-outline-warning botonComentario edit" onClick={() => modificarComentario(itemComent._id)}>edit</button></div>
+                  {user?.datosUser.id === itemComent.user._id ?
+                     <div>
+                        <div><input className='textComentarioUser' onKeyUp={handelChange} defaultValue={itemComent.comentaryUser}></input></div>
 
-                     <div><button className="btn btn-outline-danger botonComentario delete" onClick={() => borrarComentario(itemComent._id)}>delete</button></div>
-                  </div>
+                        <div className='botonesComentario'>
+                           <div><button className="btn btn-outline-warning botonComentario edit" onClick={() => modificarComentario(itemComent._id)}>edit</button></div>
+
+                           <div><button className="btn btn-outline-danger botonComentario delete" onClick={() => borrarComentario(itemComent._id)}>delete</button></div>
+                        </div>
+                     </div>
+
+                     :
+
+                     <div><div className='textComentarioUser'>{itemComent.comentaryUser}</div></div>
+                  }
+
+
                </div>
             )}
 

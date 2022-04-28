@@ -31,6 +31,7 @@ const CardSignIn = () => {
                 swal(data.message)
             }
             else {
+                localStorage.setItem("token", data.response.token)
                 swal(data.message)
                 dispatch({
                     type: actionType.USER,
@@ -58,6 +59,7 @@ const CardSignIn = () => {
                 swal(data.message)
             }
             else {
+                localStorage.setItem("token", data.response.token)
                 swal(data.message)
                 dispatch({
                     type: actionType.USER,
