@@ -27,7 +27,7 @@ function Likes(props) {
 
     // const [{ user }, dispatch] = useStateValue()
 
-    const [likes, setLikes] = useState(0)
+    const [likes, setLikes] = useState()
 
     const likeDisLike = async () => {
         const token = localStorage.getItem("token")
@@ -51,7 +51,7 @@ function Likes(props) {
             <div className="accessLikes">
 
 
-                <button className="accessLikes" onClick={likeDisLike}>{likes}</button>
+                <button className="accessLikes" onClick={likeDisLike}>♠{likes}</button>
 
 
             </div>
