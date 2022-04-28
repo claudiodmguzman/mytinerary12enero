@@ -837,9 +837,24 @@ a.linkDeco2 {
   margin: 12px;
   background: rgb(255, 255, 255);
   border-radius: 50%;
+  border-color: white;
   -webkit-box-shadow: inset 0px 0px 26px -10px #694F27;
   box-shadow: inset 0px 0px 26px -10px #694F27;
 }
+
+.paccessLikesRojo {
+  font-size: xx-large;
+  color: rgba(255, 0, 0, 0.884);
+  text-align: center;
+  padding: 20px;
+  margin: 12px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  border-color: white;
+  -webkit-box-shadow: inset 0px 0px 26px -10px #694F27;
+  box-shadow: inset 0px 0px 26px -10px #694F27;
+}
+
 .accessGralDescription {
   text-align: justify;
   font-size: x-large;
