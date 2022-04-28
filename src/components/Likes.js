@@ -7,7 +7,7 @@ import axios from 'axios';
 
 function Likes(props) {
 
-    const likes = props.likes
+    const Likes = props.likes
 
     const [{ cities }, dispatch] = useStateValue()
     const [{ user }] = useStateValue()
@@ -27,18 +27,19 @@ function Likes(props) {
 
     // const [{ user }, dispatch] = useStateValue()
 
-    // const [like, setLike] = useState(0)
+    const [likes, setLikes] = useState(0)
 
     const likeDisLike = async () => {
         const token = localStorage.getItem("token")
         console.log(user)
         console.log(props)
-        await axios.put(`http://localhost:4000/api/likeDisLike/${likes}`,{}, {
+        await axios.put(`http://localhost:4000/api/likeDisLike/${Likes}`,{}, {
             headers: {
               'Authorization': 'Bearer ' + token // método de autorizacion estandar para autoriza y autentificar al usuario
             }
           })
-        .then(response => console.log(response))
+        // .then(response => console.log(response))
+        .then(response => setLikes(response.data.response.length))
     }
   
 
@@ -50,7 +51,7 @@ function Likes(props) {
             <div className="accessLikes">
 
 
-                <button className="accessLikes" onClick={likeDisLike}>♠</button>
+                <button className="accessLikes" onClick={likeDisLike}>{likes}</button>
 
 
             </div>
