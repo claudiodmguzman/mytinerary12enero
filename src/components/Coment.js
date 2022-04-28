@@ -64,6 +64,14 @@ function Coment(props) {
 
    const borrarComentario = async (id) => {
       await axios.delete(`http://localhost:4000/api/coment/${id}`)
+         .then(response =>
+            displayMessages(response.data),
+         )
+      function displayMessages(data) {
+         if (data.success) {
+            swal(data.message)
+         }
+      }
       setReload(!reload)
    }
 
@@ -71,12 +79,28 @@ function Coment(props) {
       setCambio(event.target.value)
    }
 
+   // const modificarComentario = async (id) => {
+   //    console.log(id)
+   //    // console.log(cambio)
+   //    let data = cambio
+   //    await axios.put(`http://localhost:4000/api/coment/${id}`, { data })
+   //       .then(response => console.log(response))
+   //    setReload(!reload)
+   // }
+
    const modificarComentario = async (id) => {
       console.log(id)
       // console.log(cambio)
       let data = cambio
       await axios.put(`http://localhost:4000/api/coment/${id}`, { data })
-         .then(response => console.log(response))
+         .then(response =>
+            displayMessages(response.data),
+         )
+      function displayMessages(data) {
+         if (data.success) {
+            swal(data.message)
+         }
+      }
       setReload(!reload)
    }
 
