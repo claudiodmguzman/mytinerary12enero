@@ -888,10 +888,9 @@ a.linkDeco2 {
 
 
 .accessLikes {
-  /* width: 200px; */
-  /* justify-content: center;
-  align-items: center; */
   display: flex;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 .paccessLikes {
