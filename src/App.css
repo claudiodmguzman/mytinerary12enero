@@ -893,7 +893,7 @@ a.linkDeco2 {
   margin-right: 50%;
 }
 
-.paccessLikes {
+/* .paccessLikes {
   font-size: xx-large;
   color: #4d3b20;
   text-align: center;
@@ -904,7 +904,7 @@ a.linkDeco2 {
   border-color: white;
   -webkit-box-shadow: inset 0px 0px 26px -10px #694F27;
   box-shadow: inset 0px 0px 26px -10px #694F27;
-}
+} */
 
 .paccessLikesRojo {
   width: 120px;
@@ -916,7 +916,7 @@ a.linkDeco2 {
   margin: 12px;
   background: rgb(255, 255, 255);
   border-radius: 50%;
-  border-color: white;
+  border: 2px solid white;
   -webkit-box-shadow: inset 0px 0px 26px -10px #694F27;
   box-shadow: inset 0px 0px 26px -10px #694F27;
 }
