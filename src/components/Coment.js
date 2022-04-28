@@ -3,6 +3,7 @@ import { useStateValue } from '../StateProvider';
 import 'react-bootstrap-accordion/dist/index.css';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import swal from 'sweetalert';
 
 
 function Coment(props) {
@@ -61,8 +62,8 @@ function Coment(props) {
    }, [reload])
 
 
-   const borrarComentario = (id) => {
-      axios.delete(`http://localhost:4000/api/coment/${id}`)
+   const borrarComentario = async (id) => {
+      await axios.delete(`http://localhost:4000/api/coment/${id}`)
       setReload(!reload)
    }
 
@@ -70,14 +71,15 @@ function Coment(props) {
       setCambio(event.target.value)
    }
 
-   const modificarComentario = (id) => {
+   const modificarComentario = async (id) => {
       console.log(id)
-      console.log(cambio)
+      // console.log(cambio)
       let data = cambio
-      axios.put(`http://localhost:4000/api/coment/${id}`, { data })
+      await axios.put(`http://localhost:4000/api/coment/${id}`, { data })
          .then(response => console.log(response))
       setReload(!reload)
    }
+
 
 
    return (
