@@ -19,7 +19,7 @@ function Coment(props) {
 
    useEffect(() => {
       citiesSelecter.map(city =>
-         axios.get(`http://localhost:4000/api/itinerarios/${city.name}`)
+         axios.get(`https://myitinerary-claudiodmguzman.herokuapp.com/api/itinerarios/${city.name}`)
             .then(response => setItineraries(response.data.response.itinerario)
             )
       )
@@ -44,7 +44,7 @@ function Coment(props) {
       }
       console.log(dataComents)
       console.log(props)
-      await axios.post("http://localhost:4000/api/coment", { dataComents })
+      await axios.post("https://myitinerary-claudiodmguzman.herokuapp.com/api/coment", { dataComents })
          .then(response =>
             setComent(response.data.response.comentario))
       setReload(!reload)
@@ -53,7 +53,7 @@ function Coment(props) {
 
    useEffect(() => {
       let id = props.itinerario
-      axios.get(`http://localhost:4000/api/coment/${id}`)
+      axios.get(`https://myitinerary-claudiodmguzman.herokuapp.com/api/coment/${id}`)
          .then(response => {
             setComent(response.data.response.comentario)
          })
@@ -63,7 +63,7 @@ function Coment(props) {
 
 
    const borrarComentario = async (id) => {
-      await axios.delete(`http://localhost:4000/api/coment/${id}`)
+      await axios.delete(`https://myitinerary-claudiodmguzman.herokuapp.com/api/coment/${id}`)
          .then(response =>
             displayMessages(response.data),
          )
@@ -83,7 +83,7 @@ function Coment(props) {
    //    console.log(id)
    //    // console.log(cambio)
    //    let data = cambio
-   //    await axios.put(`http://localhost:4000/api/coment/${id}`, { data })
+   //    await axios.put(`https://myitinerary-claudiodmguzman.herokuapp.com/api/coment/${id}`, { data })
    //       .then(response => console.log(response))
    //    setReload(!reload)
    // }
@@ -92,7 +92,7 @@ function Coment(props) {
       console.log(id)
       // console.log(cambio)
       let data = cambio
-      await axios.put(`http://localhost:4000/api/coment/${id}`, { data })
+      await axios.put(`https://myitinerary-claudiodmguzman.herokuapp.com/api/coment/${id}`, { data })
          .then(response =>
             displayMessages(response.data),
          )

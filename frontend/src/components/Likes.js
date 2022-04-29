@@ -21,7 +21,7 @@ function Likes(props) {
 
     useEffect(() => {
         citiesSelecter.map(city =>
-            axios.get(`http://localhost:4000/api/itinerarios/${city.name}`)
+            axios.get(`https://myitinerary-claudiodmguzman.herokuapp.com/api/itinerarios/${city.name}`)
                 .then(response => setItineraries(response.data.response.itinerario)
                 )
         )
@@ -35,7 +35,7 @@ function Likes(props) {
         const token = localStorage.getItem("token")
         console.log(user)
         console.log(props)
-        await axios.put(`http://localhost:4000/api/likeDisLike/${Likes}`, {}, {
+        await axios.put(`https://myitinerary-claudiodmguzman.herokuapp.com/api/likeDisLike/${Likes}`, {}, {
             headers: {
                 'Authorization': 'Bearer ' + token // método de autorizacion estandar para autoriza y autentificar al usuario
             }

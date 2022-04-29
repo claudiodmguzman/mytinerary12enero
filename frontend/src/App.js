@@ -26,7 +26,7 @@ function App() {
   const [{ cities }, dispatch] = useStateValue()
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/datos")
+    axios.get("https://myitinerary-claudiodmguzman.herokuapp.com/api/datos")
       .then(response => {
         dispatch({
           type: actionType.CITIESDB,
@@ -37,7 +37,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/datosContinentes")
+    axios.get("https://myitinerary-claudiodmguzman.herokuapp.com/api/datosContinentes")
       .then(response => {
         dispatch({
           type: actionType.CONTINENTESDB,
@@ -48,7 +48,7 @@ function App() {
 
     if (localStorage.getItem("token") !== null) {
       const token = localStorage.getItem("token")
-      axios.get("http://localhost:4000/api/signInToken", {
+      axios.get("https://myitinerary-claudiodmguzman.herokuapp.com/api/signInToken", {
         headers: {
           'Authorization': 'Bearer ' + token // método de autorizacion estandar para autoriza y autentificar al usuario
         }

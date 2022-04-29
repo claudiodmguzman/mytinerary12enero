@@ -19,7 +19,7 @@ const CardSignUp = () => {
             password: response.profileObj.googleId + "Ab",
             from: "Google",
         }
-        await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
+        await axios.post("https://myitinerary-claudiodmguzman.herokuapp.com/api/CardSignUp", { NuevoUsuario })
             .then(response =>
                 displayMessages(response.data)
             )
@@ -39,7 +39,7 @@ const CardSignUp = () => {
             password: response.id + "Ab",
             from: "Facebook",
         }
-        await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
+        await axios.post("https://myitinerary-claudiodmguzman.herokuapp.com/api/CardSignUp", { NuevoUsuario })
             .then(response =>
                 displayMessages(response.data)
             )
@@ -59,7 +59,7 @@ const CardSignUp = () => {
             password: event.target[3].value,
             from: "CardSignUp",
         }
-        await axios.post("http://localhost:4000/api/CardSignUp", { NuevoUsuario })
+        await axios.post("https://myitinerary-claudiodmguzman.herokuapp.com/api/CardSignUp", { NuevoUsuario })
             .then(response =>
                 displayMessages(response.data)
             )

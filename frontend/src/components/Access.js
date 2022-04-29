@@ -19,7 +19,7 @@ const Access = () => {
 
     useEffect(() => {
         citiesSelecter.map(city =>
-            axios.get(`http://localhost:4000/api/itinerarios/${city.name}`)
+            axios.get(`https://myitinerary-claudiodmguzman.herokuapp.com/api/itinerarios/${city.name}`)
                 .then(response => setItineraries(response.data.response.itinerario)
                 )
         )

@@ -15,7 +15,7 @@ const CardLog = () => {
     async function cerrarCesion() {
         const email = user.datosUser.email
         // console.log(email)
-        await axios.post("http://localhost:4000/api/signOut", { email })
+        await axios.post("https://myitinerary-claudiodmguzman.herokuapp.com/api/signOut", { email })
             .then(response =>
                 displayMessages(response.data),
             )
