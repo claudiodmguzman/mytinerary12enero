@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.135d9d8e.css",
+    "main.js": "/static/js/main.70c4e81c.js",
+    "static/js/787.4f28155c.chunk.js": "/static/js/787.4f28155c.chunk.js",
+    "static/media/imgFondoBody.png": "/static/media/imgFondoBody.07d94359534f0756789d.png",
+    "static/media/img3City-Bolivia-La-Paz.png": "/static/media/img3City-Bolivia-La-Paz.5a1b61fec54e9a723a30.png",
+    "static/media/img5City-Paises-Bajos-Amsterdam.jpg": "/static/media/img5City-Paises-Bajos-Amsterdam.13d20774610a7c2d9c6f.jpg",
+    "static/media/imgCompass.png": "/static/media/imgCompass.89ef04b77665c7907199.png",
+    "static/media/imgCompassLogOut.png": "/static/media/imgCompassLogOut.56c416c675a63ed2d443.png",
+    "static/media/imgCompassLog.png": "/static/media/imgCompassLog.c7093ec0434e94c99e1a.png",
+    "static/media/img1City-Corea-del-Sur-Seul.jpg": "/static/media/img1City-Corea-del-Sur-Seul.e8bca9be4341e0a120ba.jpg",
+    "static/media/img4City-Japon-Tokio.jpg": "/static/media/img4City-Japon-Tokio.f7bbdc50461ec3fd71a4.jpg",
+    "static/media/img1City-Sudafrica-Ciudad-del-Cabo.jpg": "/static/media/img1City-Sudafrica-Ciudad-del-Cabo.ce13b112bc6ff098793b.jpg",
+    "static/media/imgTineraryEurope.png": "/static/media/imgTineraryEurope.44154c1f92873ea5b301.png",
+    "static/media/img2City-Taiwan-Taipei.jpg": "/static/media/img2City-Taiwan-Taipei.afbc931da8b7f3668966.jpg",
+    "static/media/img5City-Vanuatu-Port Vila.jpg": "/static/media/img5City-Vanuatu-Port Vila.d3406ae9ec612baf76fa.jpg",
+    "static/media/img6City-Mexico-Guadalajara.jpg": "/static/media/img6City-Mexico-Guadalajara.29bf410566b4acccae59.jpg",
+    "static/media/img1City-Mexico-Ciudad-de-Mexico.jpg": "/static/media/img1City-Mexico-Ciudad-de-Mexico.f6e71d9993909fe440fc.jpg",
+    "static/media/img6City-Colombia-Cartagena-de-Indias.png": "/static/media/img6City-Colombia-Cartagena-de-Indias.ea4c1ab1cac103e66145.png",
+    "static/media/imgGoogleMaps.png": "/static/media/imgGoogleMaps.1a6d32d2985951c73da2.png",
+    "static/media/img4City-Australia-Melbourne.jpg": "/static/media/img4City-Australia-Melbourne.689dbddb4be7fb3b2eaa.jpg",
+    "static/media/img1City-Argentina-Buenos-Aires.png": "/static/media/img1City-Argentina-Buenos-Aires.41f8b184362596c43d45.png",
+    "static/media/img4City-Kenia-Nairobi.jpg": "/static/media/img4City-Kenia-Nairobi.a71b7aa908891101d867.jpg",
+    "static/media/imgTineraryAsia.png": "/static/media/imgTineraryAsia.9a5be22e3e15591a2f85.png",
+    "static/media/imgTineraryOceania.png": "/static/media/imgTineraryOceania.81953d3121534e490ccf.png",
+    "static/media/imgTineraryAfrica.png": "/static/media/imgTineraryAfrica.57056891ff5d3117ed65.png",
+    "static/media/imgTineraryNorthAmerica.png": "/static/media/imgTineraryNorthAmerica.b6d446b9defbc61b56aa.png",
+    "static/media/imgIconInstagram.png": "/static/media/imgIconInstagram.ac32ec0a111aeba03298.png",
+    "static/media/imgIconTwitter.png": "/static/media/imgIconTwitter.7163a1d69ec09d7e0dbd.png",
+    "static/media/imgIconLinkedin.png": "/static/media/imgIconLinkedin.793a76008e86eb4e8160.png",
+    "static/media/imgIconFacebook.png": "/static/media/imgIconFacebook.8d51a55626e9bf107f8f.png",
+    "index.html": "/index.html",
+    "main.135d9d8e.css.map": "/static/css/main.135d9d8e.css.map",
+    "main.70c4e81c.js.map": "/static/js/main.70c4e81c.js.map",
+    "787.4f28155c.chunk.js.map": "/static/js/787.4f28155c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.135d9d8e.css",
+    "static/js/main.70c4e81c.js"
+  ]
+}
