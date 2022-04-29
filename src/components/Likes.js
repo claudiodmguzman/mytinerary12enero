@@ -49,18 +49,20 @@ function Likes(props) {
     return (
 
         <>
-
+    {user?
             <div className='accessLikes'>
-
 
                 <button className="paccessLikesRojo" onClick={likeDisLike}>❤ {likes}</button>
 
+            </div>
+            :
 
+            <div className='accessLikes'>
 
-                {/* <button>{!user ? <div className="paccessLikesNegro">❤</div> : <div className="paccessLikesRojo" onClick={() => likeDisLike}>❤ {likes}</div>}</button> */}
-
+                <button className="paccessLikesRojo">❤ {likes}</button>
 
             </div>
+            }
 
         </>
     )
