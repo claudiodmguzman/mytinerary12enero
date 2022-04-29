@@ -149,6 +149,7 @@ function Coment(props) {
 
          </div>
 
+         {user?         
          <form onSubmit={submitComent}>
 
             <div className="comentario">
@@ -162,6 +163,9 @@ function Coment(props) {
             </div>
 
          </form>
+         :
+         <h1 className='textComentarioNoSignIn'>...you must Sign In to leave a Comment...</h1>
+         }
 
       </>
    )

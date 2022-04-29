@@ -981,6 +981,35 @@ a.linkDeco2 {
   padding: 10px;
 }
 
+.textComentario {
+  display: flex;
+  text-decoration: none;
+  /* text-align: center; */
+  background: transparent;
+  border: 1px solid rgb(230, 228, 228);
+  border-radius: 4px;
+  width: 100% !important;
+  height: 50px;
+  font-size: large;
+  padding: 10px;
+}
+
+.textComentarioNoSignIn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid rgb(230, 228, 228);
+  border-radius: 4px;
+  width: 100% !important;
+  height: 50px;
+  font-size: large;
+  font-style: italic;
+  padding: 10px;
+  padding-top: 13px;
+  color: #cea76ca4;
+}
+
 .textComentarioUser {
   display: flex;
   text-decoration: none;
